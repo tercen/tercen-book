@@ -1,0 +1,31 @@
+# Get started with operators
+This step-by-step guide outlines how to create your own operator for _Tercen_. It uses the crabs data set. It assumes you have already have the data and uploaded it as described in __Get Started__ in Chapter2.
+
+## Create a workflow and projection
+To create a workflow please following the _Get Started_ in Chapter2.
+
+### Right click on the "Table Step" and add a "Data Step"
+
+### Open the "Data Step"
+
+### Drag-n-drop  
+
+## Operator using the web interface
+
+## Operator using RStudio
+
+### create a new project
+
+### install rtercen package
+
+### modify the template
+
+### run the script
+
+### refresh workflow page
+
+### visualize the results
+
+
+
+

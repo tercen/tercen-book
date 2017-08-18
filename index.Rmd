@@ -14,5 +14,5 @@ description: "This is a book about Tercen"
 
 # Prerequisites
 
-You will require a free account on Tercen
+You require a free account for Tercen. This allows you to perform the tutorials contained within this book.
 
