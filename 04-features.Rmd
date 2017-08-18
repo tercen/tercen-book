@@ -14,8 +14,6 @@ The researcher visually customizes a workflow without the aid of a bioinformatic
 ## Integrate external knowledge
 The researcher integrates extra data from external data or knowledge sources (e.g. biological, clinical, and chemical) without the aid of a bioinformatician, (e.g. Uniprot, Protein atlas, Reactome).
 
-
-
 ## Sharing analysis
 The researcher shares the workflow and data via an URL and both researcher and bioinformatician can collaborate on the same workflow and data at the same time.
 

@@ -3,10 +3,7 @@ This step-by-step guide outlines how to upload, view, compute and share data usi
 it uses a data set of morphological  _measurements_ on _Leptograpsus Crabs_ collected at Fremantle, W. Australia.
 
 ## Get the data
-The data set for this guide is available online as a git hub repository.
-
-### Download the data 
-It is found at https://github.com/tercen/crabs/data and download to your local drive
+The data set for this guide is available online as a git hub repository. It is found at https://github.com/tercen/getting_started/tree/master/crabs/data and download it to your local drive.
 
 __Crab data description:__
 
@@ -24,7 +21,7 @@ Factor|values
 ## Upload the data
 In this section you upload an example data set.
 
-_TercenCloud_ accepts data in either _.tsv_ or _csv_. These data set is in a _.csv_ and is in a _long format_.
+_TercenCloud_ accepts data in either _.tsv_ or _csv_. These data set ``crabs_longformat.csv`` is in a _.csv_ and is in a _long format_.
 
 
 ### Go to the _project page_ by clicking on the ``public`` project

@@ -1,16 +1,18 @@
 # Glossary
 
-## Observation
+__Measurement__: A numerical variable
 
-## Variable
+__Observation__: An observation is the factor name given to a value (measurement), at a particular period, of a particular variable.
 
-## Projection
+__Variable__: A variable is a characteristic of a unit being observed that may assume more than one of a set of values to which a numerical measure or a category from a classification can be assigned (e.g. income, age, weight, etc., and “occupation”, “industry”, “disease”, etc
 
-## Long format
+__Projection__:
 
-## Wide format
+__Relational Algebra__:
 
-## Relational Algebra
+__Universal Table__:
 
-## Universal Table
+__Long format__:
+
+__Wide format__:
 
