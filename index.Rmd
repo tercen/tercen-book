@@ -1,4 +1,4 @@
---- 
+---
 title: "Tercen Book"
 author: "Faris Naji, Alexandre Maurel"
 date: "`r Sys.Date()`"
@@ -14,18 +14,26 @@ description: "This is a book about Tercen"
 
 # Prerequisites
 You require a free account for Tercen to perform the tutorials contained within this book.
+
 Please sign up on the main Tercen website http://www.tercen.com
 
+<center>![](images/tercen-book.png)</center>
+
 ## Why read this book
-Can we get researchers empowered by getting control of their data?, read the book to find out.
+Can we get researchers empowered and back in control of their data?. Read the book to find out.
 
 ## Structure of the book
 There are getting started guides (Chapter 2 and Chapter 3) as well as more in-depth explanations.
 
 ## Acknowledgement
-I would like to thank all the users of Tercen who have given it a go and given great feedback. Without this feedback it would not have been possible.
+I would like to thank all the users of Tercen and also those who have given all the feedback. Without this feedback Tercen would not have been possible.
 
 # About the Authors
 Faris Naji
 
 Alexandre Maurel
+
+
+
+
+
