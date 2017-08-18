@@ -3,7 +3,6 @@ This step-by-step guide outlines how to upload, view, compute and share data usi
 it uses a data set of morphological  _measurements_ on _Leptograpsus Crabs_ collected at Fremantle, W. Australia.
 
 ## Get the data
-
 The data set for this guide is available online as a git hub repository.
 
 ### Download the data 
@@ -23,11 +22,14 @@ Factor|values
 
 
 ## Upload the data
+In this section you upload an example data set.
 
-_TercenCloud_ accepts data in either _tsv_ or _csv_. These data set is in a tsv and is in a _long format_.
+_TercenCloud_ accepts data in either _.tsv_ or _csv_. These data set is in a _.csv_ and is in a _long format_.
 
 
 ### Go to the _project page_ by clicking on the ``public`` project
+
+You may already have a personal project area, in which case go this project.
 
 ![](images/project_home.png)
 
@@ -76,6 +78,8 @@ You see what column headers were detected and their associated type.
 You will now see the new data set in the _project page_.
 
 ## Creating a _workflow_
+In this section you create a workflow.
+
 ### Go to the _project page_
 
 ![](images/project_home.png)
@@ -113,6 +117,7 @@ The Table step should now be green.
 You have now successfully imported you data sets into the workflow.
 
 ## Defining a view
+In this section you create a visual.
 Once you have imported your data into the workflow now you can configure a __projection__.
 
 ### Right click on the Table step and select **Add step**
@@ -127,7 +132,7 @@ A _projection page_ opens
 
 ![](images/projection.png)
   
-The _projection_ page is composed of different zones. The main zones are highlighted in green below:
+The _projection page_ is composed of different zones. The main zones are highlighted in green below:
 
 ![](images/projection_zones.png)
 
@@ -167,6 +172,7 @@ The projection window should now show the following:
 ![](images/projection_heatmap_crabs.png)
 
 ## Computing
+In this section you perform a computation.
 The projection you created in the previous section can also be used by a computation (i.e. _operator_).
 This is due to the _What you see is what you compute_ paradigm. The following steps outlines how to add an _operator_.
 
@@ -184,8 +190,9 @@ The save icon (see red circle in figure below) will dissappear once it is saved
 The the data step status color will now go from blue to red (i.e in progress). Wait until the status goes to green (i.e completed).
 
 ## Visualizing the result
+In this section you visualize the output of your previous PCA computation. The visual uses two principal components in a pair-wise plot.
 
-### Click on the data step and select **Add step** 
+### Right click on the data step and select **Add step** 
 
 ### Choose a **Data step** and click **OK**
 
@@ -200,6 +207,7 @@ A new projection page opens. This projection page should be familiar as you have
 
 
 ## Visualizing a pairwise
+In this section you create a multi-group pairwise visual.
 
 ### Click on the first data step and select **Add step** 
 

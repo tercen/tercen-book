@@ -1,7 +1,33 @@
 # Operators
+Tercen operators perform the computation on the projection views. There are many existing operators but it is easy to create your own operator. Using the data step, a user creates a projection and selects an operator. A data projection is composed of a __data__, __y-axis__, __x-axis__, __rowseq__, __colseq__, __color__ and __label__. All these projection parameter are presented by data structures to the operator
 
-Some _significant_ operators are demonstrated in this chapter.
+## Structure of an operator
+A Tercen operator is composed of three main sections
+* Getting the data
+* Operating on the data
+* Returning the results
 
-## Operator one
+All the projection parameters are avaialble as data frames:
+For the data itself Tercen supplies three variables.
 
-## Operator two
+``.rowseq``  row sequence of data
+
+``.colseq``  col sequence of data
+
+``.id``      id sequence of data (will be deprecated)
+
+
+## Simple operator
+A simple identity operator is shown
+
+## Mean, Sum, Count operator
+A simple Mean, Sum, Count operator is outlined
+
+## T-test operator
+
+## Bioconductor operator
+
+## R package
+There is currently an R package in the tercen repository to help in creating operators called ``tercen:rtercen`` 
+
+
