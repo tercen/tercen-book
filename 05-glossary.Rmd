@@ -1,0 +1,16 @@
+# Glossary
+
+## Observation
+
+## Variable
+
+## Projection
+
+## Long format
+
+## Wide format
+
+## Relational Algebra
+
+## Universal Table
+

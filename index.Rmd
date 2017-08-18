@@ -1,0 +1,18 @@
+--- 
+title: "Tercen Book"
+author: "Faris Naji, Alexandre Maurel"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: 
+biblio-style: apalike
+link-citations: yes
+github-repo: tercen/tercen-book
+description: "This is a book about Tercen"
+---
+
+# Prerequisites
+
+You will require a free account on Tercen
+

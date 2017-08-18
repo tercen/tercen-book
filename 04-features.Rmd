@@ -1,0 +1,9 @@
+# Tercen Features
+
+Some _significant_ features are demonstrated in this chapter.
+
+## Projection for a computation
+
+## Incremental visualization
+
+## 
