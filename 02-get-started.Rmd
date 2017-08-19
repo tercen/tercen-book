@@ -215,6 +215,7 @@ This will create a second data step (see workflow screen shot below)
 ### Open the newly created data step
 A new projection page opens. We will now create a pairwise projection of the ``variable``.
 
+### Drag-n-drop the ``measurement`` factor to the _y-axis zone_
 ### Drag-n-drop the ``variable`` factor to the _column zone_
 ### Drag-n-drop the ``variable`` factor to the _row zone_
 ### Drag-n-drop the ``index`` factor to the _label zone_
