@@ -5,6 +5,7 @@ it uses a data set of morphological  _measurements_ on _Leptograpsus Crabs_ coll
 ## Get the data
 The data set for this guide is available online as a git hub repository. It is found at https://github.com/tercen/getting_started/tree/master/crabs/data and download it to your local drive.
 
+<center>![](images/crabs_data.png)</center>
 __Crab data description:__
 
 The dataset is called "crabs" and it is in a _long format_. It is composed of four groups (two sexes and two species) of 50 measurements for five traits variables, ``FL`` (frontal lobe size in mm), ``RW`` (rear width mm), ``CL`` (carapace length mm), ``CW`` (carapace width mm) and ``BD`` (body depth mm). In summary it is:  
@@ -216,7 +217,7 @@ A new projection page opens. We will now create a pairwise projection of the ``v
 
 ### Drag-n-drop the ``variable`` factor to the _column zone_
 ### Drag-n-drop the ``variable`` factor to the _row zone_
-### Drag-n-drop the ``index`` and ``species`` factor to the _label zone_
+### Drag-n-drop the ``index`` factor to the _label zone_
 
 ![](images/projection_pairwise.png)
 
