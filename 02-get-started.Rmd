@@ -178,7 +178,7 @@ This is due to the _What you see is what you compute_ paradigm. The following st
 ### Go to the **Public tab** and select  the ``PCA`` operator, click **OK**
 
 ### Click on the save icon of the Data step page bar
-The save icon (see red circle in figure below) will dissappear once it is saved 
+The save icon (see red circle in figure below) will disappear once it is saved 
 ![](images/save_data_step.png)
 
 ### Go to the workflow page
@@ -238,7 +238,7 @@ You will notice the each _data step_ (and hence visual) has its own unique URL a
  
  https://tercen.com/core/#w/fa51aae551f7c3d14727ab5fd9b65433
 
-This URL is for the crabs workflow found in the ''public'' project
+This URL is for the crabs workflow found in the ``public`` project.
  
 ### Copy the url of the view with the multi-group plot
 You can send this URL to another person by email or via a chat session.
@@ -246,6 +246,6 @@ You can send this URL to another person by email or via a chat session.
  https://tercen.com/core/#ds/fa51aae551f7c3d14727ab5fd9b65433/2efff9f0-0f80-11e7-8de2-9fe5ab3cbd24
 
 
-This URL is for the multi-group pairwise found in the workflow in the ''public'' project
+This URL is for the multi-group pairwise found in the workflow in the ``public`` project.
 
 

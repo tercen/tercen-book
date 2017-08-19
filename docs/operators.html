@@ -25,7 +25,7 @@
 <meta name="author" content="Faris Naji, Alexandre Maurel">
 
 
-<meta name="date" content="2017-08-18">
+<meta name="date" content="2017-08-19">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -173,6 +173,8 @@
 <li class="chapter" data-level="7.6" data-path="operators.html"><a href="operators.html#r-package"><i class="fa fa-check"></i><b>7.6</b> R package</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>8</b> Glossary</a></li>
+<li class="chapter" data-level="9" data-path="roadmap.html"><a href="roadmap.html"><i class="fa fa-check"></i><b>9</b> Roadmap</a></li>
+<li class="chapter" data-level="10" data-path="glossary-1.html"><a href="glossary-1.html"><i class="fa fa-check"></i><b>10</b> Glossary</a></li>
 </ul>
 
       </nav>
@@ -195,11 +197,16 @@
 <p>Tercen operators perform the computation on the projection views. There are many existing operators but it is easy to create your own operator. Using the data step, a user creates a projection and selects an operator. A data projection is composed of a <strong>data</strong>, <strong>y-axis</strong>, <strong>x-axis</strong>, <strong>rowseq</strong>, <strong>colseq</strong>, <strong>color</strong> and <strong>label</strong>. All these projection parameter are presented by data structures to the operator</p>
 <div id="structure-of-an-operator" class="section level2">
 <h2><span class="header-section-number">7.1</span> Structure of an operator</h2>
-<p>A Tercen operator is composed of three main sections * Getting the data * Operating on the data * Returning the results</p>
-<p>All the projection parameters are avaialble as data frames: For the data itself Tercen supplies three variables.</p>
-<p><code>.rowseq</code> row sequence of data</p>
-<p><code>.colseq</code> col sequence of data</p>
-<p><code>.id</code> id sequence of data (will be deprecated)</p>
+<p>A Tercen operator is composed of three main activities:</p>
+<ul>
+<li>Get data</li>
+<li>Operate on data</li>
+<li>Return results</li>
+</ul>
+<p>All the projection parameters are available as data frames: For the data itself Tercen supplies three variables.</p>
+<p><code>.rowseq</code> row sequence of data, represented by an integer</p>
+<p><code>.colseq</code> col sequence of data, represented by an integer</p>
+<p><code>.id</code> id sequence of data (will be deprecated), represented by an integer</p>
 </div>
 <div id="simple-operator" class="section level2">
 <h2><span class="header-section-number">7.2</span> Simple operator</h2>

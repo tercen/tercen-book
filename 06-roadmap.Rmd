@@ -1,0 +1,14 @@
+# Roadmap
+Tercen is complex software and requires to built up in stages with constant feedback. The alpha version allows for testing the value proposition and the feature list. The Beta and Final are about upscaling.
+
+__Alpha__
+Scheduled for begin 2016
+
+__Beta__
+Scheduled for after summer 2017
+
+__Final__
+Scheduled for mid 2018
+
+
+<center>![](images/roadmap.png)</center>

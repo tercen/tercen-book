@@ -20,19 +20,20 @@ Please sign up on the main Tercen website http://www.tercen.com
 <center>![](images/tercen-book.png)</center>
 
 ## Why read this book
-Can we get researchers empowered and back in control of their data?. Read the book to find out.
+Can we get researchers empowered and back in control of their data?. Read the book to find out. This is essentially a Tercen manual.
 
 ## Structure of the book
 There are getting started guides (Chapter 2 and Chapter 3) as well as more in-depth explanations.
 
 ## Acknowledgement
-I would like to thank all the users of Tercen and also those who have given all the feedback. Without this feedback Tercen would not have been possible.
+I would like to thank all the users of Tercen and also those who have given feedback, all of which made Tercen possible.
 
 # About the Authors
-Faris Naji
+__Faris Naji__ over ten years experience in trying to remove data barriers in science. Lives in Amsterdam and likes biking.
 
-Alexandre Maurel
+__Alexandre Maurel__ over ten years experience in building high data performance tools. Lives in the south of France and is always on the lookout for a good restaurant.
 
+<center>![](images/fishbowl.png)</center>
 
 
 
