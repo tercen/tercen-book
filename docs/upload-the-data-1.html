@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="get-the-data.html">
-<link rel="next" href="get-an-account.html">
+<link rel="prev" href="roadmap.html">
+<link rel="next" href="create-a-workflow.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -228,70 +228,29 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="get-started" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Get started</h1>
-<p>This step-by-step guide outlines how to upload, view, compute and share data using TercenCloud. it uses a data set of morphological <em>measurements</em> on <em>Leptograpsus Crabs</em> collected at Fremantle, W. Australia.</p>
-<div id="get-the-data-1" class="section level2">
-<h2><span class="header-section-number">4.1</span> Get the data</h2>
-<p>The data set for this guide is available online as a git hub repository. It is found at <a href="https://github.com/tercen/getting_started/tree/master/crabs/data" class="uri">https://github.com/tercen/getting_started/tree/master/crabs/data</a> and download it to your local drive.</p>
-<center>
-<img src="images/crabs_data.png" />
-</center>
-<p><strong>Crab data description:</strong></p>
-<p>The dataset is called “crabs” and it is in a <em>long format</em>. It is composed of four groups (two sexes and two species) of 50 measurements for five traits variables, <code>FL</code> (frontal lobe size in mm), <code>RW</code> (rear width mm), <code>CL</code> (carapace length mm), <code>CW</code> (carapace width mm) and <code>BD</code> (body depth mm). In summary it is:</p>
-<table>
-<thead>
-<tr class="header">
-<th>Factor</th>
-<th>values</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>sp</code></td>
-<td>species, <code>B</code> or <code>O</code> for blue or orange.</td>
-</tr>
-<tr class="even">
-<td><code>sex</code></td>
-<td><code>M</code> or <code>F</code></td>
-</tr>
-<tr class="odd">
-<td><code>index</code></td>
-<td>index 1 to 50 within each of the four groups, 2 sex and 2 species</td>
-</tr>
-<tr class="even">
-<td><code>variable</code></td>
-<td>one of five variables: <code>FL</code>, <code>RW</code>, <code>CL</code>, <code>CW</code> and <code>BD</code></td>
-</tr>
-<tr class="odd">
-<td><code>measurement</code></td>
-<td>the value of one of the five <code>variable</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="upload-the-data" class="section level2">
-<h2><span class="header-section-number">4.2</span> Upload the data</h2>
-<p>In this section you upload an example data set.</p>
+<div id="upload-the-data-1" class="section level1">
+<h1><span class="header-section-number">Chapter 14</span> Upload the data</h1>
+<p>In this section you upload to Tercen an example data set you downloaded in a previous section.</p>
 <p><em>TercenCloud</em> accepts data in either <em>.tsv</em> or <em>csv</em>. These data set <code>crabs_longformat.csv</code> is in a <em>.csv</em> and is in a <em>long format</em>.</p>
-<div id="go-to-the-project-page-by-clicking-on-the-public-project" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> Go to the <em>project page</em> by clicking on the <code>public</code> project</h3>
-<p>You may already have a personal project area, in which case go this project.</p>
+<ul>
+<li>Go to the <em>project page</em> by clicking on the <code>my playground</code> project</li>
+</ul>
+<p>You may already have a personal project area created, in which case go this project.</p>
 <div class="figure">
-<img src="images/project_home.png" />
+<img src="images/my_playground.png" />
 
 </div>
-</div>
-<div id="click-on-create-a-data-set" class="section level3">
-<h3><span class="header-section-number">4.2.2</span> Click on <strong>Create a data set</strong></h3>
+<ul>
+<li>Click on <strong>Create a data set</strong></li>
+</ul>
 <p>A dialog window opens which allows you to select the data file.</p>
 <div class="figure">
 <img src="images/create_dataset.png" />
 
 </div>
-</div>
-<div id="click-on-the-choose-file-button-and-select-your-file-i.e-crabs_longformat.csv." class="section level3">
-<h3><span class="header-section-number">4.2.3</span> Click on the <strong>Choose File</strong> button and select your file (i.e <code>crabs_longformat.csv</code>).</h3>
+<ul>
+<li>Click on the <strong>Choose File</strong> button and select your file (i.e. <code>crabs_longformat.csv</code>).</li>
+</ul>
 <p>Please make sure to select the separator, the encoding and the quote format.</p>
 <p>Selecting the separator requires you to select one of three options:</p>
 <ul>
@@ -299,7 +258,7 @@
 <li>Semicolon</li>
 <li>Tab</li>
 </ul>
-<p>Please select <strong>Comma</strong> for this dataset.</p>
+<p>Please select <strong>Comma</strong> for this data set.</p>
 <p>Selecting the encoding requires you to select one of two options:</p>
 <ul>
 <li>Latin 1 (default)</li>
@@ -313,239 +272,27 @@
 <li>None</li>
 </ul>
 <p>Leave the default..</p>
-</div>
-<div id="click-next" class="section level3">
-<h3><span class="header-section-number">4.2.4</span> Click <strong>Next</strong></h3>
+<ul>
+<li>Click <strong>Next</strong></li>
+</ul>
 <p>You see what column headers were detected and their associated type.</p>
-</div>
-<div id="click-ok" class="section level3">
-<h3><span class="header-section-number">4.2.5</span> Click <strong>OK</strong></h3>
+<ul>
+<li>Click <strong>OK</strong></li>
+</ul>
 <p>You will now see the new data set in the <em>project page</em>.</p>
-</div>
-</div>
-<div id="creating-a-workflow" class="section level2">
-<h2><span class="header-section-number">4.3</span> Creating a <em>workflow</em></h2>
-<p>In this section you create a workflow.</p>
-<div id="go-to-the-project-page" class="section level3">
-<h3><span class="header-section-number">4.3.1</span> Go to the <em>project page</em></h3>
 <div class="figure">
-<img src="images/project_home.png" />
+<img src="images/my_playground_crabsdata.png" />
 
 </div>
-</div>
-<div id="click-on-create-a-workflow" class="section level3">
-<h3><span class="header-section-number">4.3.2</span> Click on <strong>Create a workflow</strong></h3>
-<p>A dialog window opens which allows you to select the data file.</p>
-<div class="figure">
-<img src="images/create_workflow.png" />
 
-</div>
-</div>
-<div id="please-fill-in-the-name-with-the-name-crab-workflow" class="section level3">
-<h3><span class="header-section-number">4.3.3</span> Please fill in the <strong>Name</strong> with the name <code>crab workflow</code></h3>
-<p>The following information is possible: * Name (Mandatory) * Description (Optional) * Wiki Link (Optional)</p>
-</div>
-<div id="click-next-and-then-click-ok" class="section level3">
-<h3><span class="header-section-number">4.3.4</span> Click <strong>Next</strong> and then click <strong>OK</strong></h3>
-<p>You will now have an empty <em>workflow page</em> titled <code>Crab workflow</code> you gave it.</p>
-</div>
-<div id="right-click-in-the-workflow-page-and-select-add-step" class="section level3">
-<h3><span class="header-section-number">4.3.5</span> Right click in the <em>workflow page</em> and select <strong>Add step</strong></h3>
-</div>
-<div id="select-table-and-click-ok" class="section level3">
-<h3><span class="header-section-number">4.3.6</span> Select <strong>Table</strong> and click <strong>OK</strong></h3>
-<p>A new step named Table should appear on your <em>worklow page</em>.</p>
-</div>
-<div id="right-click-on-the-table-step-and-select-run" class="section level3">
-<h3><span class="header-section-number">4.3.7</span> Right click on the Table step and select <strong>Run</strong></h3>
-<p>A window appear allowing you to select the data sets which are available. Select the crab data set you have uploaded.</p>
-</div>
-<div id="select-data-set-and-click-ok" class="section level3">
-<h3><span class="header-section-number">4.3.8</span> Select data set and click <strong>OK</strong></h3>
-<p>The Table step should now be green.</p>
-<p>You have now successfully imported you data sets into the workflow.</p>
-</div>
-</div>
-<div id="defining-a-view" class="section level2">
-<h2><span class="header-section-number">4.4</span> Defining a view</h2>
-<p>In this section you create a visual. Once you have imported your data into the workflow now you can configure a <strong>projection</strong>.</p>
-<div id="right-click-on-the-table-step-and-select-add-step" class="section level3">
-<h3><span class="header-section-number">4.4.1</span> Right click on the Table step and select <strong>Add step</strong></h3>
-</div>
-<div id="select-data-step-and-click-ok." class="section level3">
-<h3><span class="header-section-number">4.4.2</span> Select <strong>Data step</strong> and click <strong>OK</strong>.</h3>
-<p>Your workflow should look like: <img src="images/demo_table_data.png" /></p>
-</div>
-<div id="double-click-on-the-data-step" class="section level3">
-<h3><span class="header-section-number">4.4.3</span> Double click on the data step</h3>
-<p>A <em>projection page</em> opens</p>
-<div class="figure">
-<img src="images/projection.png" />
-
-</div>
-<p>The <em>projection page</em> is composed of different zones. The main zones are highlighted in green below:</p>
-<div class="figure">
-<img src="images/projection_zones.png" />
-
-</div>
-<p>You can create any projection by dragging-n-dropping of items in the <em>factors</em> list to the different <em>zones</em> (indicated by the color green) of the <em>projection page</em>. There are four <em>zones</em> on the right and three on the left.</p>
-<p>On the right are:</p>
-<ul>
-<li><em>y-axis zone</em></li>
-<li><em>x-axis zone</em></li>
-<li><em>column zone</em></li>
-<li><em>row zone</em></li>
-</ul>
-<p>on the left are:</p>
-<ul>
-<li><em>label zone</em></li>
-<li><em>colors zone</em></li>
-<li><em>error bar zone</em></li>
-</ul>
-</div>
-<div id="drag-n-drop-the-measurement-factor-to-the-y-axis-zone" class="section level3">
-<h3><span class="header-section-number">4.4.4</span> Drag-n-drop the <code>measurement</code> factor to the y-axis zone</h3>
-</div>
-<div id="drag-n-drop-the-variable-factor-to-the-row-zone" class="section level3">
-<h3><span class="header-section-number">4.4.5</span> Drag-n-drop the <code>variable</code> factor to the row zone</h3>
-</div>
-<div id="drag-n-drop-the-index-and-sp-and-sex-factor-to-the-column-zone" class="section level3">
-<h3><span class="header-section-number">4.4.6</span> Drag-n-drop the <code>index</code> and <code>sp</code> and <code>sex</code> factor to the column zone</h3>
-<div class="figure">
-<img src="images/projection_measurement.png" />
-
-</div>
-<p>The image should look like the one above. Notice, the variable are the row and the observations are the columns.</p>
-</div>
-<div id="drag-n-drop-the-measurement-to-colors-zone" class="section level3">
-<h3><span class="header-section-number">4.4.7</span> Drag-n-drop the <code>measurement</code> to colors zone</h3>
-</div>
-<div id="select-heatmap-in-the-drop-down-menu-where-it-currently-says-point" class="section level3">
-<h3><span class="header-section-number">4.4.8</span> Select <code>heatmap</code> in the drop down menu where it currently says <code>point</code></h3>
-<p>The projection window should now show the following:</p>
-<div class="figure">
-<img src="images/projection_heatmap_crabs.png" />
-
-</div>
-</div>
-</div>
-<div id="computing" class="section level2">
-<h2><span class="header-section-number">4.5</span> Computing</h2>
-<p>In this section you perform a computation. The projection you created in the previous section can also be used by a computation (i.e. <em>operator</em>). This is due to the <em>What you see is what you compute</em> paradigm. The following steps outlines how to add an <em>operator</em>.</p>
-<div id="click-on-the-operator-tab" class="section level3">
-<h3><span class="header-section-number">4.5.1</span> Click on the <strong>Operator</strong> tab</h3>
-</div>
-<div id="go-to-the-public-tab-and-select-the-pca-operator-click-ok" class="section level3">
-<h3><span class="header-section-number">4.5.2</span> Go to the <strong>Public tab</strong> and select the <code>PCA</code> operator, click <strong>OK</strong></h3>
-</div>
-<div id="click-on-the-save-icon-of-the-data-step-page-bar" class="section level3">
-<h3><span class="header-section-number">4.5.3</span> Click on the save icon of the Data step page bar</h3>
-<p>The save icon (see red circle in figure below) will disappear once it is saved <img src="images/save_data_step.png" /></p>
-</div>
-<div id="go-to-the-workflow-page" class="section level3">
-<h3><span class="header-section-number">4.5.4</span> Go to the workflow page</h3>
-</div>
-<div id="right-click-on-the-data-step-and-select-run" class="section level3">
-<h3><span class="header-section-number">4.5.5</span> Right click on the data step and select <strong>Run</strong></h3>
-<p>The the data step status color will now go from blue to red (i.e in progress). Wait until the status goes to green (i.e completed).</p>
-</div>
-</div>
-<div id="visualizing-the-result" class="section level2">
-<h2><span class="header-section-number">4.6</span> Visualizing the result</h2>
-<p>In this section you visualize the output of your previous PCA computation. The visual uses two principal components in a pair-wise plot.</p>
-<div id="right-click-on-the-data-step-and-select-add-step" class="section level3">
-<h3><span class="header-section-number">4.6.1</span> Right click on the data step and select <strong>Add step</strong></h3>
-</div>
-<div id="choose-a-data-step-and-click-ok" class="section level3">
-<h3><span class="header-section-number">4.6.2</span> Choose a <strong>Data step</strong> and click <strong>OK</strong></h3>
-</div>
-<div id="open-the-newly-created-data-step" class="section level3">
-<h3><span class="header-section-number">4.6.3</span> Open the newly created data step</h3>
-<p>A new projection page opens. This projection page should be familiar as you have seen this before in the previous steps of the this guide. However you will notice there are additional factors in the factor list, namely PC1, PC2, etc..</p>
-</div>
-<div id="drag-n-drop-the-pc2-factor-to-the-x-axis-zone" class="section level3">
-<h3><span class="header-section-number">4.6.4</span> Drag-n-drop the <code>PC2</code> factor to the <em>x-axis zone</em></h3>
-</div>
-<div id="drag-n-drop-the-pc3-factor-to-the-y-axis-zone" class="section level3">
-<h3><span class="header-section-number">4.6.5</span> Drag-n-drop the <code>PC3</code> factor to the <em>y-axis zone</em></h3>
-</div>
-<div id="drag-n-drop-the-sex-and-species-factor-to-the-colors-zone" class="section level3">
-<h3><span class="header-section-number">4.6.6</span> Drag-n-drop the <code>sex</code> and <code>species</code> factor to the <em>colors zone</em></h3>
-<div class="figure">
-<img src="images/projection_pca.png" />
-
-</div>
-</div>
-</div>
-<div id="visualizing-a-pairwise" class="section level2">
-<h2><span class="header-section-number">4.7</span> Visualizing a pairwise</h2>
-<p>In this section you create a multi-group pairwise visual.</p>
-<div id="click-on-the-first-data-step-and-select-add-step" class="section level3">
-<h3><span class="header-section-number">4.7.1</span> Click on the first data step and select <strong>Add step</strong></h3>
-</div>
-<div id="choose-a-data-step-and-click-ok-1" class="section level3">
-<h3><span class="header-section-number">4.7.2</span> Choose a <strong>Data step</strong> and click <strong>OK</strong></h3>
-<p>This will create a second data step (see workflow screen shot below)</p>
-</div>
-<div id="open-the-newly-created-data-step-1" class="section level3">
-<h3><span class="header-section-number">4.7.3</span> Open the newly created data step</h3>
-<p>A new projection page opens. We will now create a pairwise projection of the <code>variable</code>.</p>
-</div>
-<div id="drag-n-drop-the-measurement-factor-to-the-y-axis-zone-1" class="section level3">
-<h3><span class="header-section-number">4.7.4</span> Drag-n-drop the <code>measurement</code> factor to the <em>y-axis zone</em></h3>
-</div>
-<div id="drag-n-drop-the-variable-factor-to-the-column-zone" class="section level3">
-<h3><span class="header-section-number">4.7.5</span> Drag-n-drop the <code>variable</code> factor to the <em>column zone</em></h3>
-</div>
-<div id="drag-n-drop-the-variable-factor-to-the-row-zone-1" class="section level3">
-<h3><span class="header-section-number">4.7.6</span> Drag-n-drop the <code>variable</code> factor to the <em>row zone</em></h3>
-</div>
-<div id="drag-n-drop-the-index-factor-to-the-label-zone" class="section level3">
-<h3><span class="header-section-number">4.7.7</span> Drag-n-drop the <code>index</code> factor to the <em>label zone</em></h3>
-<div class="figure">
-<img src="images/projection_pairwise.png" />
-
-</div>
-<p>This is the first pairwise projection, however these projection can be further developed into multi-group pariwise.</p>
-</div>
-<div id="drag-n-drop-the-sex-factor-to-the-column-zone" class="section level3">
-<h3><span class="header-section-number">4.7.8</span> Drag-n-drop the <code>sex</code> factor to the <em>column zone</em></h3>
-</div>
-<div id="drag-n-drop-the-sp-factor-to-the-color-zone" class="section level3">
-<h3><span class="header-section-number">4.7.9</span> Drag-n-drop the <code>sp</code> factor to the <em>color zone</em></h3>
-<div class="figure">
-<img src="images/projection_pairwise_2.png" />
-
-</div>
-<p>You have now completed the multi-group pairwise. This view is a powerful projection.</p>
-<p>Your workflow should look like the following:</p>
-<div class="figure">
-<img src="images/workflow_crabs.png" />
-
-</div>
-</div>
-</div>
-<div id="sharing-the-result" class="section level2">
-<h2><span class="header-section-number">4.8</span> Sharing the result</h2>
-<p>You will notice the each <em>data step</em> (and hence visual) has its own unique URL and each <em>workflow</em> has its own unique URL.</p>
-<p><a href="https://tercen.com/core/#w/fa51aae551f7c3d14727ab5fd9b65433" class="uri">https://tercen.com/core/#w/fa51aae551f7c3d14727ab5fd9b65433</a></p>
-<p>This URL is for the crabs workflow found in the <code>public</code> project.</p>
-<div id="copy-the-url-of-the-view-with-the-multi-group-plot" class="section level3">
-<h3><span class="header-section-number">4.8.1</span> Copy the url of the view with the multi-group plot</h3>
-<p>You can send this URL to another person by email or via a chat session.</p>
-<p><a href="https://tercen.com/core/#ds/fa51aae551f7c3d14727ab5fd9b65433/2efff9f0-0f80-11e7-8de2-9fe5ab3cbd24" class="uri">https://tercen.com/core/#ds/fa51aae551f7c3d14727ab5fd9b65433/2efff9f0-0f80-11e7-8de2-9fe5ab3cbd24</a></p>
-<p>This URL is for the multi-group pairwise found in the workflow in the <code>public</code> project.</p>
-
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="get-the-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="get-an-account.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="roadmap.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="create-a-workflow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

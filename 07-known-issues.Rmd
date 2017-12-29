@@ -1,0 +1,11 @@
+# Known issues 
+The alpha version of Tercen has the following known issues and limitations:
+
+* By default users are not allowed to create operators unless explicitly given permission by a Tercen administrator
+* Cannot perform an operator on multi pairwise projections
+* If your local computer's date and clock time is not the same as the Tercen server then you may get delays and errors
+* Cannot run python scripts
+
+These issues are solved in the beta version scheduled to go live after summer.
+
+<center>![](images/alpha2beta.png)</center>

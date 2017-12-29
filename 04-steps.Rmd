@@ -1,0 +1,22 @@
+# Steps
+Each step is explained in this chapter.
+
+## Data step: data
+
+## Query Data step:data 
+
+## Join:leftTable
+
+## Join:rightTable
+
+## Gather:Table
+
+## External View Data step:query
+
+## Wizard:table
+
+## Input:in
+
+## Output:out
+
+

@@ -1,0 +1,9 @@
+# Getting started
+Here are some ideas:
+
+* Try to upload different data sets and play with making different projection visuals
+* Try to code for different operators using the ``rtercen`` R package, Note when using RStudio it will autocomplete when you type the methods on the tercen client and tercen query object.
+* Give feedback on this starters's guide by creating an [issue](https://github.com/tercen/starters-guide/issues)
+* Give feedback on Tercen by sending an email to info@tercen.com
+* Contact us for a one-2-one session
+<center>![](images/stairs.png)</center>

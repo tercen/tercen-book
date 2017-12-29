@@ -1,0 +1,6 @@
+# About the authors {-}
+
+__Faris Naji__ has over ten years experience in trying to remove data barriers in science. Lives in Amsterdam and thinks bikes are the solution to urban living (at least in Europe).
+
+__Alexandre Maurel__ has over ten years experience in building high data performance tools. Lives in the south of France and is always on the lookout for a good restaurant.
+

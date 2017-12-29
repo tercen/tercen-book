@@ -1,39 +1,44 @@
 ---
 title: "Tercen Book"
 author: "Faris Naji, Alexandre Maurel"
-date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
 documentclass: book
-bibliography: 
+output: bookdown::gitbook
 biblio-style: apalike
 link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
 github-repo: tercen/tercen-book
 description: "This is a book about Tercen"
+graphics: yes
+cover-image: images/tercen-guide.png
 ---
 
-# Prerequisites
-You require a free account for Tercen to perform the tutorials contained within this book.
-
-Please sign up on the main Tercen website http://www.tercen.com
-
+# Preface {-}
+This is a book about Tercen.
 <center>![](images/tercen-book.png)</center>
 
-## Why read this book
-Can we get researchers empowered and back in control of their data?. Read the book to find out. This is essentially a Tercen manual.
 
-## Structure of the book
-There are getting started guides (Chapter 2 and Chapter 3) as well as more in-depth explanations.
+## Why read this book? {-}
 
-## Acknowledgement
-I would like to thank all the users of Tercen and also those who have given feedback, all of which made Tercen possible.
+It is the centralized knowledge of Tercen in book form. It is detailed and is aimed for a deeper understanding of Tercen. If you require to have a quick intro to Tercen then we suggest you read the [starters guide](https://tercen.github.io/starters-guide/). 
 
-# About the Authors
-__Faris Naji__ over ten years experience in trying to remove data barriers in science. Lives in Amsterdam and likes biking.
+## Structure of the book {-}
 
-__Alexandre Maurel__ over ten years experience in building high data performance tools. Lives in the south of France and is always on the lookout for a good restaurant.
+There is an introduction chapter\@ref(introduction)
 
-<center>![](images/fishbowl.png)</center>
+## Acknowledgement {-}
+
+I would like to thank all the users for their feedback about Tercen. It has helped us improve Tercen.
+
+## Feedback {-}
+
+If you wish to give feedback then please do not hesitate to create an entry in the [issue tracker](https://github.com/tercen/tercen-book/issues).
+
+
+
+
 
 
 
