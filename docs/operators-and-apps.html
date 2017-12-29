@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-
-<link rel="next" href="about-the-authors.html">
+<link rel="prev" href="steps.html">
+<link rel="next" href="roadmap.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -123,31 +123,30 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Tercen Book</h1>
-<h4 class="author"><em>Faris Naji, Alexandre Maurel</em></h4>
+<div id="operators-and-apps" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Operators and apps</h1>
+<p>Tercen operators and apps perform the computation on the projection views. An operator performs a computation on one projection. An app is a mini workflow allow a user to perform a computation or visualization.</p>
+<p>There are many existing operators but it is easy to create your own operator. Using the data step, a user creates a projection and selects an operator. A data projection is composed of a <strong>data</strong>, <strong>y-axis</strong>, <strong>x-axis</strong>, <strong>rowseq</strong>, <strong>colseq</strong>, <strong>color</strong> and <strong>label</strong>. All these projection parameter are presented by data structures to the operator.</p>
+<div id="app-library" class="section level2">
+<h2><span class="header-section-number">5.1</span> App library</h2>
+<p>All Tercen operators and apps are on tercen github.</p>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-This is a book about Tercen.
-<center>
-<img src="images/tercen-book.png" />
-</center>
-<div id="why-read-this-book" class="section level2 unnumbered">
-<h2>Why read this book?</h2>
-<p>It is the centralized knowledge of Tercen in book form. It is detailed and is aimed for a deeper understanding of Tercen. If you require to have a quick intro to Tercen then we suggest you read the <a href="https://tercen.github.io/starters-guide/">starters guide</a>.</p>
+<div id="structure-of-an-operator" class="section level2">
+<h2><span class="header-section-number">5.2</span> Structure of an operator</h2>
+<p>A Tercen operator is composed of three main activities:</p>
+<ul>
+<li>Get data</li>
+<li>Operate on data</li>
+<li>Return results</li>
+</ul>
+<p>All the projection parameters are available as data frames: For the data itself Tercen supplies three variables.</p>
+<p><code>.ri</code> row sequence of data, represented by an integer</p>
+<p><code>.ci</code> col sequence of data, represented by an integer</p>
+<p><code>.id</code> id sequence of data (will be deprecated), represented by an integer</p>
 </div>
-<div id="structure-of-the-book" class="section level2 unnumbered">
-<h2>Structure of the book</h2>
-<p>There is an introduction chapter<a href="introduction.html#introduction">1</a></p>
-</div>
-<div id="acknowledgement" class="section level2 unnumbered">
-<h2>Acknowledgement</h2>
-<p>I would like to thank all the users for their feedback about Tercen. It has helped us improve Tercen.</p>
-</div>
-<div id="feedback" class="section level2 unnumbered">
-<h2>Feedback</h2>
-<p>If you wish to give feedback then please do not hesitate to create an entry in the <a href="https://github.com/tercen/tercen-book/issues">issue tracker</a>.</p>
+<div id="tercen-r-package" class="section level2">
+<h2><span class="header-section-number">5.3</span> Tercen R package</h2>
+<p>There is currently an R package in the tercen repository to help in creating operators called <code>teRcen</code></p>
 
 </div>
 </div>
@@ -156,8 +155,8 @@ This is a book about Tercen.
           </div>
         </div>
       </div>
-
-<a href="about-the-authors.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="steps.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="roadmap.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

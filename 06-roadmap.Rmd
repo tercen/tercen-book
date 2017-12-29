@@ -2,10 +2,26 @@
 Tercen is complex software and requires to built up in stages with constant feedback. The alpha version allows for testing the value proposition and the feature list. The Beta and Final are about upscaling.
 
 __Alpha__
-Scheduled for begin 2016
+Released begin 2016
 
 __Beta__
-Scheduled for after summer 2017
+Release begin 2017
+
+* New server application, called Tercen_Server(beta)
+* Easy one button installation
+* New App store (on github)
+* Ability to import/export workflows
+* New Admin Menu
+  -- Improved User management
+  -- New resource management (for CPU and Disk) 
+* Upgraded user interface
+  - New GUI, and browser
+  - New Data table views
+  - New Progress bars
+  - New Logs
+* Improved performance
+* Github integration (for R code)
+* R code package management
 
 __Final__
 Scheduled for mid 2018

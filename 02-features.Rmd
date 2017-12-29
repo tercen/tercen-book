@@ -34,7 +34,7 @@ The researcher centralizes all the data, workflow and visuals in one project and
 The researcher traces any computed value back to the initial measurement without the aid of a bioinformatician.
 
 ## Cloud hosted or on-site
-The researcher shares the complete process via a secure internet connection to secure cloud service, all computation resources (CPU, RAM and hard disk) are dynamically allocated to the researcher without the aid of an IT administration. Tercen is also availabe for onsite deployment.
+The researcher shares the complete process via a secure internet connection to secure cloud service, all computation resources (CPU, RAM and hard disk) are dynamically allocated to the researcher without the aid of an IT administration. Tercen is also available for onsite deployment.
 
 ## Zero install
 Researcher immediately starts performing analysis using a browser on any device without the aid of an IT administration
