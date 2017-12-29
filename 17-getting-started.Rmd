@@ -1,4 +1,4 @@
-# Getting started
+# Getting started {#getting-started}
 Here are some ideas:
 
 * Try the [starters guide](https://tercen.github.io/starters-guide/)

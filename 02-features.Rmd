@@ -1,40 +1,100 @@
-# Tercen Features
-Here is an overview of Tercen features.
+# Tercen features
+Here is an overview of Tercen features. Each feature has its own chapter.
 
-## Generate any visual
-The researcher configures any graphical view (e.g. heatmaps, plots, time series, kinetic time series and parallel co-ordinates, pairwise scatter plots) without the aid of a bioinformatician.
+__Generate any visual__
 
-## Visual computation
-The researcher defines a computation (e.g. mean, ANOVA, Mixed-Model, count) visually and in so doing defines a new computation without the aid of bioinformatician.
-Process any large numeric data: Researcher can upload and process any type of large numerical data (e.g. genomic, flow cytometry, proteomic) without the aid of a bioinformatician.
+A researcher configures any graphical view (e.g. heatmaps, plots, time series, kinetic time series and parallel co-ordinates, pairwise scatter plots).
 
-## Workflow analysis and customization
-The researcher visually customizes a workflow without the aid of a bioinformatician. A workflow is a pipeline data analysis composed of a sequence of computation and annotation steps. There are standard workflows for each of molecular readouts (e.g. RNAseq, flowCyto, mass-spectroscopy spectra).
+Refer to chapter \@ref(visualization).
 
-## Integrate external knowledge
-The researcher integrates extra data from external data or knowledge sources (e.g. biological, clinical, and chemical) without the aid of a bioinformatician, (e.g. Uniprot, Protein atlas, Reactome).
+<center>![](images/visual1.png)</center>
 
-## Sharing analysis
-The researcher shares the workflow and data via an URL and both researcher and bioinformatician can collaborate on the same workflow and data at the same time.
+__Visual computation__
 
-## Sharing data
-The researcher shares the measurement and computed data via URL to other parties. Raw measurement data or newly analysed data is shareable to any users with internet.
-Results reporting: The researcher generates an extensive report on the complete workflow for collaborators, presentations or publication. The report contains not only the conclusions but an automatically generated formal description of the complete process (e.g. normalization, statistics testing, clustering, functional annotation). This is essential for reproducible science. The aid of the bioinformatician is not needed.
+A researcher defines a computation (e.g. mean, ANOVA, Mixed-Model, count) visually and in so doing defines a new computation.
+Process any large numeric data: Researcher can upload and process any type of large numerical data (e.g. genomic, flow cytometry, proteomic).
 
-## Programmatic access
-Bioinformaticians accesses and manipulates the analysis and components through their favorite programming environment (e.g. R, RShiny, Python, Matlab, Javascript).
+Refer to chapter \@ref(visual-computation).
 
-## Add plug-in apps
-The researcher easily adds powerful computation or visualization plug-ins without the aid of a bioinformatician. These plugins are developed by the bioinformatician and transmitted via the TercenCloud platform. Plug-ins are computation or visualization modules (e.g. vsn normalization, ANOVA, PCA, MDS, Mixed Models, clustering).
+<center>![](images/visual2.png)</center>
 
-## Project centric analysis
-The researcher centralizes all the data, workflow and visuals in one project and sets access control without the aid of an IT administration. 
+__Workflow analysis and customization__
 
-## Data provenance
-The researcher traces any computed value back to the initial measurement without the aid of a bioinformatician.
+A researcher visually customizes a workflow. A workflow is a pipeline data analysis composed of a sequence of computation and annotation steps. There are standard workflows for each of molecular readouts (e.g. RNAseq, flowCyto, mass-spectroscopy spectra).
 
-## Cloud hosted or on-site
-The researcher shares the complete process via a secure internet connection to secure cloud service, all computation resources (CPU, RAM and hard disk) are dynamically allocated to the researcher without the aid of an IT administration. Tercen is also available for onsite deployment.
+Refer to chapter \@ref(workflow-and-steps).
 
-## Zero install
-Researcher immediately starts performing analysis using a browser on any device without the aid of an IT administration
+<center>![](images/workflow.png)</center>
+
+__Integrate external knowledge__
+
+A researcher integrates extra data from external data or knowledge sources (e.g. biological database).
+
+Refer to chapter \@ref(external-databases).
+
+<center>![](images/database.png)</center>
+
+__Sharing analysis__
+
+A researcher shares the workflow and data via an URL and both researcher and bioinformatician can collaborate on the same workflow and data at the same time.
+
+Refer to chapter \@ref(sharing-analysis).
+
+<center>![](images/share.png)</center>
+
+__Sharing data__
+
+A researcher shares the measurement and computed data via URL to other parties. Raw measurement data or newly analysed data is shareable to any users with internet.
+
+Refer to chapter \@ref(sharing-data).
+
+<center>![](images/share.png)</center>
+
+
+__Results reporting__
+
+A researcher generates an extensive report on the complete workflow for collaborators, presentations or publication. The report contains not only the conclusions but an automatically generated formal description of the complete process (e.g. normalization, statistics testing, clustering, functional annotation). This is essential for reproducible science.
+
+Refer to chapter \@ref(results-reporting).
+
+__Project centric analysis__
+
+A researcher centralizes all the data, workflow and visuals in one project and easily sets access control. 
+
+Refer to chapter \@ref(projects).
+
+__Data provenance__
+
+A researcher traces any computed value back to the initial measurement.
+
+Refer to chapter \@ref(data-provenance).
+
+__Add operators or apps (i.e. plug-ins)__
+A researcher easily adds powerful computation or visualization plug-ins. These plugins are developed by the bioinformatician and transmitted via the TercenCloud platform. Plug-ins are computation or visualization modules (e.g. vsn normalization, ANOVA, PCA, MDS, Mixed Models, and clustering).
+
+Refer to chapter \@ref(operators).
+
+<center>![](images/app.png)</center>
+
+__Programmatic access__
+
+Bioinformaticians accesses and manipulates the analysis and components through their favorite programming environment (e.g. R, RShiny, Python, Matlab and Javascript).
+
+<center>![](images/API.png)</center>
+
+Refer to chapter \@ref(programmatic-access).
+
+__Cloud hosted or on-site__
+
+A researcher shares the complete process via a secure internet connection to secure cloud service, all computation resources (CPU, RAM and hard disk) are dynamically allocated to the researcher. Tercen is also available for onsite deployment.
+
+Refer to chapter \@ref(deployment).
+
+
+__Zero install__
+
+A researcher immediately starts performing analysis using a browser on any device without the aid of an IT administration.
+
+Refer to chapter \@ref(installation).
+
+<center>![](images/deploy.png)</center>

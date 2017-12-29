@@ -16,7 +16,11 @@ cover-image: images/tercen-guide.png
 ---
 
 # Preface {-}
-This is a book about Tercen.
+
+This is a book about Tercen. It is currently a draft and aims to eventually be the definitive guide to Tercen. It is incrementally written and changes often.  
+
+
+
 <center>![](images/tercen-book.png)</center>
 
 
@@ -26,7 +30,7 @@ It is the centralized knowledge of Tercen in book form. It is detailed and is ai
 
 ## Structure of the book {-}
 
-There is an introduction chapter\@ref(introduction)
+There is a chapter for each main feature of the tool. Last chapters contain additional practical information (e.g. installation, roadmaps, etc.)
 
 ## Acknowledgement {-}
 

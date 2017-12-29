@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="tercen-features.html">
-<link rel="next" href="visualization.html">
+<link rel="prev" href="data-provenance.html">
+<link rel="next" href="programmatic-access.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -122,18 +122,48 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="concepts" class="section level1">
-<h1><span class="header-section-number">Chapter 3</span> Concepts</h1>
-<p>The important concepts of Tercen are covered in this chapter. The concepts help in the understanding the logic behind Tercen. It allows users to visual interact and define a projection for visualization and computation. For those readers who are interested, these projection are in fact using relational algebra. Even though the data used for the projection may be from different tables, the user sees only one table (called the universal table).</p>
+<div id="operators" class="section level1">
+<h1><span class="header-section-number">Chapter 13</span> Operators and Apps</h1>
+<p>Tercen operators perform the computation on the projection views. An operator performs a computation on one projection. An app is a mini workflow allow a user to perform a computation or visualization.</p>
+<p>There are many existing operators but it is easy to create your own operator. Using the data step, a user creates a projection and selects an operator. A data projection is composed of a <strong>data</strong>, <strong>y-axis</strong>, <strong>x-axis</strong>, <strong>rowseq</strong>, <strong>colseq</strong>, <strong>color</strong> and <strong>label</strong>. All these projection parameter are presented by data structures to the operator.</p>
+<div id="app-library" class="section level2 unnumbered">
+<h2>App library</h2>
+<p>All Tercen operators and apps are on tercen github.</p>
+<p>The contents of the app library are found in a json file in <a href="https://github.com/tercen/app-library">github app library</a></p>
+<p>The operators and apps are also found on the Tercen github area, see (<a href="https://github.com/tercen" class="uri">https://github.com/tercen</a>)</p>
+</div>
+<div id="structure-of-an-operator" class="section level2 unnumbered">
+<h2>Structure of an operator</h2>
+<p>A Tercen operator is composed of three main activities:</p>
+<ul>
+<li>Getting the data</li>
+<li>Operating on the data</li>
+<li>Returning the results</li>
+</ul>
+<p>The data is contained in each data step. Each data step contain the data in three main tables:</p>
+<ul>
+<li>Row table</li>
+<li>Column table</li>
+<li>Cross-tab table</li>
+</ul>
+<p>Each table contains different data as a result of the definition of the cross-tab projection.</p>
+<p>The cross-tab Table contains the following important columns, as examples:</p>
+<p><code>.ri</code> row index of data, represented by an integer</p>
+<p><code>.ci</code> col index of data, represented by an integer</p>
+</div>
+<div id="tercen-r-package" class="section level2 unnumbered">
+<h2>Tercen R package</h2>
+<p>There is currently an R package in the tercen repository to help in creating operators called <a href="https://github.com/tercen/teRcen">teRcen</a></p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="tercen-features.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="visualization.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-provenance.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="programmatic-access.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

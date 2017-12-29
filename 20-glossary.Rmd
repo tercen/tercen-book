@@ -1,4 +1,4 @@
-# Glossary
+# Glossary {#glossary}
 
 __Measurement__: A numerical variable
 
