@@ -14,15 +14,24 @@ Go to the folder named `resources\tercen` in the Tercen installation folder (usu
 The file contains three profile levels: 0,1,2
 Each user is associated with one of the levels. The default is 0 (the lowest level of resource allocation).
 
+Level  | Resource |
+:----- | :------- |
+0      | Low amount of resources |
+1      | Medium amount of resources |
+2      | Highest amount of resources |
+
+
 There are settings associated for each level for each category of resources.
 
 The current categories are:
 
-* API call settings (ApiCallProfile)
-* Table settings (TableProfile)
-* CPU time settings (CputimeProfile)
-* Data storage settings (StorageProfile)
-* Run profile settings (RunProfile)
+Category  | Description | Name in yaml file
+:-----    | :-------    | :-------  
+Table     | resource  for table (i.e. size)  | `TableProfile`
+CPU time  | resources for cpu time  | `CputimeProfile`
+Storage   | resources for storage   | `StorageProfile`
+Run       | resources for a run     | `RunProfile`
+API calls | resources fro the API   | `ApiCallProfile`
 
 Increasing the value for any of these settings gives extra resources.
 

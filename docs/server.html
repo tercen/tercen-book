@@ -120,24 +120,75 @@
             <section class="normal" id="section-">
 <div id="server" class="section level1">
 <h1><span class="header-section-number">Chapter 16</span> Running a server</h1>
-<p>If you require the on-site version of Tercen then send an email to <code>info@tercen.com</code>. Currently the on-site versions is the beta of tercen.</p>
+<p>If you require the on-site version of Tercen then send an email to <code>info@tercen.com</code>. Currently the on-site versions is the <strong>beta</strong> of Tercen.</p>
 <div id="server-resources" class="section level2 unnumbered">
 <h2>Server resources</h2>
-<p>A Tercen server allows for multiple researchers using the server. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different catgories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilizaton (i.e. 0,1,2) where 0 represents the lowest level of resource utilization.</p>
+<p>A Tercen server allows for multiple researchers using the same server. Each researcher is using CPU and Storage resources. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different categories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilization (i.e. 0,1,2) where 0 represents the lowest level of resource utilization. Ideally the right level of resources should be assigned for different users. A researcher who exceeds their limit gets an error. A resource utilization information bar is shown to each user in the graphical user interface. The bar indicates the level of resource utilization and the amount left.</p>
 <p>Server resources are configured using <code>config.yaml</code> file.</p>
-<p>Go to the folder <code>resources\tercen</code> in the Tercen installation folder, in it there is a file called <code>config.yaml</code>.</p>
+<p>Go to the folder named <code>resources\tercen</code> in the Tercen installation folder (usually <code>C:\Tercen</code>), in it there is a file called <code>config.yaml</code>.</p>
 <p>The file contains three profile levels: 0,1,2 Each user is associated with one of the levels. The default is 0 (the lowest level of resource allocation).</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Level</th>
+<th align="left">Resource</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">0</td>
+<td align="left">Low amount of resources</td>
+</tr>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">Medium amount of resources</td>
+</tr>
+<tr class="odd">
+<td align="left">2</td>
+<td align="left">Highest amount of resources</td>
+</tr>
+</tbody>
+</table>
 <p>There are settings associated for each level for each category of resources.</p>
 <p>The current categories are:</p>
-<ul>
-<li>API call settings (ApiCallProfile)</li>
-<li>Table settings (TableProfile)</li>
-<li>CPU time settings (CputimeProfile)</li>
-<li>Data storage settings (StorageProfile)</li>
-<li>Run profile settings (RunProfile)</li>
-</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Category</th>
+<th align="left">Description</th>
+<th align="left">Name in yaml file</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Table</td>
+<td align="left">resource for table (i.e. size)</td>
+<td align="left"><code>TableProfile</code></td>
+</tr>
+<tr class="even">
+<td align="left">CPU time</td>
+<td align="left">resources for cpu time</td>
+<td align="left"><code>CputimeProfile</code></td>
+</tr>
+<tr class="odd">
+<td align="left">Storage</td>
+<td align="left">resources for storage</td>
+<td align="left"><code>StorageProfile</code></td>
+</tr>
+<tr class="even">
+<td align="left">Run</td>
+<td align="left">resources for a run</td>
+<td align="left"><code>RunProfile</code></td>
+</tr>
+<tr class="odd">
+<td align="left">API calls</td>
+<td align="left">resources fro the API</td>
+<td align="left"><code>ApiCallProfile</code></td>
+</tr>
+</tbody>
+</table>
 <p>Increasing the value for any of these settings gives extra resources.</p>
-<p>If you change these profile settings then you need to restart the Tercen applicaton for your changes to take effect.</p>
+<p>If you change these profile settings then you need to restart the Tercen application for your changes to take effect.</p>
 <center>
 <img src="images/deploy.png" />
 </center>
