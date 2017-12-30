@@ -1,1 +1,34 @@
 # Visualization
+
+The cross-tab view in the data step allows the researchers to create any visual by drag-n-dropping factors into one of six zones.
+
+* row zone
+* column zone
+* x-axis zone
+* y-axis zone
+* color zone
+* label zone
+
+The type of visualization is determine by what is configured (or preconfigured)
+
+__Heatmap__
+column, row, color, heatmap
+<center> ![](images/heatmap.png) </center>
+
+__Multigrup Pairwise Plot__
+<center> ![](images/pairwise.png) </center>
+
+__Profiles__
+<center> ![](images/geo.png) </center>
+
+__Bar Plot__
+<center> ![](images/debt.png) </center>
+
+__Single Scatter Plot__
+<center> ![](images/geo.png) </center>
+
+__Maps__
+<center> ![](images/ireland.png) </center>
+
+
+

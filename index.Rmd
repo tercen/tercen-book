@@ -12,21 +12,19 @@ lof: yes
 github-repo: tercen/tercen-book
 description: "This is a book about Tercen"
 graphics: yes
-cover-image: images/tercen-guide.png
+# cover-image: images/tercen-book.png
 ---
 
 # Preface {-}
 
 This is a book about Tercen. It is currently a draft and aims to eventually be the definitive guide to Tercen. It is incrementally written and changes often.  
 
-
-
 <center>![](images/tercen-book.png)</center>
 
 
 ## Why read this book? {-}
 
-It is the centralized knowledge of Tercen in book form. It is detailed and is aimed for a deeper understanding of Tercen. If you require to have a quick intro to Tercen then we suggest you read the [starters guide](https://tercen.github.io/starters-guide/). 
+It is the centralized knowledge of Tercen in a book format. It is intended to be detailed and is aimed for researchers who require a broader and deeper understanding of Tercen. If you require to have a quick intro  to Tercen without the details then we suggest the [starters guide](https://tercen.github.io/starters-guide/). 
 
 ## Structure of the book {-}
 
@@ -34,7 +32,7 @@ There is a chapter for each main feature of the tool. Last chapters contain addi
 
 ## Acknowledgement {-}
 
-I would like to thank all the users for their feedback about Tercen. It has helped us improve Tercen.
+We would like to thank all the users for their feedback about Tercen. It has helped us improve Tercen.
 
 ## Feedback {-}
 
