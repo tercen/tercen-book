@@ -12,29 +12,29 @@ Tercen allows non programmers (e.g. biologists) to explore their data and allows
 
 ## Challenges {-}
 
-__Analysis time__
+__Large Analysis time__
 
 Researchers are spending more time performing analysis.
 
-<center>![](images/highthrougput.png)</center>
+__Large data sets__
 
-
-__Control__
-
-Researchers want control back. 
-
-<center>![](images/empower_liberate.png)</center>
-
+Researchers want to interact with large data sets. 
 
 __Ratio__
 
-The ratio between the programmers vs non programmers can be large.
+The ratio between the programmers vs non-programmers can be large.
 
-<center>![](images/ratio.png)</center>
+__Control__
+
+Researchers want control of their data. 
+
+
+## Way forward {-}
+
+The way forward is to get researchers back in control of their data. New tools and approaches are required.
 
 __Harmony__
 
-We require to get harmony back between the researchers.
+A more harmonious state between the programmers and non-programmers.
 
 <center>![](images/harmony.png)</center>
-

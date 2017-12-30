@@ -1,4 +1,4 @@
-# Installation {#installation}
+# Running a server {#server}
 
 If you require the on-site version of tercen then send an email to `info@tercen.com`.
 Currently the on-site versions is the beta of tercen.

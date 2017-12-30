@@ -9,7 +9,7 @@ The cross-tab view in the data step allows the researchers to create any visual 
 * color zone
 * label zone
 
-The type of visualization is determine by what is configured (or preconfigured)
+The type of visualization is determine by what is configured (or pre-configured)
 
 Here are a few examples:
 

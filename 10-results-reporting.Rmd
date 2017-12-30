@@ -1,8 +1,8 @@
 # Results reporting {#results-reporting}
 
 The ability to publish results for scientific journals or even group presentation is key.
-The current version of beta is implementing the a high quality image output. Any _data step_ allows the researcher to export a high quality visual for reports.
+The current version of beta is implementing a high quality image output. Any __data step__ allows the researcher to export a high quality visual for reports.
 
-The final release of Tercen is targeted to have a full reporting subsystem in order to convert _workflows_ into reports.
+The final release of Tercen is targeted to have a full reporting subsystem in order to convert __workflows__ into reports.
 
 <center>![](images\report.png)</center>

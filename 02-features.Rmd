@@ -88,13 +88,13 @@ __Cloud hosted or on-site__
 
 A researcher shares the complete process via a secure internet connection to secure cloud service, all computation resources (CPU, RAM and hard disk) are dynamically allocated to the researcher. Tercen is also available for onsite deployment.
 
-Refer to chapter \@ref(deployment).
+Refer to chapter \@ref(deployment) and chapter \@ref(server).
 
 
 __Zero install__
 
 A researcher immediately starts performing analysis using a browser on any device without the aid of an IT administration.
 
-Refer to chapter \@ref(installation).
+Refer to chapter \@ref(deployment).
 
 <center>![](images/deploy.png)</center>
