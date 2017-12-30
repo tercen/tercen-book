@@ -4,7 +4,7 @@ If you require the on-site version of Tercen then send an email to `info@tercen.
 Currently the on-site versions is the beta of tercen.
 
 
-## Server resources
+## Server resources {-}
 A Tercen server allows for multiple researchers using the server. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different catgories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilizaton (i.e. 0,1,2) where 0 represents the lowest level of resource utilization.
 
 Server resources are configured using `config.yaml` file.
@@ -18,7 +18,7 @@ There are settings associated for each level for each category of resources.
 
 The current categories are:
 
-* Api call settings(ApiCallProfile)
+* API call settings (ApiCallProfile)
 * Table settings (TableProfile)
 * CPU time settings (CputimeProfile)
 * Data storage settings (StorageProfile)
@@ -26,6 +26,6 @@ The current categories are:
 
 Increasing the value for any of these settings gives extra resources.
 
-If you change these profile settings then you need to restart the Tercen application for your changes to take effect.
+If you change these profile settings then you need to restart the Tercen applicaton for your changes to take effect.
 
 <center>![](images\deploy.png)</center>
