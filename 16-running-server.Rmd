@@ -5,11 +5,11 @@ Currently the on-site versions is the __beta__ of Tercen.
 
 
 ## Server resources {-}
-A Tercen server allows for multiple researchers using the same server. Each researcher is using CPU and Storage resources. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different catgories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilizaton (i.e. 0,1,2) where 0 represents the lowest level of resource utilization. Ideally the right level of resources should be assigned for different users. A researcher who exceeds their limit gets an error. A resource utilization information bar is shown to each user in the graphical user interface. The bar indicates the level of resource utilization and the amount left.  
+A Tercen server allows for multiple researchers using the same server. Each researcher is using CPU and Storage resources. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different categories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilization (i.e. 0,1,2) where 0 represents the lowest level of resource utilization. Ideally the right level of resources should be assigned for different users. A researcher who exceeds their limit gets an error. A resource utilization information bar is shown to each user in the graphical user interface. The bar indicates the level of resource utilization and the amount left.  
 
 Server resources are configured using `config.yaml` file.
 
-Go to the folder  `resources\tercen` in the Tercen installation folder, in it there is a file called `config.yaml`.
+Go to the folder named `resources\tercen` in the Tercen installation folder (usually `C:\Tercen`), in it there is a file called `config.yaml`.
 
 The file contains three profile levels: 0,1,2
 Each user is associated with one of the levels. The default is 0 (the lowest level of resource allocation).
