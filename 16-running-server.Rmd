@@ -5,7 +5,7 @@ Currently the on-site versions is the beta of tercen.
 
 
 ## Server resources
-A Tercen server allows for multiple researcheres using the server. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different catgories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilizaton (i.e. 0,1,2) where 0 represents the lowest level of resource utilization.
+A Tercen server allows for multiple researchers using the server. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different catgories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilizaton (i.e. 0,1,2) where 0 represents the lowest level of resource utilization.
 
 Server resources are configured using `config.yaml` file.
 
