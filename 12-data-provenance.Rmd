@@ -1,1 +1,11 @@
 # Data provenance {#data-provenance}
+
+Data provenance allows researchers to take a computed value and trace back to the original data sources to investigate how a value was computed.
+
+This is a fundamental aspect of reproducible science.
+
+The data model of Tercen is fundamentally built on data relationships and therefore has data provenance built into it. 
+
+In the final version of Tercen we aim to offer researchers the ability to interrogate any value and show the full computed trace stack for it.
+
+<center>![](images\database.png)</center>

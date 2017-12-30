@@ -1,1 +1,13 @@
 # Programmatic access {#programmatic-access}
+
+The [`teRcen`](https://github.com/tercen/teRcen)  R package on the tercen github allows complete programmatic control. Any functionality available graphically in Tercen is also available pro grammatically. This includes, for example:
+
+* uploading data
+* computing data
+* creating groups and users
+* creating projects
+* creating workflows and operators
+
+For the full API please refer to the [teRcen R package](https://github.com/tercen/teRcen) 
+
+<center>![](images\API.png)</center>

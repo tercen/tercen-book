@@ -1,1 +1,15 @@
 # Deployment {#deployment}
+
+Deployment is the ability of Tercen to be delivered to the researchers. Currently is available in two forms: cloud and on-site.
+
+__Cloud__:
+The tercen cloud is found at: (www.tercen.com)
+Currently the cloud is running the alpha version of tercen.
+
+
+__On-site__:
+The tercen on-site requires an install and is available by sending an email to `info@tercen.com`.
+Currently the on-site version are the beta version of tercen.
+
+<center>![](images\deploy.png)</center>
+

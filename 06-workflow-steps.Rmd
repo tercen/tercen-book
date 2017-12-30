@@ -2,33 +2,43 @@
 
 A workflow consists of a series of steps.Each step is explained below.
 
-## Table step {-}
+__Table step__
+
 Allows a researcher to define a dataset. The dataset requires to be uploaded to Tercen before it is visible in the Table step.
 
-## Data step {-}
+__Data step__
+
 Allows a researcher to create a projection for visualization and computation. 
 
-## Gather step {-}
+__Gather step__
+
 Allows a researcher to gather many factors into one factor.
 
-## Join left step {-}
+__Join left step__
+
 Allows a researcher to link to external data.
 
-## Join right step {-}
+__Join right step__
+
 Allows a researcher to link to external data.
 
-## Query Data step {-}
+__Query Data step__
+
 Allows a researcher to perform a project without a computation.
 
-## External View Data step {-}
+__External View Data step__
+
 Allows a researcher to connect to an external web apps (i.e. shiny app).
 
-## Wizard step {-}
+__Wizard step__
+
 Maps the factors in your workflow with what is in the data.
 
-## Input step {-}
+__Input step__
+
 Used as the first step in an app workflow.
 
-## Output step {-}
+__Output step__
+
 Used as the last step in an app workflow.
 

@@ -1,1 +1,14 @@
 # External databases {#external-databases}
+
+Researchers require to add extra information into their data analysis. This is usually extra annotation or even data from an external source (i.e. database). This is effectively a join between two data sets.
+
+The _data step_ called _join left_ and _join right_ are used for this. The extra data requires to be uploaded first. This is done using the standard method of uploading to Tercen.
+
+A common key or keys are required to join the two data sets.
+
+Once joined the extra annotations or data are available for any succeeding _step_.
+
+<center>![](images\database.png)</center>
+
+
+

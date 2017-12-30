@@ -1,5 +1,5 @@
 # Roadmap {#roadmap}
-Tercen is complex software and requires to built up in stages with constant feedback. The alpha version allows for testing the value proposition and the feature list. The Beta and Final are about upscaling.
+Tercen is complex software and requires to built up in stages with constant feedback. The alpha version allows for testing the value proposition and the feature list. The __Beta__ and __Final__ are about up-scaling.
 
 __Alpha__
 Released begin 2016
@@ -21,7 +21,9 @@ Release begin 2017
   - New Logs
 * Improved performance
 * Github integration (for R code)
-* R code package management
+* New R code package management
+* New full programmatic access to Tercen
+  - New tercen R package
 
 __Final__
 Scheduled for mid 2018

@@ -1,1 +1,6 @@
 # Projects {#projects}
+
+The concept of a _project_ is fundamental in Tercen. The _project_ determines what group members work on. Data and workflows are created within a project.
+Without a project a researcher cannot upload data or create a workflow.
+
+<center>![](images\share.png)</center>

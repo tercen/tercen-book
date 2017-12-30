@@ -11,6 +11,8 @@ The cross-tab view in the data step allows the researchers to create any visual 
 
 The type of visualization is determine by what is configured (or preconfigured)
 
+Here are a few examples:
+
 __Heatmap__
 column, row, color, heatmap
 <center> ![](images/heatmap.png) </center>
@@ -31,4 +33,4 @@ __Maps__
 <center> ![](images/ireland.png) </center>
 
 
-
+<center>![](images\visual1.png)</center>
