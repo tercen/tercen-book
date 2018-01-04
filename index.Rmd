@@ -28,7 +28,7 @@ It is the centralized knowledge of Tercen in a book format. It is intended to be
 
 ## Structure of the book {-}
 
-There is a chapter for each main feature of the tool. Last chapters contain additional practical information (e.g. installation, roadmaps, etc.)
+The book has a chapter for each main feature of the tool. The final chapters contain additional practical information (e.g. server configuration, roadmaps, etc.)
 
 ## Acknowledgement {-}
 

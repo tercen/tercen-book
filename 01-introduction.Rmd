@@ -12,29 +12,32 @@ Tercen allows non programmers (e.g. biologists) to explore their data and allows
 
 ## Challenges {-}
 
-__Large Analysis time__
+There are challenges for both the biologist and bioinformatician.
 
-Researchers are spending more time performing analysis.
+__Biologist's__ challenges:
 
-__Large data sets__
+* Get control of data
+* Handle large data sizes
+* Reduce analysis time
+* Integrate external databases
+* Visual Interaction
 
-Researchers want to interact with large data sets. 
+__Bioinformatician's__ challenges:
 
-__Ratio__
-
-The ratio between the programmers vs non-programmers can be large.
-
-__Control__
-
-Researchers want control of their data. 
+* Validate methodologies
+* Improve analysis quality
+* Educate biologists on statistical techniques
+* Reduce time spent on IT support
 
 
 ## Way forward {-}
 
-The way forward is to get researchers back in control of their data. New tools and approaches are required.
+A new generation of tools and approaches are necessary. __TercenCloud__ aims to be such an approach. __TercenCloud__ is a platform where Biologist and Bioinformatics work easily together and upload, store and compute data.
 
-__Harmony__
+<center>![](images/tercencloud.png)</center>
 
-A more harmonious state between the programmers and non-programmers.
+A more harmonious state between the programmers and non-programmers is achieved using __TercenCloud__.
 
 <center>![](images/harmony.png)</center>
+
+The following chapter gives a full overview of the features of __TercenCloud__.
