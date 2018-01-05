@@ -57,4 +57,4 @@ The main features of __TercenCloud__ are:
 * Zero install
 
 
-For a deeper understanding about __TercenCloud__ read the next chapter and consult the specific chapter about a feature.
+For a deeper understanding about __TercenCloud__ read the next chapter and consult the specific chapter on a particular feature.
