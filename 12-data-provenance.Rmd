@@ -4,8 +4,8 @@ Data provenance allows researchers to take a computed value and trace back to th
 
 This is a fundamental aspect of reproducible science.
 
-The data model of Tercen is fundamentally built on data relationships and therefore has data provenance built into it. 
+The data model of __Tercen__ is fundamentally built on data relationships and therefore has data provenance built into it. 
 
-In the final version of Tercen we aim to offer researchers the ability to interrogate any value and show the full computed trace stack for it.
+In the final version of __Tercen__ we aim to offer researchers the ability to interrogate any value and show the full computed trace stack for it.
 
 <center>![](images\database.png)</center>
