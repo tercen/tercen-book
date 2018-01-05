@@ -1,5 +1,5 @@
 # Concepts
-The important concepts of Tercen are covered in this chapter. The concepts help in the understanding the logic behind Tercen.
-It allows users to visual interact and define a projection for visualization and computation. For those readers who are interested, these projection are in fact using relational algebra. Even though the data used for the projection may be from different tables, the user sees only one table (called the universal table). 
+The important concepts of __Tercen__ are covered in this chapter. The concepts help in the understanding the logic behind __Tercen__.
+It allows users to visual interact and define a projection for visualization and computation. For those readers who are interested, these projection are in fact using __relational algebra__. Even though the data used for the projection may be from different tables, the user sees only one table (called the __universal table__). 
 
 
