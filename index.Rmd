@@ -24,11 +24,11 @@ This is a book about the __Tercen__ platform and covers the motivation, design i
 
 ## Why read this book? {-}
 
-It is the centralized knowledge of __Tercen__ in a book format. It is intended to be detailed and is aimed for researchers who require a broader and deeper understanding of __Tercen__. If you require to have a quick intro  to Tercen without the details then we suggest the [starters guide](https://tercen.github.io/starters-guide/). 
+It is the centralized knowledge of __Tercen__ in a book format. It is intended to be detailed and is aimed for researchers who require an understanding of __Tercen__. If you require a quick intro to __Tercen__ then we suggest the [starters guide](https://tercen.github.io/starters-guide/). 
 
 ## Structure of the book {-}
 
-The book has a chapter for each of the tool's main features. The final chapters contain additional practical information (e.g. server configuration, roadmaps etc.).
+The book has a chapter for each of the tool's main features. The final chapters contain additional practical information (e.g. server configuration, roadmaps).
 
 ## Acknowledgement {-}
 
@@ -36,12 +36,12 @@ We would like to thank all the users for their feedback about __Tercen__. It has
 
 ## Typography conventions {-}
 
-Important terms and concepts are in __bold__ (e.g. __workflow__, __step__, __biologist__). Any element related to the user interface element is in a `code` typography (e.g. `factor` label, `ok` button).
+Important terms and concepts are in __bold__ (e.g. __workflow__, __step__, __biologist__). Any element related to a user interface element is in a `code` typography (e.g. `factor` label, `ok` button).
 
 ## Feedback {-}
 
 If you wish to give feedback then please do not hesitate to create an entry in the [issue tracker](https://github.com/tercen/tercen-book/issues).
-
+The book is in a public github repository [tercen book](https://github.com/tercen/tercen-book), therefore feel free to interact with the repository by cloning, modifying, pushing content. 
 
 
 

@@ -41,6 +41,7 @@ A more harmonious state between the programmers and non-programmers is achieved 
 <center>![](images/harmony.png)</center>
 
 The main features of __TercenCloud__ are:
+
 * Generate any visual
 * Visual computation
 * Workflow analysis and customization
