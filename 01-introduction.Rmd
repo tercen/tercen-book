@@ -3,7 +3,7 @@
 ## Motivation {-}
 
 Tercen  promotes collaboration for data analysis. Not everyone can code or even wants to,  but everyone should benefit from the explosion of data and code currently taking place.
-Tercen allows non programmers (e.g. biologists) to explore their data and allows programmers (e.g. bioinformaticians) to upload their code (or web-apps) for the biologist to use. By offering this services we believe biologist get empowered and can claim back control of their data. The bioinformatician gets liberated from the operational details and  day to day analysis demands from the biologist. This is summed up with the phrase:
+Tercen allows non programmers (e.g. __biologists__) to explore their data and allows programmers (e.g. __bioinformaticians__) to upload their code (or web-apps) for the biologist to use. By offering this services we believe biologist get __empowered__ and can claim back control of their data. The bioinformatician gets __liberated__ from the operational details and  day to day analysis demands from the biologist. This is summed up with the phrase:
 
 > Tercen __empowers__ the biologist and __liberates__ the bioinformatician.
 
@@ -32,7 +32,7 @@ __Bioinformatician's__ challenges:
 
 ## Way forward {-}
 
-A new generation of tools and approaches are necessary. __TercenCloud__ aims to be such an approach. __TercenCloud__ is a platform where Biologist and Bioinformatics work easily together and upload, store and compute data.
+A new generation of tools and approaches are necessary. __TercenCloud__ aims to be such an approach. __TercenCloud__ is a platform where __biologist__ and __bioinformatician__ work easily together and upload, store and compute data.
 
 <center>![](images/tercencloud.png)</center>
 
@@ -40,4 +40,20 @@ A more harmonious state between the programmers and non-programmers is achieved 
 
 <center>![](images/harmony.png)</center>
 
-The following chapter gives a full overview of the features of __TercenCloud__.
+The main features of __TercenCloud__ are:
+* Generate any visual
+* Visual computation
+* Workflow analysis and customization
+* Integrate external knowledge
+* Sharing analysis
+* Sharing data
+* Results reporting
+* Project centric analysis
+* Data provenance
+* Add operators or apps (i.e. plug-ins)
+* Programmatic access (Tercen API)
+* Cloud hosted or on-site
+* Zero install
+
+
+For a deeper understanding about __TercenCloud__ read the next chapter and consult the specific chapter about a feature.

@@ -59,7 +59,7 @@ Refer to chapter \@ref(results-reporting).
 
 __Project centric analysis__
 
-A researcher centralizes all the data, workflow and visuals in one project and easily sets access control. 
+Science is project orientated and a researcher centralizes all the data, workflow and visuals in one project and easily sets access control. 
 
 Refer to chapter \@ref(projects).
 

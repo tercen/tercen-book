@@ -17,22 +17,26 @@ graphics: yes
 
 # Preface {-}
 
-This is a book about Tercen. It is currently a draft and aims to eventually be the definitive guide to Tercen. It is incrementally written and changes often.  
+This is a book about the __Tercen__ platform and covers the motivation, design ideas, features, deployment, server administration aspects and roadmap. It is currently a draft and aims to eventually be the definitive guide to __Tercen__. It is incrementally written and changes often as we are constantly adding to the __Tercen__ project.
 
 <center>![](images/tercen-book.png)</center>
 
 
 ## Why read this book? {-}
 
-It is the centralized knowledge of Tercen in a book format. It is intended to be detailed and is aimed for researchers who require a broader and deeper understanding of Tercen. If you require to have a quick intro  to Tercen without the details then we suggest the [starters guide](https://tercen.github.io/starters-guide/). 
+It is the centralized knowledge of __Tercen__ in a book format. It is intended to be detailed and is aimed for researchers who require a broader and deeper understanding of __Tercen__. If you require to have a quick intro  to Tercen without the details then we suggest the [starters guide](https://tercen.github.io/starters-guide/). 
 
 ## Structure of the book {-}
 
-The book has a chapter for each main feature of the tool. The final chapters contain additional practical information (e.g. server configuration, roadmaps, etc.)
+The book has a chapter for each of the tool's main features. The final chapters contain additional practical information (e.g. server configuration, roadmaps etc.).
 
 ## Acknowledgement {-}
 
-We would like to thank all the users for their feedback about Tercen. It has helped us improve Tercen.
+We would like to thank all the users for their feedback about __Tercen__. It has helped us improve __Tercen__.
+
+## Typography conventions {-}
+
+Important terms and concepts are in __bold__ (e.g. __workflow__, __step__, __biologist__). Any element related to the user interface element is in a `code` typography (e.g. `factor` label, `ok` button).
 
 ## Feedback {-}
 
