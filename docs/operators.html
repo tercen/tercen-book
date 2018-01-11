@@ -52,7 +52,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-105575395-1', 'auto');
+  ga('create', 'UA-105575395-2', 'auto');
   ga('send', 'pageview');
 
 </script>
@@ -97,7 +97,8 @@
 <li class="chapter" data-level="11" data-path="projects.html"><a href="projects.html"><i class="fa fa-check"></i><b>11</b> Projects</a></li>
 <li class="chapter" data-level="12" data-path="data-provenance.html"><a href="data-provenance.html"><i class="fa fa-check"></i><b>12</b> Data provenance</a></li>
 <li class="chapter" data-level="13" data-path="operators.html"><a href="operators.html"><i class="fa fa-check"></i><b>13</b> Operators and Apps</a><ul>
-<li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#app-library"><i class="fa fa-check"></i>App library</a></li>
+<li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#app-libraries"><i class="fa fa-check"></i>App libraries</a></li>
+<li class="chapter" data-level="13.1" data-path="operators.html"><a href="operators.html#installing-apps"><i class="fa fa-check"></i><b>13.1</b> Installing apps</a></li>
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#structure-of-an-operator"><i class="fa fa-check"></i>Structure of an operator</a></li>
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#tercen-r-package"><i class="fa fa-check"></i>Tercen R package</a></li>
 </ul></li>
@@ -134,11 +135,52 @@
 <h1><span class="header-section-number">Chapter 13</span> Operators and Apps</h1>
 <p>Tercen operators perform the computation on the projection views. An operator performs a computation on one projection. An app is a mini workflow allow a user to perform a computation or visualization.</p>
 <p>There are many existing operators but it is easy to create your own operator. Using the data step, a user creates a projection and selects an operator. A data projection is composed of a <strong>data</strong>, <strong>y-axis</strong>, <strong>x-axis</strong>, <strong>rowseq</strong>, <strong>colseq</strong>, <strong>color</strong> and <strong>label</strong>. All these projection parameter are presented by data structures to the operator.</p>
-<div id="app-library" class="section level2 unnumbered">
-<h2>App library</h2>
-<p>All Tercen operators and apps are on tercen github.</p>
-<p>The contents of the app library are found in a json file in <a href="https://github.com/tercen/app-library">github app library</a></p>
-<p>The operators and apps are also found on the Tercen github area, see (<a href="https://github.com/tercen" class="uri">https://github.com/tercen</a>)</p>
+<div id="app-libraries" class="section level2 unnumbered">
+<h2>App libraries</h2>
+<p>The main standard Tercen library is called, <strong>Tercen app library</strong>, however the full list of standard library locations are:</p>
+<ul>
+<li>Tercen app library (located on tercen github)</li>
+<li>Site library (located on tercen server)</li>
+<li>My library (located in the project)</li>
+</ul>
+<p>The differences between the different libraries is their location and their permission.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Library</th>
+<th align="left">Permission level</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Tercen library</td>
+<td align="left">Public</td>
+</tr>
+<tr class="even">
+<td align="left">Site library</td>
+<td align="left">Site only</td>
+</tr>
+<tr class="odd">
+<td align="left">My library</td>
+<td align="left">Project only</td>
+</tr>
+</tbody>
+</table>
+<p>A site, here is an Tercen server (of a site).</p>
+<p>A library consists of a set of:</p>
+<ul>
+<li>Operator</li>
+<li>Apps</li>
+<li>Workflows</li>
+</ul>
+<p><strong>Tercen app library:</strong></p>
+<p>All public Tercen operators and apps are on tercen github.</p>
+<p>The contents of the public Tercen app library are found in a json file in <a href="https://github.com/tercen/app-library">github app library</a></p>
+<p>The public operators and apps are also found on the Tercen github area, see (<a href="https://github.com/tercen" class="uri">https://github.com/tercen</a>)</p>
+</div>
+<div id="installing-apps" class="section level2">
+<h2><span class="header-section-number">13.1</span> Installing apps</h2>
+<p>The</p>
 </div>
 <div id="structure-of-an-operator" class="section level2 unnumbered">
 <h2>Structure of an operator</h2>

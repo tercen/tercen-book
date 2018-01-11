@@ -4,12 +4,42 @@ Tercen operators perform the computation on the projection views. An operator pe
 
 There are many existing operators but it is easy to create your own operator. Using the data step, a user creates a projection and selects an operator. A data projection is composed of a __data__, __y-axis__, __x-axis__, __rowseq__, __colseq__, __color__ and __label__. All these projection parameter are presented by data structures to the operator.
 
-## App library {-}
-All Tercen operators and apps are on tercen github. 
 
-The contents of the app library are found in a json file in [github app library](https://github.com/tercen/app-library)
 
-The operators and apps are also found on the Tercen github area, see (https://github.com/tercen)
+## App libraries {-}
+
+The main standard Tercen library is called, __Tercen app library__, however the full list of standard library locations are: 
+
+* Tercen app library (located on tercen github)
+* Site library (located on tercen server)
+* My library (located in the project)
+
+The differences between the different libraries is their location and their permission.
+
+Library  | Permission level |
+:----- | :------- |
+Tercen library | Public |
+Site library   | Site only|
+My library     | Project only |
+
+A site, here is an Tercen server (of a site).
+
+A library consists of a set of:
+
+* Operator
+* Apps
+* Workflows
+
+__Tercen app library:__
+
+All public Tercen operators and apps are on tercen github. 
+
+The contents of the public Tercen app library are found in a json file in [github app library](https://github.com/tercen/app-library)
+
+The public operators and apps are also found on the Tercen github area, see (https://github.com/tercen)
+
+## Installing apps
+The 
 
 ## Structure of an operator {-}
 A Tercen operator is composed of three main activities:
@@ -36,5 +66,3 @@ The cross-tab Table contains the following important columns, as examples:
 
 ## Tercen R package {-}
 There is currently an R package in the tercen repository to help in creating operators called [teRcen](https://github.com/tercen/teRcen) 
-
-

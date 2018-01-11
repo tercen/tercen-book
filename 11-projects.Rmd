@@ -1,6 +1,15 @@
 # Projects {#projects}
 
-The concept of a _project_ is fundamental in Tercen. The _project_ determines what group members work on. Data and workflows are created within a project.
-Without a project a researcher cannot upload data or create a workflow.
+Science is project based and therefore concept of a _project_ is integrated into Tercen. The _project_ determines what group members work on. Data and workflows are created within a project. Without a project a researcher cannot upload data or create a workflow.
+
+In summary, a project is:
+* a set of members
+* a set of member permissions
+* a set of data
+* a set of workflows
+* a set of apps
+* a set of operators
+
+A reasearcher may be a member of many projects.
 
 <center>![](images\share.png)</center>
