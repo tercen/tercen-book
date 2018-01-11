@@ -3,7 +3,7 @@ Here are some ideas:
 
 * Try the [starters guide](https://tercen.github.io/starters-guide/)
 * Try to code for different operators using the [`teRcen`](https://github.com/tercen/tercen) R package, Note when using R Studio, it has a useful auto-complete feature. When you have loaded the teRcen R package, the available methods for tercen client and tercen query object will automatically appear as you type.
-* Give feedback on this starter's guide by creating an [issue](https://github.com/tercen/tercen-book/issues)
+* Give feedback on this book by creating an [issue](https://github.com/tercen/tercen-book/issues)
 * Give feedback on Tercen by sending an email to `info@tercen.com`
 * [Contact us](mailto:info@tercen.com) for an online one-2-one session
 

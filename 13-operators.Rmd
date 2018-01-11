@@ -11,7 +11,7 @@ There are many existing operators but it is easy to create your own operator. Us
 The main standard Tercen library is called, __Tercen app library__, however the full list of standard library locations are: 
 
 * Tercen app library (located on tercen github)
-* Site library (located on tercen server)
+* Site library (located on a tercen server)
 * My library (located in the project)
 
 The differences between the different libraries is their location and their permission.
@@ -22,7 +22,7 @@ Tercen library | Public |
 Site library   | Site only|
 My library     | Project only |
 
-A site, here is a Tercen server installed on a machine at an installation  site.
+A __site__ is a Tercen server installed on a machine at an installation  site.
 
 A library consists of a set of:
 
