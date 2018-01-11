@@ -38,8 +38,10 @@ The contents of the public Tercen app library are found in a json file in [githu
 
 The public operators and apps are also found on the Tercen github area, see (https://github.com/tercen)
 
-## Installing apps
-The 
+## Installing apps {-}
+
+A researcher installs an app by sourcing it from any of the libraries (tercen app library, site library, my library) or from a git repository.
+
 
 ## Structure of an operator {-}
 A Tercen operator is composed of three main activities:
