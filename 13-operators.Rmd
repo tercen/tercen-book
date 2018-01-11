@@ -22,7 +22,7 @@ Tercen library | Public |
 Site library   | Site only|
 My library     | Project only |
 
-A site, here is a Tercen server installed on a machine at an installation site.
+A site, here is a Tercen server installed on a machine at an installation  site.
 
 A library consists of a set of:
 
