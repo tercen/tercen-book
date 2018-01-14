@@ -1,15 +1,32 @@
 # Visualization
 
-The cross-tab window in the data step allows the researchers to create any visual by drag-n-dropping factors into one of six zones of the user interface: `row`, `column`, `x-axis`, `y-axis`, `color` and `label`.
+## Cross-tab window
 
-Zone   | Description |
-:----- | :------- |
-`row`    | Row dimension of graph|
-`column`  | Column dimension of graph|
-`x-axis` | x-axis dimension of graph|
-`y-axis`  | y-axis dimension of graph|
-`color` | colored by the selected factor|
-`label`  | labelled by the selected factor|
+The cross-tab window is opened by double clicking on a __data step__ in a __workflow__. The cross-tab window allows the researchers to create any visual by dragging-n-dropping factors to the appropiate section of the cross-tab window.
+
+The cross-tab windows is composed of six sections.
+
+Section | Location | Description |
+:-----  | :------- |:------- |
+`factor`  | top left     | shows the available factors
+`filter`  | top middle   | defines the filters for the view in graph section
+`layer`   | middle middle| defines the layers for the view in graph section
+`namespace`| middle middle| defines the filters for the view in graph section
+`run` | bottom middle| defines the filters for the view in graph section
+`graph` | top right    | displays the resulting view
+
+
+Researchers create a visual by drag-n-dropping factors from the `factor` section into one of seven zones : `row`, `column`, `x-axis`, `y-axis`, `color`, `label`, `error bar`.
+
+Zone   |Section| Description |
+:----- |:----- |:------- |
+`row`    | graph| row dimension of graph|
+`column`  | graph| column dimension of graph|
+`x-axis` | graph| x-axis dimension of graph|
+`y-axis`  | graph| y-axis dimension of graph|
+`color` | layer| colored by the selected factor|
+`label`  | layer|labelled by the selected factor|
+`error bar`|layer| an error bar using the selected factor|
 
 The factors are both the variables and annotations of your data (e.g. column headers in your uploaded data). The factors are dragged over to the zones in order to create the visualization or desired projection. Researchers may either create their own view or use an app pre-configured views. 
 
@@ -17,7 +34,7 @@ The cross-tab window also allows the concept of __layers__. A __layer__ allows t
 
 ## Layers
 
-__Layers__ are created in the cross-tab window. Each created __layer__ has the same __row__, __column__, __x-axis__ definition but allows the researcher to configure a different __y-axis__, __filter__, __color__ and __label__. 
+__Layers__ are created in the cross-tab window. Each created __layer__ has the same __row__, __column__, __x-axis__ definition but allows the researcher to configure a different __y-axis__, __filter__, __color__, __label__ and __error bar__ which are all found in the `layer` section.
 
 ## Filters
 
