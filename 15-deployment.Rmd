@@ -7,22 +7,18 @@ When Tercen is running on servers in a remote data center, we consider this to a
 
 __Public Cloud__
 
-![](images\tercen_cloud.png)
-
 The __TercenCloud__ is found at: (http://www.tercen.com).
 Currently the cloud is running the alpha version of __Tercen__. It will be shortly upgraded.
 
-__Private Cloud__
+![](images\tercen_cloud.png)
 
-![](images\tercen_private.png)     ![](images\amazon.png)
+__Private Private Cloud__
 
 The tercen cloud private is tercen running on private servers on the cloud.
 These servers may be Amazon web services, for example.
-
-
-
 It is available on request to `info@tercen.com`
 
+![](images\tercen_private.png)     ![](images\amazon.png)
 
 ## On-site
 The tercen on-site requires an install and is available by sending an email to `info@tercen.com`.
@@ -30,20 +26,21 @@ Currently the on-site version are the beta version of tercen.
 
 __Desktop on-site__
 
-![](images\tercen_desktop.png)
 The desktop version is for a local on-site install on a user's machine. This version is still capable of being a server to a group of users.
+
+![](images\tercen_desktop.png)
 
 __Server on-site__
 
-![](images\tercen_server.png)
-
 The server version is for a on-site server install.
+
+![](images\tercen_server.png)
 
 __Cluster on-site__
 
-![](images\tercen_cluster.png)
-
 The cluster version is for a high availability on-site server install.
+
+<right>![](images\tercen_cluster.png)</right>
 
 <center>![](images\deploy.png)</center>
 
