@@ -2,7 +2,7 @@
 
 An outline of how flexible and interactable a visualizaton is constructed with the projections in the cross-tab. A projection is also a computation in what we call **WYSIWYC**, **W** hat **Y**ou **S**ee **I**s **W**hat **Y**ou **C**ompute.
 
-Every view is potentially a computation. You require to select an _operator_ to compute on the choosen projection. 
+Every view is potentially a computation. You require to select an __operator__ to compute on the choosen projection. 
 
 Note: Some operators requrie a specific projection e.g. a PCA requires to have observations on the `columns` and variables on the `rows`.
 

@@ -4,7 +4,7 @@ A workflow consists of a series of steps.Each step is explained below.
 
 __Table step__
 
-Allows a researcher to define a dataset. The dataset requires to be uploaded to Tercen before it is visible in the Table step.
+Allows a researcher to select a dataset. The dataset requires to be uploaded to Tercen before it is visible for selection in the Table step.
 
 __Data step__
 

@@ -25,14 +25,14 @@ __Filters__ are found in the `filter` zone of the cross-tab window. The filter a
 
 ## Multi-pairwise
 
-__Multi-pairwise__ is configured in the cross-tab window. It is created by dragging-n-dropping the same factor in the ``row`` zone and in the ``column`` zone. Note, a factors requires to be defined in the ``label zone``. This allows the projection to know what factor separates data points in the pairwise. 
+__Multi-pairwise__ is configured in the cross-tab window. It is created by dragging-n-dropping the same factor in the `row` zone and in the `column` zone. Note, a factor requires to be defined in the `label` zone. This allows the projection to know what factor separates data points in the pairwise plot. 
 
 A typically configuration example is when researchers are comparing different gene measurements in different samples and wish to have a sample to sample pairwise plot. The factor (say `sample_id`), representing the sample, is placed in the `row` and `column` zone. The factor (say `measurement`) representing the values is placed in the `y-axis` zone. The factor (say `gene_id`), representing the different genes which were measured, is placed in the `label` zone.
 
 
 ## Examples
 
-Here are a few examples view configuration examples.
+Here are a few examples of the configuration flexibility of the views.
 
 __Heatmap__
 View configuration: column, row, color, heatmap
