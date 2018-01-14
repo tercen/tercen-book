@@ -1,6 +1,6 @@
 # Visual computation {#visual-computation}
 
-An outline of how flexible and interactable a visualizaton is constructed with the projections in the cross-tab. A projection is also a computation in what we call **WYSIWYG**, **W** hat **Y**ou **S**ee **I**s **W**hat **Y**ou **G**et.
+An outline of how flexible and interactable a visualizaton is constructed with the projections in the cross-tab. A projection is also a computation in what we call **WYSIWYC**, **W** hat **Y**ou **S**ee **I**s **W**hat **Y**ou **C**ompute.
 
 Every view is potentially a computation. You require to select an _operator_ to compute on the choosen projection. 
 

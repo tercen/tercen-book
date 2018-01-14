@@ -17,7 +17,7 @@ The main standard Tercen library is called, __Tercen app library__, however the 
 The differences between the different libraries is their location and their permission.
 
 Library  | Permission level |
-:----- | :------- |
+:-----   | :------- |
 Tercen library | Public |
 Site library   | Site only|
 My library     | Project only |

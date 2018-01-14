@@ -1,20 +1,41 @@
 # Visualization
 
-The cross-tab view in the data step allows the researchers to create any visual by drag-n-dropping factors into one of six zones.
+The cross-tab window in the data step allows the researchers to create any visual by drag-n-dropping factors into one of six zones of the user interface: `row`, `column`, `x-axis`, `y-axis`, `color` and `label`.
 
-* row zone
-* column zone
-* x-axis zone
-* y-axis zone
-* color zone
-* label zone
+Zone   | Description |
+:----- | :------- |
+`row`    | Row dimension of graph|
+`column`  | Column dimension of graph|
+`x-axis` | x-axis dimension of graph|
+`y-axis`  | y-axis dimension of graph|
+`color` | colored by the selected factor|
+`label`  | labelled by the selected factor|
 
-The type of visualization is determine by what is configured (or pre-configured)
+The factors are both the variables and annotations of your data (e.g. column headers in your uploaded data). The factors are dragged over to the zones in order to create the visualization or desired projection. Researchers may either create their own view or use an app pre-configured views. 
 
-Here are a few examples:
+The cross-tab window also allows the concept of __layers__. A __layer__ allows the researcher to superimpose different views and build up sophisticated graphics. 
+
+## Layers
+
+__Layers__ are created in the cross-tab window. Each created __layer__ has the same __row__, __column__, __x-axis__ definition but allows the researcher to configure a different __y-axis__, __filter__, __color__ and __label__. 
+
+## Filters
+
+__Filters__ are found in the `filter` zone of the cross-tab window. The filter allows the researcher to remove data from the view. A __filter__ is created, modified or deleted.
+
+## Multi-pairwise
+
+__Multi-pairwise__ is configured in the cross-tab window. It is created by dragging-n-dropping the same factor in the ``row`` zone and in the ``column`` zone. Note, a factors requires to be defined in the ``label zone``. This allows the projection to know what factor separates data points in the pairwise. 
+
+A typically configuration example is when researchers are comparing different gene measurements in different samples and wish to have a sample to sample pairwise plot. The factor (say `sample_id`), representing the sample, is placed in the `row` and `column` zone. The factor (say `measurement`) representing the values is placed in the `y-axis` zone. The factor (say `gene_id`), representing the different genes which were measured, is placed in the `label` zone.
+
+
+## Examples
+
+Here are a few examples view configuration examples.
 
 __Heatmap__
-column, row, color, heatmap
+View configuration: column, row, color, heatmap
 <center> ![](images/heatmap.png) </center>
 
 __Multigrup Pairwise Plot__
