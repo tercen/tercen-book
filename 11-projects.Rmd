@@ -1,15 +1,14 @@
-# Projects {#projects}
+# Team Projects {#projects}
 
-Science is project based and therefore concept of a _project_ is integrated into Tercen. The _project_ determines what group members work on. Data and workflows are created within a project. Without a project a researcher cannot upload data or create a workflow.
+Science is performed by teams on research projects. Both concepts are integrated into __Tercen__. Reseachers are member of a __team__. The __team__ creates __project__. The __project__ determines what type of __data__ and __workflows__ the team work on for the research study. Without a __project__ a researcher cannot upload data or create a __workflow__.
 
-In summary, a project is:
-* a set of members
-* a set of member permissions
-* a set of data
-* a set of workflows
-* a set of apps
-* a set of operators
+In summary, a __project__ is:
 
-A reasearcher may be a member of many projects.
+* created by a __team__
+* a set of __data__ (i.e. __tables__)
+* a set of __workflows__
+* a set of __apps__ (called an __app library__)
+
+A reasearcher may be a member of many __teams__ and __projects__.
 
 <center>![](images\share.png)</center>
