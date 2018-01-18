@@ -1,38 +1,41 @@
-# Operators and Apps {#operators}
+# Apps (i.e. plug-ins) {#apps}
+An app is a plug-in and allows the researcher to customize __Tercen__ with the latest algorithms and visualizations. There are currently three __app types__: __operators__ (e.g. mean, pca, t-test), __steps__ (e.g. two group comparison, pca), and __workflows__ (e.g. RNAseq). Each __app__ has an __app version__ and is located in a __app library__. 
 
-Tercen operators perform the computation on the projection views. An operator performs a computation on one projection. An app is a mini workflow allow a user to perform a computation or visualization.
+The three types of __apps__ with some examples:
 
-There are many existing operators but it is easy to create your own operator. Using the data step, a user creates a projection and selects an operator. A data projection is composed of a __data__, __y-axis__, __x-axis__, __rowseq__, __colseq__, __color__ and __label__. All these projection parameter are presented by data structures to the operator.
+* an __operator app__ 
+    + e.g. pca function
+* a __step app__
+    + e.g. a combination of a pca and visuals
+* a __workflow app__
+    + e.g RNAseq pipeline workflow
 
+An __operator app__ performs a computation on the projection views in the cross-tab window. A __step app__ is a mini workflow and allows a researcher to perform a set of computations and/or visualizations. A __workflow app__ is type of template allows a researcher to start a complete standard analysis defined by a template (e.g. a RNAseq workflow). 
+
+Typically a __workflow app__ contains __step apps__ and a __step app__ contains __operators apps__.
+As an example there may be a RNAseq __workflow app__ in which there is a pca __step app__ containing a pca __operator app__. The  pca step performs the pca __operator__ but in addition it supplies useful pre-defined views.
+
+There are many existing __operator apps__ but it is easy to create your own operator and wrapped it up as an __app__. Using the data step, a user creates a projection and selects an __operator__. A data projection is composed of a __data__, __y-axis__, __x-axis__, __rowseq__, __colseq__, __color__ and __label__. All these projection parameter are presented by data structures to the __operator__.
 
 
 ## App libraries {-}
 
-The main standard Tercen library is called, __Tercen app library__, however the full list of standard library locations are: 
+There is more than one app library. However the main publically available library is called the __Tercen app library__. The other app libraries have different location and permission levels.
 
-* Tercen app library (located on tercen github)
-* Site library (located on a tercen server)
-* My library (located in the project)
-
-The differences between the different libraries is their location and their permission.
-
-Library  | Permission level |
-:-----   | :------- |
-Tercen library | Public |
-Site library   | Site only|
-My library     | Project only |
+Library  | Location|Permission level |
+:-----   | :------- |:------- |
+Tercen app library | tercen github| Public |
+Site app library   | tercen server| Site only|
+My app library     | tercen project area | Project only |
+ 
 
 A __site__ is a Tercen server installed on a machine at an installation  site.
 
-A library consists of a set of:
-
-* Operator
-* Apps
-* Workflows
+A library consists of a set of __apps__ and their __versions__.
 
 __Tercen app library:__
 
-All public Tercen operators and apps are on tercen github. 
+All public Tercen operators and apps are on a tercen github. 
 
 The contents of the public Tercen app library are found in a json file in [github app library](https://github.com/tercen/app-library)
 
@@ -43,7 +46,7 @@ The public operators and apps are also found on the Tercen area, see (https://gi
 A researcher installs an app by sourcing it from any of the libraries (tercen app library, site library, my library) or from a git repository.
 
 
-## Structure of an operator {-}
+## Structure of an operator app {-}
 A Tercen operator is composed of three main activities:
 
 * Getting the data
@@ -69,12 +72,12 @@ The cross-tab table contains the following important columns, as examples:
 ## Tercen R package {-}
 There is currently an R package in the tercen repository to help in creating operators called [teRcen](https://github.com/tercen/teRcen) 
 
-## Creating operators {-}
-Tercen allows programmers to easily build new operators from the comfort of their favorite interactive development environment (IDE). From the IDE it is possible to access all Tercen features. Access the input data and returning results is essential when developing your __operator__ in the IDE on your local machine.  
+## Creating an operator app {-}
+Tercen allows programmers to easily build new operators from the comfort of their favorite interactive development environment (IDE). From the IDE it is possible to access all Tercen features. Access the input data and returning results is essential when developing your __operator app__ in the IDE on your local machine.  
 
 The ability to create a new Tercen operator requires basic programming skills and is straight forward.
 
-Here is a development workflow to create an __operator__:
+Here is a development process to create an __operator app__:
 
 __Getting setup__:
 
@@ -98,17 +101,17 @@ options("tercen.stepId"= "3-2")
 ```
 The values indicated above are examples. The real values come from the next section
 
-__Writing and testing the operator__:
+__Writing and testing the operator app__:
 
-* Develop and test the __operator__ within the `workspace.R` file
-* Determine the input data for the __operator__
+* Develop and test the __operator app__ within the `workspace.R` file
+* Determine the input data for the __operator app__
     + Go to Tercen and configure a project view in cross-tab window of the __data step__
     + Record the __stepId__ and __workflowId__ of this __data step__
     + Get data using the tercen api `tercen::ctx$select`
-    + Execute the __operator__ locally 
+    + Execute the __operator app__ locally 
     + Push results back to Tercen using the tercen API `tercen::ctx$save`
   
-The actions above may happen multiple times as you develop your operator. Once the __operator__ is finalized then proceed:
+The actions above may happen multiple times as you develop your operator. Once the __operator app__ is finalized then proceed:
 
 __Deploy the operator__:
 
@@ -132,34 +135,34 @@ options("tercen.password"="YYYY")
 ```
 where `XXXX` and `YYYY` are the appropriate username and password of the developer.
 
-## Creating a Step {-}
+## Creating a step app {-}
 * Make a workflow first
 * Save the workflow
 * Set the property of the workflow to “step”
-* Download the zip of the __step__
+* Download the zip of the __step app__
 * Unzip the folder
 * Add `README.md` file
 * Add `.gitignore` file
-* Create a git repository for the new __step__
-* Upload the files to the new __step__ git repository
+* Create a git repository for the new __step app__
+* Upload the files to the new __step app__ git repository
 
 
-## Creating a Workflow template {-}
+## Creating a workflow app {-}
 * Make a workflow first
 * Save the workflow
 * Set the property of the workflow to "workflow"
-* Download the zip of the  __workflow__
+* Download the zip of the  __workflow app__
 * Unzip the folder
 * Add `README.md` file
 * Add `.gitignore` file
-* Create a git repository for the new __workflow__ git repository
-* Upload the files to the new __workflow__ git repository
+* Create a git repository for the new __workflow app__ git repository
+* Upload the files to the new __workflow app__ git repository
 
 ## App examples {-}
 
-__Operator examples:__
+__Operator app examples:__
 
-An __operator__ which performs computation follows either one of the following computing pattern :
+An __operator app__ which performs computation follows either one of the following computing pattern :
 
 * per cell
 * per row

@@ -72,7 +72,7 @@ Refer to chapter \@ref(data-provenance).
 __Add operators or apps (i.e. plug-ins)__
 A researcher easily adds powerful computation or visualization plug-ins. These plugins are developed by the bioinformatician and transmitted via the TercenCloud platform. Plug-ins are computation or visualization modules (e.g. vsn normalization, ANOVA, PCA, MDS, Mixed Models, and clustering).
 
-Refer to chapter \@ref(operators).
+Refer to chapter \@ref(apps).
 
 <center>![](images/app.png)</center>
 
