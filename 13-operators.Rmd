@@ -59,7 +59,7 @@ three main tables:
 
 Each table contains different data as a result of the definition of the cross-tab projection.
 
-The cross-tab Table contains the following important columns, as examples:
+The cross-tab table contains the following important columns, as examples:
 
 ``.ri``  row index of data, represented by an integer
 
@@ -68,3 +68,76 @@ The cross-tab Table contains the following important columns, as examples:
 
 ## Tercen R package {-}
 There is currently an R package in the tercen repository to help in creating operators called [teRcen](https://github.com/tercen/teRcen) 
+
+## Creating operators {-}
+The ability to create a new Tercen operator requires basic programming scills and should be straight forward.
+
+You require to:
+
+* Install R
+* Install R Studio
+* Install the [teRcen R package](https://github.com/tercen/teRcen)
+* Open R Studio and create an empty project and init the git
+* copy four files into project (from a operator in github)
+    + `operator.json`
+    + `main.R`
+    + `README.md`
+    + `.gitignore`
+* Modify appropriately each of the files 
+* Create  the `workspace.R`
+  + Copy `main.R` and rename to `workspace.R` and add the following lines:
+```
+source('~/.Rprofile')
+options("tercen.workflowId"= "76a4dcffd551802fd23d42bd862e8300")
+options("tercen.stepId"= "3-2")
+```
+* Develop and test the __operator__ within the `workspace.R` file
+    + Make view in cross-tab window
+    + Get data 
+    + Execute operator
+    + Push data
+  
+Once the __operator__ is finalized then proceed:
+
+* Modify `workshop.R` and copy it to `main.R` 
+* Run `packrat::init`
+This can always be redone by performing the following
+    + Remove the `packrat` folder in the Rstudio project folder
+    + Remove the `.Rprofile` file in the project folder
+* upload to github as a public repository
+
+You can now install your __operator__  into your Tercen server via the github install menu from the __site library__ or any __project library__ 
+If you want it available to the Tercen community send an email to Tercen.
+Tercen administrator makes it available by modify app library on tercen github.
+
+__Content of `.Rprofile:` file in your home directory__ 
+```
+options("tercen.serviceUri"="http://127.0.0.1:5400/api/v1/")
+options("tercen.username"="XXXX")
+options("tercen.password"="YYYY")
+```
+where `XXXX` and `YYYY` are the appropiate username and password of the developer.
+
+## Creating a Step or Workflow template {-}
+* Make your workflow first
+* Save the workflow
+* Set the property of the workflow to “step” or "workflow"
+* Download the zip of the __step__ or __workflow__
+* Unzip the folder
+* Add `README.md` file
+* Add `.gitignore` file
+* Create a git repository
+* Upload the files to the git repository
+
+## App examples {-}
+
+__Operator examples:__
+
+An __operator__ which performs computation follows either one of the following computing pattern :
+
+* per cell
+* per row
+* per col
+* per row and col
+
+

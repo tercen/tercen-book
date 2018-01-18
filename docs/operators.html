@@ -107,6 +107,9 @@
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#installing-apps"><i class="fa fa-check"></i>Installing apps</a></li>
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#structure-of-an-operator"><i class="fa fa-check"></i>Structure of an operator</a></li>
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#tercen-r-package"><i class="fa fa-check"></i>Tercen R package</a></li>
+<li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#creating-operators"><i class="fa fa-check"></i>Creating operators</a></li>
+<li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#creating-a-step-or-workflow-template"><i class="fa fa-check"></i>Creating a Step or Workflow template</a></li>
+<li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#app-examples"><i class="fa fa-check"></i>App examples</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="programmatic-access.html"><a href="programmatic-access.html"><i class="fa fa-check"></i><b>14</b> Programmatic access</a></li>
 <li class="chapter" data-level="15" data-path="deployment.html"><a href="deployment.html"><i class="fa fa-check"></i><b>15</b> Deployment</a><ul>
@@ -203,13 +206,85 @@
 <li>Cross-tab table</li>
 </ul>
 <p>Each table contains different data as a result of the definition of the cross-tab projection.</p>
-<p>The cross-tab Table contains the following important columns, as examples:</p>
+<p>The cross-tab table contains the following important columns, as examples:</p>
 <p><code>.ri</code> row index of data, represented by an integer</p>
 <p><code>.ci</code> col index of data, represented by an integer</p>
 </div>
 <div id="tercen-r-package" class="section level2 unnumbered">
 <h2>Tercen R package</h2>
 <p>There is currently an R package in the tercen repository to help in creating operators called <a href="https://github.com/tercen/teRcen">teRcen</a></p>
+</div>
+<div id="creating-operators" class="section level2 unnumbered">
+<h2>Creating operators</h2>
+<p>The ability to create a new Tercen operator requires basic programming scills and should be straight forward.</p>
+<p>You require to:</p>
+<ul>
+<li>Install R</li>
+<li>Install R Studio</li>
+<li>Install the <a href="https://github.com/tercen/teRcen">teRcen R package</a></li>
+<li>Open R Studio and create an empty project and init the git</li>
+<li>copy four files into project (from a operator in github)
+<ul>
+<li><code>operator.json</code></li>
+<li><code>main.R</code></li>
+<li><code>README.md</code></li>
+<li><code>.gitignore</code></li>
+</ul></li>
+<li>Modify appropriately each of the files</li>
+<li>Create the <code>workspace.R</code></li>
+<li><p>Copy <code>main.R</code> and rename to <code>workspace.R</code> and add the following lines:</p>
+<pre><code>source(&#39;~/.Rprofile&#39;)
+options(&quot;tercen.workflowId&quot;= &quot;76a4dcffd551802fd23d42bd862e8300&quot;)
+options(&quot;tercen.stepId&quot;= &quot;3-2&quot;)</code></pre></li>
+<li>Develop and test the <strong>operator</strong> within the <code>workspace.R</code> file
+<ul>
+<li>Make view in cross-tab window</li>
+<li>Get data</li>
+<li>Execute operator</li>
+<li>Push data</li>
+</ul></li>
+</ul>
+<p>Once the <strong>operator</strong> is finalized then proceed:</p>
+<ul>
+<li>Modify <code>workshop.R</code> and copy it to <code>main.R</code></li>
+<li>Run <code>packrat::init</code> This can always be redone by performing the following
+<ul>
+<li>Remove the <code>packrat</code> folder in the Rstudio project folder</li>
+<li>Remove the <code>.Rprofile</code> file in the project folder</li>
+</ul></li>
+<li>upload to github as a public repository</li>
+</ul>
+<p>You can now install your <strong>operator</strong> into your Tercen server via the github install menu from the <strong>site library</strong> or any <strong>project library</strong> If you want it available to the Tercen community send an email to Tercen. Tercen administrator makes it available by modify app library on tercen github.</p>
+<p><strong>Content of <code>.Rprofile:</code> file in your home directory</strong></p>
+<pre><code>options(&quot;tercen.serviceUri&quot;=&quot;http://127.0.0.1:5400/api/v1/&quot;)
+options(&quot;tercen.username&quot;=&quot;XXXX&quot;)
+options(&quot;tercen.password&quot;=&quot;YYYY&quot;)</code></pre>
+<p>where <code>XXXX</code> and <code>YYYY</code> are the appropiate username and password of the developer.</p>
+</div>
+<div id="creating-a-step-or-workflow-template" class="section level2 unnumbered">
+<h2>Creating a Step or Workflow template</h2>
+<ul>
+<li>Make your workflow first</li>
+<li>Save the workflow</li>
+<li>Set the property of the workflow to “step” or “workflow”</li>
+<li>Download the zip of the <strong>step</strong> or <strong>workflow</strong></li>
+<li>Unzip the folder</li>
+<li>Add <code>README.md</code> file</li>
+<li>Add <code>.gitignore</code> file</li>
+<li>Create a git repository</li>
+<li>Upload the files to the git repository</li>
+</ul>
+</div>
+<div id="app-examples" class="section level2 unnumbered">
+<h2>App examples</h2>
+<p><strong>Operator examples:</strong></p>
+<p>An <strong>operator</strong> which performs computation follows either one of the following computing pattern :</p>
+<ul>
+<li>per cell</li>
+<li>per row</li>
+<li>per col</li>
+<li>per row and col</li>
+</ul>
 
 </div>
 </div>
