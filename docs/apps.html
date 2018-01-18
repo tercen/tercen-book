@@ -143,28 +143,17 @@
             <section class="normal" id="section-">
 <div id="apps" class="section level1">
 <h1><span class="header-section-number">Chapter 13</span> Apps (i.e. plug-ins)</h1>
-<p>An app is a plug-in and allows the researcher to customize <strong>Tercen</strong> with the latest algorithms and visualizations. There are currently three <strong>app types</strong>: <strong>operators</strong> (e.g. mean, pca, t-test), <strong>steps</strong> (e.g. two group comparison, pca), and <strong>workflows</strong> (e.g. RNAseq). Each <strong>app</strong> has an <strong>app version</strong> and is located in a <strong>app library</strong>.</p>
-<p>The three types of <strong>apps</strong> with some examples:</p>
-<ul>
-<li>an <strong>operator app</strong>
-<ul>
-<li>e.g. pca function</li>
-</ul></li>
-<li>a <strong>step app</strong>
-<ul>
-<li>e.g. a combination of a pca and visuals</li>
-</ul></li>
-<li>a <strong>workflow app</strong>
-<ul>
-<li>e.g RNAseq pipeline workflow</li>
-</ul></li>
-</ul>
-<p>An <strong>operator app</strong> performs a computation on the projection views in the cross-tab window. A <strong>step app</strong> is a mini workflow and allows a researcher to perform a set of computations and/or visualizations. A <strong>workflow app</strong> is type of template allows a researcher to start a complete standard analysis defined by a template (e.g. a RNAseq workflow).</p>
-<p>Typically a <strong>workflow app</strong> contains <strong>step apps</strong> and a <strong>step app</strong> contains <strong>operators apps</strong>. As an example there may be a RNAseq <strong>workflow app</strong> in which there is a pca <strong>step app</strong> containing a pca <strong>operator app</strong>. The pca step performs the pca <strong>operator</strong> but in addition it supplies useful pre-defined views.</p>
-<p>There are many existing <strong>operator apps</strong> but it is easy to create your own operator and wrapped it up as an <strong>app</strong>. Using the data step, a user creates a projection and selects an <strong>operator</strong>. A data projection is composed of a <strong>data</strong>, <strong>y-axis</strong>, <strong>x-axis</strong>, <strong>rowseq</strong>, <strong>colseq</strong>, <strong>color</strong> and <strong>label</strong>. All these projection parameter are presented by data structures to the <strong>operator</strong>.</p>
+<p>Lets say a researcher begins a brand new research project and requires to analyze many RNAseq measurements. The researcher opens Tercen and proceeds to browse the Tercen library for a relevant workflow and eventually discovers a workflow app called “RNAseq” and installs it and voilà the research can begin. This is the concept of an <strong>app</strong>. An <strong>app</strong> is a sort of plug-in, just like i-phone apps.</p>
+<p>There are currently three types of apps: <strong>workflows</strong> (e.g. RNAseq), <strong>steps</strong> (e.g. two group comparison, PCA), and <strong>operators</strong> (e.g. mean, PCA, t-test). Each <strong>app</strong> has an <strong>app version</strong> and is located in an <strong>app library</strong>.</p>
+<p>The three types of <strong>apps</strong> including some examples are:</p>
+<p>A <strong>workflow app</strong> is a type of template data analysis pipeline and it allows a researcher to start a complete standard analysis defined by the template (e.g. a RNAseq workflow, or a bioconductor workflow). The researcher would install a RNAseq workflow app from the Tercen library.</p>
+<p>A <strong>step app</strong> is a mini workflow and allows a researcher to perform a set of computations and/or visualizations e.g. the researcher requires to perform a PCA including some automated visuals of the results. The researcher would install a PCA step app from the Tercen library.</p>
+<p>An <strong>operator app</strong> performs a computation on the projection views in the cross-tab window (e.g. a PCA function) e.g. the researcher requires to perform a simple PCA without any automated visuals. The researcher would install a PCA operator app from the Tercen library.</p>
+<p>Typically a there is a hierarchy of apps where a <strong>workflow app</strong> contains <strong>step apps</strong> and a <strong>step app</strong> contains <strong>operators apps</strong>.</p>
+<p>A an example, think of an RNAseq <strong>workflow app</strong> in which there is a PCA <strong>step app</strong> and this in turn contains a PCA <strong>operator app</strong>.</p>
 <div id="app-libraries" class="section level2 unnumbered">
 <h2>App libraries</h2>
-<p>There is more than one app library. However the main publically available library is called the <strong>Tercen app library</strong>. The other app libraries have different location and permission levels.</p>
+<p>There is more than one app library. However the main publicly available library is called the <strong>Tercen app library</strong>. The other app libraries have different location and permission levels.</p>
 <table>
 <thead>
 <tr class="header">

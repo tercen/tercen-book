@@ -1,26 +1,24 @@
 # Apps (i.e. plug-ins) {#apps}
-An app is a plug-in and allows the researcher to customize __Tercen__ with the latest algorithms and visualizations. There are currently three __app types__: __operators__ (e.g. mean, pca, t-test), __steps__ (e.g. two group comparison, pca), and __workflows__ (e.g. RNAseq). Each __app__ has an __app version__ and is located in a __app library__. 
+Lets say a researcher begins a brand new research project and requires to analyze many RNAseq measurements. The researcher opens Tercen and proceeds to browse the Tercen library for a relevant workflow and eventually discovers a workflow app called "RNAseq" and installs it and voilà the research can begin. This is the concept of an __app__. An __app__ is a sort of plug-in, just like i-phone apps.
 
-The three types of __apps__ with some examples:
+There are currently three types of apps: __workflows__ (e.g. RNAseq), __steps__ (e.g. two group comparison, PCA), and __operators__ (e.g. mean, PCA, t-test). Each __app__ has an __app version__ and is located in an __app library__. 
 
-* an __operator app__ 
-    + e.g. pca function
-* a __step app__
-    + e.g. a combination of a pca and visuals
-* a __workflow app__
-    + e.g RNAseq pipeline workflow
+The three types of __apps__ including some examples are:
 
-An __operator app__ performs a computation on the projection views in the cross-tab window. A __step app__ is a mini workflow and allows a researcher to perform a set of computations and/or visualizations. A __workflow app__ is type of template allows a researcher to start a complete standard analysis defined by a template (e.g. a RNAseq workflow). 
+A __workflow app__ is a type of template data analysis pipeline and it allows a researcher to start a complete standard analysis defined by the template (e.g. a RNAseq workflow, or a bioconductor workflow). The researcher would install a RNAseq workflow app from the Tercen library.
 
-Typically a __workflow app__ contains __step apps__ and a __step app__ contains __operators apps__.
-As an example there may be a RNAseq __workflow app__ in which there is a pca __step app__ containing a pca __operator app__. The  pca step performs the pca __operator__ but in addition it supplies useful pre-defined views.
+A __step app__ is a mini workflow and allows a researcher to perform a set of computations and/or visualizations e.g. the researcher requires to perform a PCA including some automated visuals of the results. The researcher would install a PCA step app from the Tercen library.
 
-There are many existing __operator apps__ but it is easy to create your own operator and wrapped it up as an __app__. Using the data step, a user creates a projection and selects an __operator__. A data projection is composed of a __data__, __y-axis__, __x-axis__, __rowseq__, __colseq__, __color__ and __label__. All these projection parameter are presented by data structures to the __operator__.
+An __operator app__ performs a computation on the projection views in the cross-tab window (e.g. a PCA function) e.g. the researcher requires to perform a simple PCA without any automated visuals. The researcher would install a PCA operator app from the Tercen library.
+
+Typically a there is a hierarchy of apps where a __workflow app__ contains __step apps__ and a __step app__ contains __operators apps__.
+
+A an example, think of an RNAseq __workflow app__ in which there is a PCA __step app__ and this in turn contains a PCA __operator app__.
 
 
 ## App libraries {-}
 
-There is more than one app library. However the main publically available library is called the __Tercen app library__. The other app libraries have different location and permission levels.
+There is more than one app library. However the main publicly available library is called the __Tercen app library__. The other app libraries have different location and permission levels.
 
 Library  | Location|Permission level |
 :-----   | :------- |:------- |
