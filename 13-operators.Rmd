@@ -36,7 +36,7 @@ All public Tercen operators and apps are on tercen github.
 
 The contents of the public Tercen app library are found in a json file in [github app library](https://github.com/tercen/app-library)
 
-The public operators and apps are also found on the Tercen github area, see (https://github.com/tercen)
+The public operators and apps are also found on the Tercen area, see (https://github.com/tercen)
 
 ## Installing apps {-}
 
@@ -70,41 +70,55 @@ The cross-tab table contains the following important columns, as examples:
 There is currently an R package in the tercen repository to help in creating operators called [teRcen](https://github.com/tercen/teRcen) 
 
 ## Creating operators {-}
-The ability to create a new Tercen operator requires basic programming scills and should be straight forward.
+Tercen allows programmers to easily build new operators from the comfort of their favorite interactive development environment (IDE). From the IDE it is possible to access all Tercen features. Access the input data and returning results is essential when developing your __operator__ in the IDE on your local machine.  
 
-You require to:
+The ability to create a new Tercen operator requires basic programming skills and is straight forward.
+
+Here is a development workflow to create an __operator__:
+
+__Getting setup__:
 
 * Install R
 * Install R Studio
 * Install the [teRcen R package](https://github.com/tercen/teRcen)
 * Open R Studio and create an empty project and init the git
-* copy four files into project (from a operator in github)
+* Copy four files into project, you can find them in any operator in tercen github.
     + `operator.json`
     + `main.R`
     + `README.md`
     + `.gitignore`
 * Modify appropriately each of the files 
-* Create  the `workspace.R`
-  + Copy `main.R` and rename to `workspace.R` and add the following lines:
+* Create  the `workspace.R` file by:
+    + Copy `main.R` and rename to `workspace.R` file
+    + Add the following lines to `workspace.R` file:
 ```
 source('~/.Rprofile')
 options("tercen.workflowId"= "76a4dcffd551802fd23d42bd862e8300")
 options("tercen.stepId"= "3-2")
 ```
+The values indicated above are examples. The real values come from the next section
+
+__Writing and testing the operator__:
+
 * Develop and test the __operator__ within the `workspace.R` file
-    + Make view in cross-tab window
-    + Get data 
-    + Execute operator
-    + Push data
+* Determine the input data for the __operator__
+    + Go to Tercen and configure a project view in cross-tab window of the __data step__
+    + Record the __stepId__ and __workflowId__ of this __data step__
+    + Get data using the tercen api `tercen::ctx$select`
+    + Execute the __operator__ locally 
+    + Push results back to Tercen using the tercen API `tercen::ctx$save`
   
-Once the __operator__ is finalized then proceed:
+The actions above may happen multiple times as you develop your operator. Once the __operator__ is finalized then proceed:
+
+__Deploy the operator__:
 
 * Modify `workshop.R` and copy it to `main.R` 
 * Run `packrat::init`
-This can always be redone by performing the following
+This can always re-init packrat by performing the following
     + Remove the `packrat` folder in the Rstudio project folder
     + Remove the `.Rprofile` file in the project folder
-* upload to github as a public repository
+    + Run `packrat::init` again
+* upload to github in a public repository, let call it the operator git repo.
 
 You can now install your __operator__  into your Tercen server via the github install menu from the __site library__ or any __project library__ 
 If you want it available to the Tercen community send an email to Tercen.
@@ -116,18 +130,30 @@ options("tercen.serviceUri"="http://127.0.0.1:5400/api/v1/")
 options("tercen.username"="XXXX")
 options("tercen.password"="YYYY")
 ```
-where `XXXX` and `YYYY` are the appropiate username and password of the developer.
+where `XXXX` and `YYYY` are the appropriate username and password of the developer.
 
-## Creating a Step or Workflow template {-}
-* Make your workflow first
+## Creating a Step {-}
+* Make a workflow first
 * Save the workflow
-* Set the property of the workflow to “step” or "workflow"
-* Download the zip of the __step__ or __workflow__
+* Set the property of the workflow to “step”
+* Download the zip of the __step__
 * Unzip the folder
 * Add `README.md` file
 * Add `.gitignore` file
-* Create a git repository
-* Upload the files to the git repository
+* Create a git repository for the new __step__
+* Upload the files to the new __step__ git repository
+
+
+## Creating a Workflow template {-}
+* Make a workflow first
+* Save the workflow
+* Set the property of the workflow to "workflow"
+* Download the zip of the  __workflow__
+* Unzip the folder
+* Add `README.md` file
+* Add `.gitignore` file
+* Create a git repository for the new __workflow__ git repository
+* Upload the files to the new __workflow__ git repository
 
 ## App examples {-}
 

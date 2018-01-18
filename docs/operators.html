@@ -108,7 +108,8 @@
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#structure-of-an-operator"><i class="fa fa-check"></i>Structure of an operator</a></li>
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#tercen-r-package"><i class="fa fa-check"></i>Tercen R package</a></li>
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#creating-operators"><i class="fa fa-check"></i>Creating operators</a></li>
-<li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#creating-a-step-or-workflow-template"><i class="fa fa-check"></i>Creating a Step or Workflow template</a></li>
+<li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#creating-a-step"><i class="fa fa-check"></i>Creating a Step</a></li>
+<li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#creating-a-workflow-template"><i class="fa fa-check"></i>Creating a Workflow template</a></li>
 <li class="chapter" data-level="" data-path="operators.html"><a href="operators.html#app-examples"><i class="fa fa-check"></i>App examples</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="programmatic-access.html"><a href="programmatic-access.html"><i class="fa fa-check"></i><b>14</b> Programmatic access</a></li>
@@ -216,14 +217,16 @@
 </div>
 <div id="creating-operators" class="section level2 unnumbered">
 <h2>Creating operators</h2>
-<p>The ability to create a new Tercen operator requires basic programming scills and should be straight forward.</p>
-<p>You require to:</p>
+<p>Tercen allows programmers to easily build new operators from the comfort of their favorite interactive development environment (IDE). From the IDE it is possible to access all Tercen features. Access the input data and returning results is essential when developing your <strong>operator</strong> in the IDE on your local machine.</p>
+<p>The ability to create a new Tercen operator requires basic programming skills and is straight forward.</p>
+<p>Here is a development workflow to create an <strong>operator</strong>:</p>
+<p><strong>Getting setup</strong>:</p>
 <ul>
 <li>Install R</li>
 <li>Install R Studio</li>
 <li>Install the <a href="https://github.com/tercen/teRcen">teRcen R package</a></li>
 <li>Open R Studio and create an empty project and init the git</li>
-<li>copy four files into project (from a operator in github)
+<li>Copy four files into project, you can find them in any operator in tercen github.
 <ul>
 <li><code>operator.json</code></li>
 <li><code>main.R</code></li>
@@ -231,48 +234,73 @@
 <li><code>.gitignore</code></li>
 </ul></li>
 <li>Modify appropriately each of the files</li>
-<li>Create the <code>workspace.R</code></li>
-<li><p>Copy <code>main.R</code> and rename to <code>workspace.R</code> and add the following lines:</p>
+<li>Create the <code>workspace.R</code> file by:
+<ul>
+<li>Copy <code>main.R</code> and rename to <code>workspace.R</code> file</li>
+<li><p>Add the following lines to <code>workspace.R</code> file:</p>
 <pre><code>source(&#39;~/.Rprofile&#39;)
 options(&quot;tercen.workflowId&quot;= &quot;76a4dcffd551802fd23d42bd862e8300&quot;)
-options(&quot;tercen.stepId&quot;= &quot;3-2&quot;)</code></pre></li>
-<li>Develop and test the <strong>operator</strong> within the <code>workspace.R</code> file
-<ul>
-<li>Make view in cross-tab window</li>
-<li>Get data</li>
-<li>Execute operator</li>
-<li>Push data</li>
+options(&quot;tercen.stepId&quot;= &quot;3-2&quot;)</code></pre>
+<p>The values indicated above are examples. The real values come from the next section</p></li>
 </ul></li>
 </ul>
-<p>Once the <strong>operator</strong> is finalized then proceed:</p>
+<p><strong>Writing and testing the operator</strong>:</p>
+<ul>
+<li>Develop and test the <strong>operator</strong> within the <code>workspace.R</code> file</li>
+<li>Determine the input data for the <strong>operator</strong>
+<ul>
+<li>Go to Tercen and configure a project view in cross-tab window of the <strong>data step</strong></li>
+<li>Record the <strong>stepId</strong> and <strong>workflowId</strong> of this <strong>data step</strong></li>
+<li>Get data using the tercen api <code>tercen::ctx$select</code></li>
+<li>Execute the <strong>operator</strong> locally</li>
+<li>Push results back to Tercen using the tercen API <code>tercen::ctx$save</code></li>
+</ul></li>
+</ul>
+<p>The actions above may happen multiple times as you develop your operator. Once the <strong>operator</strong> is finalized then proceed:</p>
+<p><strong>Deploy the operator</strong>:</p>
 <ul>
 <li>Modify <code>workshop.R</code> and copy it to <code>main.R</code></li>
-<li>Run <code>packrat::init</code> This can always be redone by performing the following
+<li>Run <code>packrat::init</code> This can always re-init packrat by performing the following
 <ul>
 <li>Remove the <code>packrat</code> folder in the Rstudio project folder</li>
 <li>Remove the <code>.Rprofile</code> file in the project folder</li>
+<li>Run <code>packrat::init</code> again</li>
 </ul></li>
-<li>upload to github as a public repository</li>
+<li>upload to github in a public repository, let call it the operator git repo.</li>
 </ul>
 <p>You can now install your <strong>operator</strong> into your Tercen server via the github install menu from the <strong>site library</strong> or any <strong>project library</strong> If you want it available to the Tercen community send an email to Tercen. Tercen administrator makes it available by modify app library on tercen github.</p>
 <p><strong>Content of <code>.Rprofile:</code> file in your home directory</strong></p>
 <pre><code>options(&quot;tercen.serviceUri&quot;=&quot;http://127.0.0.1:5400/api/v1/&quot;)
 options(&quot;tercen.username&quot;=&quot;XXXX&quot;)
 options(&quot;tercen.password&quot;=&quot;YYYY&quot;)</code></pre>
-<p>where <code>XXXX</code> and <code>YYYY</code> are the appropiate username and password of the developer.</p>
+<p>where <code>XXXX</code> and <code>YYYY</code> are the appropriate username and password of the developer.</p>
 </div>
-<div id="creating-a-step-or-workflow-template" class="section level2 unnumbered">
-<h2>Creating a Step or Workflow template</h2>
+<div id="creating-a-step" class="section level2 unnumbered">
+<h2>Creating a Step</h2>
 <ul>
-<li>Make your workflow first</li>
+<li>Make a workflow first</li>
 <li>Save the workflow</li>
-<li>Set the property of the workflow to “step” or “workflow”</li>
-<li>Download the zip of the <strong>step</strong> or <strong>workflow</strong></li>
+<li>Set the property of the workflow to “step”</li>
+<li>Download the zip of the <strong>step</strong></li>
 <li>Unzip the folder</li>
 <li>Add <code>README.md</code> file</li>
 <li>Add <code>.gitignore</code> file</li>
-<li>Create a git repository</li>
-<li>Upload the files to the git repository</li>
+<li>Create a git repository for the new <strong>step</strong></li>
+<li>Upload the files to the new <strong>step</strong> git repository</li>
+</ul>
+</div>
+<div id="creating-a-workflow-template" class="section level2 unnumbered">
+<h2>Creating a Workflow template</h2>
+<ul>
+<li>Make a workflow first</li>
+<li>Save the workflow</li>
+<li>Set the property of the workflow to “workflow”</li>
+<li>Download the zip of the <strong>workflow</strong></li>
+<li>Unzip the folder</li>
+<li>Add <code>README.md</code> file</li>
+<li>Add <code>.gitignore</code> file</li>
+<li>Create a git repository for the new <strong>workflow</strong> git repository</li>
+<li>Upload the files to the new <strong>workflow</strong> git repository</li>
 </ul>
 </div>
 <div id="app-examples" class="section level2 unnumbered">
