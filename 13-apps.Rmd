@@ -97,13 +97,18 @@ source('~/.Rprofile')
 options("tercen.workflowId"= "76a4dcffd551802fd23d42bd862e8300")
 options("tercen.stepId"= "3-2")
 ```
-The values indicated above are examples. The real values come from the next section
+The values indicated above are examples. The real values come from the next section.
 
 __Writing and testing the operator app__:
 
 * Develop and test the __operator app__ within the `workspace.R` file
 * Determine the input data for the __operator app__
-    + Go to Tercen and configure a project view in cross-tab window of the __data step__
+    + Start Tercen
+    + Use the browser to go to http://127.0.0.1:5400
+    + Login
+    + Go to the workflow which contains the data
+    + Add a __data step__
+    + Configure a project view in cross-tab window of the __data step__
     + Record the __stepId__ and __workflowId__ of this __data step__
     + Get data using the tercen api `tercen::ctx$select`
     + Execute the __operator app__ locally 

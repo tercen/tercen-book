@@ -1,13 +1,15 @@
 # Visualization
 
+Researchers want to control the data they generate. Hence visualization of the data is key to getting an overview. In the overview, they search for known (e.g. effects) or unknown patterns (e.g. biases). The current classical tools (e.g. graphpad, excel) are not made to visualize large complex data sets. Tercen __cross tab  window__ allows researchers to interact and configure complex views.
+
 ## Cross-tab window
 
-The cross-tab window is opened by double clicking on a __data step__ in a __workflow__. The cross-tab window allows the researchers to create any visual by dragging-n-dropping factors to the appropiate section of the cross-tab window.
+The __cross-tab window__ is opened by double clicking on a __data step__ in a __workflow__. The __cross-tab window__ allows the researchers to create any visual by dragging-n-dropping factors to the appropiate section of the cross-tab window.
 
 The cross-tab windows is composed of six sections.
 
-Section | Location | Description |
-:-----  | :------- |:------- |
+Section   | Location | Description |
+:-----    | :------- |:------- |
 `factor`  | top left     | shows the available factors
 `filter`  | top middle   | defines the filters for the view in graph section
 `layer`   | middle middle| defines the layers for the view in graph section
@@ -39,6 +41,8 @@ __Layers__ are created in the cross-tab window. Each created __layer__ has the s
 ## Filters
 
 __Filters__ are found in the `filter` zone of the cross-tab window. The filter allows the researcher to remove data from the view. A __filter__ is created, modified or deleted.
+To create a filter you require to drag over a factor from the factor section to the filter section. The filter is configurable by double clicking on the filter itself. A previously defined filter may also be added by click on the `+` button. A list of previously defined filters appear and can be selected.
+
 
 ## Multi-pairwise
 

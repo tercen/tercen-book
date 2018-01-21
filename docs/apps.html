@@ -240,7 +240,7 @@
 <pre><code>source(&#39;~/.Rprofile&#39;)
 options(&quot;tercen.workflowId&quot;= &quot;76a4dcffd551802fd23d42bd862e8300&quot;)
 options(&quot;tercen.stepId&quot;= &quot;3-2&quot;)</code></pre>
-<p>The values indicated above are examples. The real values come from the next section</p></li>
+<p>The values indicated above are examples. The real values come from the next section.</p></li>
 </ul></li>
 </ul>
 <p><strong>Writing and testing the operator app</strong>:</p>
@@ -248,7 +248,12 @@ options(&quot;tercen.stepId&quot;= &quot;3-2&quot;)</code></pre>
 <li>Develop and test the <strong>operator app</strong> within the <code>workspace.R</code> file</li>
 <li>Determine the input data for the <strong>operator app</strong>
 <ul>
-<li>Go to Tercen and configure a project view in cross-tab window of the <strong>data step</strong></li>
+<li>Start Tercen</li>
+<li>Use the browser to go to <a href="http://127.0.0.1:5400" class="uri">http://127.0.0.1:5400</a></li>
+<li>Login</li>
+<li>Go to the workflow which contains the data</li>
+<li>Add a <strong>data step</strong></li>
+<li>Configure a project view in cross-tab window of the <strong>data step</strong></li>
 <li>Record the <strong>stepId</strong> and <strong>workflowId</strong> of this <strong>data step</strong></li>
 <li>Get data using the tercen api <code>tercen::ctx$select</code></li>
 <li>Execute the <strong>operator app</strong> locally</li>
