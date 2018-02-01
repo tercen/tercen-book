@@ -1,14 +1,19 @@
 # Team Projects {#projects}
 
-Science is performed by teams on research projects. Both concepts are integrated into __Tercen__. Reseachers are member of a __team__. The __team__ creates __project__. The __project__ determines what type of __data__ and __workflows__ the team work on for the research study. Without a __project__ a researcher cannot upload data or create a __workflow__.
+Science is performed by teams in the context of research projects. Both concepts are integrated into __Tercen__. Reseachers are member of a __team__. The __team__ creates __project__. The __project__ determines what type of __data__ and __workflows__ the team work on for the research study. Without a __project__ a researcher cannot upload data or create a __workflow__.
 
-In summary, a __project__ is:
+A __team__ is:
+
+* created by an __admin__
+* a set of __users__ (i.e. researchers)
+* a set of __apps__ (called __my library__)
+
+A __project__ is:
 
 * created by a __team__
 * a set of __data__ (i.e. __tables__)
 * a set of __workflows__
-* a set of __apps__ (called an __app library__)
 
-A reasearcher may be a member of many __teams__ and __projects__.
+A __user__ (i.e. reasearcher) may be a member of many __teams__ and therefore access many __projects__.
 
 <center>![](images\share.png)</center>

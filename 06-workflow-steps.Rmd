@@ -1,6 +1,7 @@
 # Workflow and Steps {#workflow-and-steps}
+Researchers want to control the data processing steps involved in the analyis of large complex data. A record of what analysis is performed is key for reproducible science. Hence Tercen has a graphical workflow editor. This allows researchers to use pre-defined workflows (e.g. taken from the app library) or if the researcher wishes, can create workflows from scratch.
 
-A workflow consists of a series of steps.Each step is explained below.
+A workflow consists of a series of steps. Each step is explained below.
 
 __Table step__
 
@@ -41,4 +42,8 @@ Used as the first step in an app workflow.
 __Output step__
 
 Used as the last step in an app workflow.
+
+__App step__
+
+Is a generic term for a customized step. They are usually taken from the __app library__.
 

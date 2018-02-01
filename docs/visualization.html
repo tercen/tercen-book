@@ -143,7 +143,7 @@
             <section class="normal" id="section-">
 <div id="visualization" class="section level1">
 <h1><span class="header-section-number">Chapter 4</span> Visualization</h1>
-<p>Researchers want to control the data they generate. Hence visualization of the data is key to getting an overview of the data. In such data, they search for known (e.g. effects) or unknown patterns (e.g. biases). The current classical tools (e.g. graphpad, excel) are not made to visualize large complex data sets. Tercen <strong>cross tab window</strong> allows researchers to interact and configure complex views.</p>
+<p>Researchers want to control the data they generate. Hence visualization of the data is key. Researcher want the overview and they search for known (e.g. effects) or unknown patterns (e.g. biases) in the data. The current classical tools (e.g. graphpad, excel) are not made to visualize large complex data sets. Tercen <strong>cross tab window</strong> allows researchers to interact and configure complex views.</p>
 <div id="cross-tab-window" class="section level2">
 <h2><span class="header-section-number">4.1</span> Cross-tab window</h2>
 <p>The <strong>cross-tab window</strong> is opened by double clicking on a <strong>data step</strong> in a <strong>workflow</strong>. The <strong>cross-tab window</strong> allows the researchers to create any visual by dragging-n-dropping factors to the appropiate section of the cross-tab window.</p>
@@ -249,7 +249,8 @@
 </div>
 <div id="multi-pairwise" class="section level2">
 <h2><span class="header-section-number">4.4</span> Multi-pairwise</h2>
-<p><strong>Multi-pairwise</strong> is configured in the cross-tab window. It is created by dragging-n-dropping the same factor in the <code>row</code> zone and in the <code>column</code> zone. Note, a factor requires to be defined in the <code>label</code> zone. This allows the projection to know what factor separates data points in the pairwise plot.</p>
+<p>Researchers typically compare conditions using a scatter plots. These plot are often repeated over and over again, imagine if researcher could generate many scatter plots, for all the conditions, in one go. This is possible with the <strong>multi-pairwise</strong> view.</p>
+<p><strong>Multi-pairwise</strong> is configured in the <strong>cross-tab window</strong>. It is created by dragging-n-dropping the same factor in the <code>row</code> zone and in the <code>column</code> zone. Note, a factor requires to be defined in the <code>label</code> zone. This allows the projection to know what factor separates data points in the pairwise plot.</p>
 <p>A typically configuration example is when researchers are comparing different gene measurements in different samples and wish to have a sample to sample pairwise plot. The factor (say <code>sample_id</code>), representing the sample, is placed in the <code>row</code> and <code>column</code> zone. The factor (say <code>measurement</code>) representing the values is placed in the <code>y-axis</code> zone. The factor (say <code>gene_id</code>), representing the different genes which were measured, is placed in the <code>label</code> zone.</p>
 </div>
 <div id="examples" class="section level2">

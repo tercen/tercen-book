@@ -1,6 +1,5 @@
 # Visual computation {#visual-computation}
-
-An outline of how flexible and interactable a visualizaton is constructed with the projections in the cross-tab. A projection is also a computation in what we call **WYSIWYC**, **W** hat **Y**ou **S**ee **I**s **W**hat **Y**ou **C**ompute.
+Researchers want to control the data they generate. Hence easily performing any computing on the data is key. In a previous chapter we discussed the cross tab window. Its flexibility and interactability are important features to create any visualization the researcher desires. The __cross tab window__ is also capable of computing, in what we call **WYSIWYC**, **W** hat **Y**ou **S**ee **I**s **W**hat **Y**ou **C**ompute.
 
 Every view is potentially a computation. You require to select an __operator__ to compute on the choosen projection. 
 

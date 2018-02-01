@@ -2,7 +2,7 @@
 
 Researchers require to add extra information into their data analysis. This is usually extra annotation or even data from an external source (i.e. database). This is effectively a join between two data sets.
 
-The __data step__ called __join left__ and __join right__ are used for this. The extra data requires to be uploaded first. This is done using the standard method of uploading to Tercen.
+The __data step__ called __join left__ and __join right__ are used for this. The extra data requires to be uploaded first. This is done using the standard method of uploading to Tercen.å
 
 <center>![](images\workflow_join.png)</center>
 
