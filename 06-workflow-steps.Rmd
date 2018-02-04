@@ -47,3 +47,6 @@ __App step__
 
 Is a generic term for a customized step. They are usually taken from the __app library__.
 
+__Export step__
+
+Used to export the result of a __data step__ as a __table__

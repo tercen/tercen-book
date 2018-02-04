@@ -1,4 +1,5 @@
 # Sharing analysis {#sharing-analysis}
+Researchers require to share their analysis with the team. Using a URL is one easy way to give the complete analysis to another researcher without having to attach a large file to an email.
 
 All entities in Tercen, i.e. data, steps, views, workflows, groups, projects are shared via a permanent URL.
 

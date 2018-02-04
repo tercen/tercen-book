@@ -1,5 +1,5 @@
 # Data provenance {#data-provenance}
-
+Reproducible science necessitates knowing how all computed values where in fact computed. This ability is at the hart of the methodology section in a publication.
 Data provenance allows researchers to take a computed value and trace back to the original data sources to investigate how a value was computed.
 
 This is a fundamental aspect of reproducible science.

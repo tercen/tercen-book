@@ -86,7 +86,12 @@
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#way-forward"><i class="fa fa-check"></i>Way forward</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="tercen-features.html"><a href="tercen-features.html"><i class="fa fa-check"></i><b>2</b> Tercen features</a></li>
-<li class="chapter" data-level="3" data-path="concepts.html"><a href="concepts.html"><i class="fa fa-check"></i><b>3</b> Concepts</a></li>
+<li class="chapter" data-level="3" data-path="concepts.html"><a href="concepts.html"><i class="fa fa-check"></i><b>3</b> Concepts</a><ul>
+<li class="chapter" data-level="3.1" data-path="concepts.html"><a href="concepts.html#what-is-a-measurement-variable-and-observation"><i class="fa fa-check"></i><b>3.1</b> What is a measurement, variable and observation?</a></li>
+<li class="chapter" data-level="3.2" data-path="concepts.html"><a href="concepts.html#what-is-visual-computation"><i class="fa fa-check"></i><b>3.2</b> What is visual computation?</a></li>
+<li class="chapter" data-level="3.3" data-path="concepts.html"><a href="concepts.html#what-is-a-step-app-and-workflow"><i class="fa fa-check"></i><b>3.3</b> What is a step, app and workflow?</a></li>
+<li class="chapter" data-level="3.4" data-path="concepts.html"><a href="concepts.html#what-is-an-universal-table-and-relatonal-algebra"><i class="fa fa-check"></i><b>3.4</b> What is an universal table and <strong>relatonal algebra</strong>?</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="visualization.html"><a href="visualization.html"><i class="fa fa-check"></i><b>4</b> Visualization</a><ul>
 <li class="chapter" data-level="4.1" data-path="visualization.html"><a href="visualization.html#cross-tab-window"><i class="fa fa-check"></i><b>4.1</b> Cross-tab window</a></li>
 <li class="chapter" data-level="4.2" data-path="visualization.html"><a href="visualization.html#layers"><i class="fa fa-check"></i><b>4.2</b> Layers</a></li>
@@ -143,8 +148,61 @@
             <section class="normal" id="section-">
 <div id="concepts" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Concepts</h1>
-<p>The important concepts of <strong>Tercen</strong> are covered in this chapter. The concepts help in the understanding the logic behind <strong>Tercen</strong>. It allows users to visual interact and define a projection for visualization and computation. For those readers who are interested, these projection are in fact using <strong>relational algebra</strong>. Even though the data used for the projection may be from different tables, the user sees only one table (called the <strong>universal table</strong>).</p>
+<p>Spending some time on the important concepts helps in the understanding the logic behind <strong>Tercen</strong>. The following questions highlight some core concepts.</p>
+<div id="what-is-a-measurement-variable-and-observation" class="section level2">
+<h2><span class="header-section-number">3.1</span> What is a measurement, variable and observation?</h2>
+<p>It may sound like an obvious questions but it goes to the heart of Tercen. It also determines how a <strong>measurement</strong> is represented. Think of an lab instrument generating <strong>measurements</strong>, say a protein or gene value, <code>mt</code>, and each <strong>measurement</strong> has an annotation context, i.e. sample name (<code>sn</code>), temperature(<code>tm</code>), time(<code>ti</code>), Ph (<code>Ph</code>) etc. So each <code>mt</code> (i.e. a <strong>measurement</strong>) is annotated with many other values <code>sn</code>, <code>tm</code>, <code>ti</code>, <code>Ph</code>. Describing <code>mt</code> can be done by using a long format such as:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><code>mt</code></th>
+<th align="left"><code>sn</code></th>
+<th align="left"><code>tm</code></th>
+<th align="left"><code>ti</code></th>
+<th align="left"><code>Ph</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2.3</td>
+<td align="left">sample1</td>
+<td align="left">37</td>
+<td align="left">60</td>
+<td align="left">7.7</td>
+</tr>
+<tr class="even">
+<td align="left">4.1</td>
+<td align="left">sample2</td>
+<td align="left">37</td>
+<td align="left">70</td>
+<td align="left">8.0</td>
+</tr>
+<tr class="odd">
+<td align="left">2.0</td>
+<td align="left">sample3</td>
+<td align="left">37</td>
+<td align="left">80</td>
+<td align="left">7.0</td>
+</tr>
+</tbody>
+</table>
+<p>This format may seem verbose but it is complete. Each <strong>measurement</strong> is recorded with a full experimental context of annotation values. A <strong>varaible</strong> is <code>mt</code> itself and everytime it is measured it is called an <strong>observation</strong>. In the above example there is one <strong>variable</strong> <code>mt</code>, three <strong>observations</strong>, and three <strong>measurements</strong>.</p>
+<p>In Tercen <strong>measurements</strong> are usually on the y-axis of most projection views (defined by the cross-tab window) and the others are used to define the row, col, x-axis etc.</p>
+<p>Statistician traditionally use column headers to describe a <strong>variable</strong> and rows to describe an <strong>observation</strong>. The Tercen data model allows the <strong>measurement</strong>, <strong>variable</strong> and <strong>observation</strong> to be positioned anywhere (col, row, x-axis, y-axis, color, label) and therefore there is great flexibility. However most Tercen operators require to know what is the <strong>variable</strong> in order to compute the appropriate results. Therefore we have adopted the convention of using <strong>variable</strong> on the row. This is inspired by the genomics world where the gene (i.e. a <strong>variable</strong>) is a row and the samples are the <strong>observation</strong>. Most Tercen operators or apps use the row as a <strong>variable</strong> and columns as <strong>observations</strong> and the y-axis for the <strong>measurement</strong>. The documentation associated with the operator indicates what the operator is expecting in terms of position and input. Note, there are operators which do not follow these conventions.</p>
+</div>
+<div id="what-is-visual-computation" class="section level2">
+<h2><span class="header-section-number">3.2</span> What is visual computation?</h2>
+<p>It allows users to visual interact and define a projection for visualization and computation (using the cross-tab window). For those readers who are interested, these projections are in fact using a <strong>universal table</strong> and <strong>relational algebra</strong> (see below).</p>
+</div>
+<div id="what-is-a-step-app-and-workflow" class="section level2">
+<h2><span class="header-section-number">3.3</span> What is a step, app and workflow?</h2>
+<p>An individual <strong>step</strong> is a projection and potentially a computation of the data. Projections are defined visually using the cross-tab window of a <strong>step</strong>. A __workflow app_ is composed of several steps. A <strong>workflow</strong> is composed of several <strong>apps</strong> and/or <strong>steps</strong>.</p>
+</div>
+<div id="what-is-an-universal-table-and-relatonal-algebra" class="section level2">
+<h2><span class="header-section-number">3.4</span> What is an universal table and <strong>relatonal algebra</strong>?</h2>
+<p>A <strong>universal table</strong> is an abstract table. It presents itself as one table eventhough underneath it is composed of several actual tables. The <strong>universal table</strong> allows Tercen to always represent a unified data model throughout the Tercen workflow and visual projections. The underlying tables are all linked using <strong>relational algebra</strong>.</p>
 
+</div>
 </div>
             </section>
 
