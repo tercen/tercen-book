@@ -12,6 +12,8 @@ Researchers who wish to interact with Tercen programmatically through the API ca
 
 Tercen itself auto-generates the API for the different programming languages. At the moment we auto-generated a package for the R programming language. We will rapidly auto-generate for Python and Matlab very soon (during summer of 2018). if you have an immediate need, do not hesitate to contact us by email to `info@tercen.com` with the request.
 
-The [`teRcen`](https://github.com/tercen/teRcen)  R package on the Tercen github allows complete programmatic control. For the full API please refer to the [teRcen R package](https://github.com/tercen/teRcen) 
+The [`teRcen`](https://github.com/tercen/teRcen)  R package on the Tercen github allows complete programmatic control. For the full API please refer to the [teRcen R package](https://github.com/tercen/teRcen).
+
+Note: when using R Studio as a programming environment, it has a useful auto-complete feature. When you have loaded the teRcen R package, the available methods for tercen client and tercen query object will automatically appear as you type. It is a handy manner to discover the different methods in the Tercen API.
 
 <center>![](images\API.png)</center>
