@@ -1,16 +1,15 @@
 # Programmatic access {#programmatic-access}
-Researchers who wish to interact with Tercen programmatically to, for example, automate a Tercen analysis pipeline. Tercen auto-generates these API for the different programming languages. At the moment we auto-generated a package for the R programming language. We will rapidly auto-generate for Python and Matlab very soon (before summer of 2018).
+Researchers who wish to interact with Tercen programmatically can do so. Any functionality available graphically in Tercen is also available programmatically. This powerful capability means researchers can automate the following:
 
-The [`teRcen`](https://github.com/tercen/teRcen)  R package on the Tercen github allows complete programmatic control. Any functionality available graphically in Tercen is also available pro grammatically. This includes, for example:
+* automate the uploading data
+* automate the creation of workflows
+* automate the execution of workflows (i.e. piplines)
+* automate the creation of teams and users
+* automate the creation of projects
+* automate the creation of operators
 
-* uploading data
-* computing data
-* auto-generate a workflow
-* execute a workflow
-* creating groups and users
-* creating projects
-* creating operators
+Tercen itself auto-generates these API for the different programming languages. At the moment we auto-generated a package for the R programming language. We will rapidly auto-generate for Python and Matlab very soon (before summer of 2018). if you have an immediate need, do not hesistate to contact us by email to `info@tercen.com` with the request.
 
-For the full API please refer to the [teRcen R package](https://github.com/tercen/teRcen) 
+The [`teRcen`](https://github.com/tercen/teRcen)  R package on the Tercen github allows complete programmatic control. For the full API please refer to the [teRcen R package](https://github.com/tercen/teRcen) 
 
 <center>![](images\API.png)</center>
