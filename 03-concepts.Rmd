@@ -10,7 +10,7 @@ It may sound like an obvious questions but it goes to the heart of Tercen. It al
 4.1 | sample2 |37 |70 | 8.0|
 2.0 | sample3 |37 |80 | 7.0|
 
-This format may seem verbose but it is complete. Each __measurement__ is recorded with a full experimental context of annotation values. A __varaible__ is `mt` itself and everytime it is measured it is called an __observation__. In the above example there is one __variable__ `mt`, three __observations__, and three __measurements__. 
+This format may seem verbose but it is complete. Each __measurement__ is recorded with a full experimental context of annotation values. A __varaible__ is `mt` itself and every time it is measured it is called an __observation__. In the above example there is one __variable__ `mt`, three __observations__, and three __measurements__. 
 
 In Tercen __measurements__ are usually on the y-axis of most projection views (defined by the cross-tab window) and the others are used to define the row, col, x-axis etc. 
 
@@ -18,10 +18,11 @@ Statistician traditionally use column headers to describe a __variable__ and row
 
 
 ## What is visual computation?
-It allows users to visual interact and define a projection for visualization and computation (using the cross-tab window). For those readers who are interested, these projections are in fact using a __universal table__ and __relational algebra__ (see below). 
+It allows researchers to define a visual projection of the data, this projection also defines the computation to be executed. This done by interacting with the Tercen cross-tab window. For those readers who are interested, these projections are in fact using a __universal table__ and __relational algebra__ (see below). 
 
 ## What is a step, app and workflow?
-An individual __step__ is a projection and potentially a computation of the data. Projections are defined visually using the cross-tab window of a __step__. A  __workflow app_ is composed of several steps. A __workflow__ is composed of several __apps__ and/or __steps__.
+Typically, researchers perform many computations on their measurements. Tercen supports this by having the concepts of step, apps and workflows. An individual __step__ is a projection and potentially a computation of the data. Projections are defined visually using the cross-tab window associated with a __step__. A  __workflow app__ is composed of several __steps__. A __workflow__ is composed of several __apps__ and __steps__.
 
 ## What is an universal table and __relatonal algebra__?
-A __universal table__ is an abstract table. It presents itself as one table eventhough underneath it is composed of several actual tables. The __universal table__ allows Tercen to always represent a unified data model throughout the Tercen workflow and visual projections. The underlying tables are all linked using __relational algebra__.
+A researcher avoids complexity by using the Tercen's universal table concept. A __universal table__ is essentially an abstract table. It presents itself as one table even though underneath it is composed of several actual tables. The __universal table__ allows Tercen to always represent a unified data model throughout the Tercen workflow and visual projections. The underlying tables are all linked using __relational algebra__.
+The researchers can make these sophisticated relationships without requiring to understand __relational algebra__.
