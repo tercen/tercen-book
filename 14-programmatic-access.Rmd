@@ -1,14 +1,16 @@
 # Programmatic access {#programmatic-access}
-Researchers who wish to interact with Tercen programmatically can do so. Any functionality available graphically in Tercen is also available programmatically. This powerful capability means researchers can automate the following:
+Let's say researchers wish to execute the same Tercen workflow over and over again. They may even have an existing pipline they wish to convert into a Tercen workflow. Either way they are seeking a one button execution of a workflow from the security of their desktop PC. One method to do this is to use the Tercen API.
+
+Researchers who wish to interact with Tercen programmatically through the API can do so. Any functionality available graphically in Tercen is also available programmatically. This powerful capability means researchers can do the following:
 
 * automate the uploading data
 * automate the creation of workflows
-* automate the execution of workflows (i.e. piplines)
+* automate the execution of workflows (i.e. pipelines)
 * automate the creation of teams and users
 * automate the creation of projects
 * automate the creation of operators
 
-Tercen itself auto-generates these API for the different programming languages. At the moment we auto-generated a package for the R programming language. We will rapidly auto-generate for Python and Matlab very soon (before summer of 2018). if you have an immediate need, do not hesistate to contact us by email to `info@tercen.com` with the request.
+Tercen itself auto-generates the API for the different programming languages. At the moment we auto-generated a package for the R programming language. We will rapidly auto-generate for Python and Matlab very soon (during summer of 2018). if you have an immediate need, do not hesistate to contact us by email to `info@tercen.com` with the request.
 
 The [`teRcen`](https://github.com/tercen/teRcen)  R package on the Tercen github allows complete programmatic control. For the full API please refer to the [teRcen R package](https://github.com/tercen/teRcen) 
 
