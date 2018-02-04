@@ -24,7 +24,7 @@ A plug-in to Tercen. It can be an __operator__, __step__, __workflow app__, or _
 __App library__:
 A repository of Tercen __apps__. There are many repository locations, (e.g. github, team library). 
 
-__workflow__.
+__Workflow__:
 A sequence of __steps__ or __apps__ to achieve an analysis pipeline.
 
 __Workflow app__:

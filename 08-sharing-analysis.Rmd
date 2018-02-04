@@ -3,6 +3,7 @@ Researchers require to share their analysis with the team. Using a URL is one ea
 
 All entities in Tercen, i.e. data, steps, views, workflows, groups, projects are shared via a permanent URL.
 
-If sharing a URL is not possible for whatever reasons then a researcher exports a workflow as zip file. This zip file is sent to the other researchers which imports the workflows.
+If sharing a URL is not possible for whatever reasons then a researcher exports a workflow as a zip file. This zip file is sent to the other researchers who sebequently can import the workflow into their own project in Tercen.
+
 
 <center>![](images\share.png)</center>
