@@ -7,7 +7,7 @@ Released on: start of 2016
 
 __beta__
 
-Released on: start of 2017
+Released on: end of 2017
 
 * New server application, called Tercen_Server(beta)
 * Easy one button installation
