@@ -1,6 +1,6 @@
 ---
 title: "Tercen Book"
-author: "Faris Naji, Alexandre Maurel"
+author: "Tercen info"
 site: bookdown::bookdown_site
 documentclass: book
 output: bookdown::gitbook
