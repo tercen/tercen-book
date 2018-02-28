@@ -13,7 +13,7 @@ An app __operator__ performs a computation on the projection views in the cross-
 
 Typically a there is a hierarchy of apps where a __workflow__ contains __workflow apps__ and a __workflow app__ contains __operators__.
 
-A an example, think of an RNAseq app __workflow__ in which there is a PCA __workflow app__ and this in turn contains a PCA app __operator__.
+As an example, think of an RNAseq app __workflow__ in which there is a PCA __workflow app__ and this in turn contains a PCA __operator__.
 
 
 ## App libraries {-}
@@ -51,21 +51,30 @@ A Tercen operator is composed of three main activities:
 * Operating on the data
 * Returning the results
 
-The data is contained in each data step. Each data step contain the data in 
-three main tables:
+A Tercen operator requires a Tercen __data step__ in order to work. The operator is defined in a __data step__ and the __data step__ contains all that is necessary for the operator, namely structure data. The structure of the data becomes clear when you explore the table data structure of a __data step__. Go ahead and open a __data step__ and you will notice three vertical tabs on the left of the window. The first tab is the default view is called the __cross tab__ view. The other two are associated with data tables. For each __data step__ there are two tables tabs:
 
-* Row table
-* Column table
-* Cross-tab table
+* __Tables tab__ (i.e. the data input to the operator)
+* __Computed tables tab__ (i.e. the data output of the operator)
 
-Each table contains different data as a result of the definition of the cross-tab projection.
+Note: the __Computed tables tab__ only appears when the data step has been computed (i.e. the __data step__ has a green executed status)
 
-The cross-tab table contains the following important columns, as examples:
+Each table contains data as a result of the definition of the cross-tab view.
 
+The __Tables tab__ contain the following three tables:
+
+* __Main table__
+* __Row table__
+* __Col table__
+
+
+The __Main table__ contains the data to be used to compute. It is described using standard system names, usually beginning with a dot `.`, examples are
 ``.ri``  row index of data, represented by an integer
 
 ``.ci``  col index of data, represented by an integer
 
+The __Computed tables__ only appears when the data step is computed. It contains the following the results of the computation.
+
+If you are familiar with reading code then take some time to look at the operator code on the public tercen github. It gives a good outline on how operators are structured. Look at the file called `main.R` file. This is the key code for performing the operator.
 
 ## Tercen R package {-}
 There is currently an R package in the tercen repository to help in creating operators called [teRcen](https://github.com/tercen/teRcen) 
@@ -167,9 +176,8 @@ __Operator app examples:__
 
 An __operator app__ which performs computation follows either one of the following computing pattern :
 
-* per cell
 * per row
 * per col
-* per row and col
+* per row and per col (i.e. per cell)
 
 

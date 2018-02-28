@@ -75,5 +75,11 @@ __Single Scatter Plot__
 __Maps__
 <center> ![](images/ireland.png) </center>
 
+## Interacting with the cross-tab
+There are three ways to navigate the data
+* zooming
+* scrolling
+* gating
+
 
 <center>![](images\visual1.png)</center>

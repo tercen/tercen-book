@@ -1,0 +1,43 @@
+This suplementary material which may find its way into the book.
+
+# Relational Algebra
+Create by Codd 1970, good wikipedia page
+
+(https://en.wikipedia.org/wiki/Relational_algebra)
+
+## Standard relational algebra
+The terminology:
+
+A relationship is a table.
+
+Relation(a,b)   (i.e. a Table containing two columns a and b)
+```
+R(a,b)
+```
+
+Each row is unique.
+
+What are the standard relational algebra operations
+
+
+## Tercen relational algebra
+
+Representing the `gather` operation as unions:
+
+```
+Gather = Union(RenameVar(a,value,R(a)), RenameVar(b,value,R(b)))
+
+R(a,b)
+CR(mean,a)
+UniversalR = Join(R,CR,[a])
+CR2(median,b,a)
+UnivR2 = Join(UnivR, CR2, [a,b])
+
+UnivR3 = Gather(UnivR2, var, value,[median,mean])
+```
+
+The tercen optimizer:
+
+```
+Simplify(query,UnivR3) = CR
+```

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tercen Book</title>
   <meta name="description" content="This is a book about Tercen">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Tercen Book" />
   <meta property="og:type" content="book" />
@@ -98,6 +98,7 @@
 <li class="chapter" data-level="4.3" data-path="visualization.html"><a href="visualization.html#filters"><i class="fa fa-check"></i><b>4.3</b> Filters</a></li>
 <li class="chapter" data-level="4.4" data-path="visualization.html"><a href="visualization.html#multi-pairwise"><i class="fa fa-check"></i><b>4.4</b> Multi-pairwise</a></li>
 <li class="chapter" data-level="4.5" data-path="visualization.html"><a href="visualization.html#examples"><i class="fa fa-check"></i><b>4.5</b> Examples</a></li>
+<li class="chapter" data-level="4.6" data-path="visualization.html"><a href="visualization.html#interacting-with-the-cross-tab"><i class="fa fa-check"></i><b>4.6</b> Interacting with the cross-tab</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="visual-computation.html"><a href="visual-computation.html"><i class="fa fa-check"></i><b>5</b> Visual computation</a></li>
 <li class="chapter" data-level="6" data-path="workflow-and-steps.html"><a href="workflow-and-steps.html"><i class="fa fa-check"></i><b>6</b> Workflow and Steps</a></li>
@@ -155,7 +156,7 @@
 <p>An app <strong>workflow app</strong> is a mini workflow and allows a researcher to perform a set of computations and/or visualizations e.g. the researcher requires to perform a PCA including some automated visuals of the results. The researcher would install a PCA step app from the Tercen library.</p>
 <p>An app <strong>operator</strong> performs a computation on the projection views in the cross-tab window (e.g. a PCA function) e.g. the researcher requires to perform a simple PCA without any automated visuals. The researcher would install a PCA operator app from the Tercen library.</p>
 <p>Typically a there is a hierarchy of apps where a <strong>workflow</strong> contains <strong>workflow apps</strong> and a <strong>workflow app</strong> contains <strong>operators</strong>.</p>
-<p>A an example, think of an RNAseq app <strong>workflow</strong> in which there is a PCA <strong>workflow app</strong> and this in turn contains a PCA app <strong>operator</strong>.</p>
+<p>As an example, think of an RNAseq app <strong>workflow</strong> in which there is a PCA <strong>workflow app</strong> and this in turn contains a PCA <strong>operator</strong>.</p>
 <div id="app-libraries" class="section level2 unnumbered">
 <h2>App libraries</h2>
 <p>There is more than one app library. However the main publicly available library is called the <strong>Tercen app library</strong>. The other app libraries have different location and permission levels.</p>
@@ -204,16 +205,23 @@
 <li>Operating on the data</li>
 <li>Returning the results</li>
 </ul>
-<p>The data is contained in each data step. Each data step contain the data in three main tables:</p>
+<p>A Tercen operator requires a Tercen <strong>data step</strong> in order to work. The operator is defined in a <strong>data step</strong> and the <strong>data step</strong> contains all that is necessary for the operator, namely structure data. The structure of the data becomes clear when you explore the table data structure of a <strong>data step</strong>. Go ahead and open a <strong>data step</strong> and you will notice three vertical tabs on the left of the window. The first tab is the default view is called the <strong>cross tab</strong> view. The other two are associated with data tables. For each <strong>data step</strong> there are two tables tabs:</p>
 <ul>
-<li>Row table</li>
-<li>Column table</li>
-<li>Cross-tab table</li>
+<li><strong>Tables tab</strong> (i.e. the data input to the operator)</li>
+<li><strong>Computed tables tab</strong> (i.e. the data output of the operator)</li>
 </ul>
-<p>Each table contains different data as a result of the definition of the cross-tab projection.</p>
-<p>The cross-tab table contains the following important columns, as examples:</p>
-<p><code>.ri</code> row index of data, represented by an integer</p>
+<p>Note: the <strong>Computed tables tab</strong> only appears when the data step has been computed (i.e. the <strong>data step</strong> has a green executed status)</p>
+<p>Each table contains data as a result of the definition of the cross-tab view.</p>
+<p>The <strong>Tables tab</strong> contain the following three tables:</p>
+<ul>
+<li><strong>Main table</strong></li>
+<li><strong>Row table</strong></li>
+<li><strong>Col table</strong></li>
+</ul>
+<p>The <strong>Main table</strong> contains the data to be used to compute. It is described using standard system names, usually beginning with a dot <code>.</code>, examples are <code>.ri</code> row index of data, represented by an integer</p>
 <p><code>.ci</code> col index of data, represented by an integer</p>
+<p>The <strong>Computed tables</strong> only appears when the data step is computed. It contains the following the results of the computation.</p>
+<p>If you are familiar with reading code then take some time to look at the operator code on the public tercen github. It gives a good outline on how operators are structured. Look at the file called <code>main.R</code> file. This is the key code for performing the operator.</p>
 </div>
 <div id="tercen-r-package" class="section level2 unnumbered">
 <h2>Tercen R package</h2>
@@ -317,10 +325,9 @@ options(&quot;tercen.password&quot;=&quot;YYYY&quot;)</code></pre>
 <p><strong>Operator app examples:</strong></p>
 <p>An <strong>operator app</strong> which performs computation follows either one of the following computing pattern :</p>
 <ul>
-<li>per cell</li>
 <li>per row</li>
 <li>per col</li>
-<li>per row and col</li>
+<li>per row and per col (i.e. per cell)</li>
 </ul>
 
 </div>
