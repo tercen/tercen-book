@@ -22,6 +22,6 @@ Typically, researchers perform many computations on their measurements. Tercen s
 ## What is visual computation?
 It allows researchers to define a visual projection of the data, this projection also defines the computation to be executed. This done by interacting with the Tercen cross-tab window. For those readers who are interested, these projections are in fact using a __universal table__ and __relational algebra__ (see below). 
 
-## What is an universal table and __relatonal algebra__?
+## What is an universal table and __relational algebra__?
 A researcher avoids complexity by using the Tercen's universal table concept. A __universal table__ is essentially an abstract table. It presents itself as one table even though underneath it is composed of several actual tables. The __universal table__ allows Tercen to always represent a unified data model throughout the Tercen workflow and visual projections. The underlying tables are all linked using __relational algebra__.
 The researchers can make these sophisticated relationships without requiring to understand __relational algebra__.
