@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tercen Book</title>
   <meta name="description" content="This is a book about Tercen">
-  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
   <meta property="og:title" content="Tercen Book" />
   <meta property="og:type" content="book" />
@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="This is a book about Tercen" />
   
 
-<meta name="author" content="Tercen info">
+<meta name="author" content="Tercen support document">
 
 
 
@@ -117,6 +117,7 @@
 <li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#creating-a-step-app"><i class="fa fa-check"></i>Creating a step app</a></li>
 <li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#creating-a-workflow-app"><i class="fa fa-check"></i>Creating a workflow app</a></li>
 <li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#app-examples"><i class="fa fa-check"></i>App examples</a></li>
+<li class="chapter" data-level="13.1" data-path="apps.html"><a href="apps.html#app-versioning"><i class="fa fa-check"></i><b>13.1</b> App versioning</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="programmatic-access.html"><a href="programmatic-access.html"><i class="fa fa-check"></i><b>14</b> Programmatic access</a></li>
 <li class="chapter" data-level="15" data-path="deployment.html"><a href="deployment.html"><i class="fa fa-check"></i><b>15</b> Deployment</a><ul>
@@ -154,30 +155,25 @@
 <h2><span class="header-section-number">15.1</span> Cloud</h2>
 <p>When Tercen is running on servers in a remote data center, we consider this to a <strong>cloud deployment</strong>. There is a <strong>cloud deployment</strong> called <strong>TercenCloud</strong>. It is aimed for the public and is currently free. A private <strong>TercenCloud</strong> is also available but requires a request.</p>
 <p><strong>Public Cloud</strong></p>
-<p>The <strong>TercenCloud</strong> is found at: (<a href="http://www.tercen.com" class="uri">http://www.tercen.com</a>). Currently the cloud is running the alpha version of <strong>Tercen</strong>. It will be shortly upgraded.</p>
-<div class="figure">
-<img src="images/tercen_cloud.png" />
-
-</div>
+<p>The <strong>TercenCloud</strong> is found at: (<a href="http://www.tercen.com" class="uri">http://www.tercen.com</a>).
+Currently the cloud is running the beta version of <strong>Tercen</strong>.</p>
+<p><img src="images/tercen_cloud.png" /></p>
 <p><strong>Private Private Cloud</strong></p>
-<p>The tercen cloud private is tercen running on private servers on the cloud. These servers may be Amazon web services, for example. It is available on request to <code>info@tercen.com</code></p>
+<p>The tercen cloud private is tercen running on private servers on the cloud.
+These servers may be Amazon web services, for example.
+It is available on request to <code>info@tercen.com</code></p>
 <p><img src="images/tercen_private.png" /> <img src="images/amazon.png" /></p>
 </div>
 <div id="on-site" class="section level2">
 <h2><span class="header-section-number">15.2</span> On-site</h2>
-<p>The tercen on-site requires an install and is available by sending an email to <code>info@tercen.com</code>. Currently the on-site version are the beta version of tercen.</p>
+<p>The tercen on-site requires an install and is available by sending an email to <code>info@tercen.com</code>.
+Currently the on-site version are the beta version of tercen.</p>
 <p><strong>Desktop on-site</strong></p>
 <p>The desktop version is for a local on-site install on a user’s machine. This version is still capable of being a server to a group of users.</p>
-<div class="figure">
-<img src="images/tercen_desktop.png" />
-
-</div>
+<p><img src="images/tercen_desktop.png" /></p>
 <p><strong>Server on-site</strong></p>
-<p>The server version is for a on-site server install.</p>
-<div class="figure">
-<img src="images/tercen_server.png" />
-
-</div>
+<p>The server version is for a on-site server install. It is packaged as a docker version. The current version runs Linux, Mac, Windows.</p>
+<p><img src="images/tercen_server.png" /></p>
 <p><strong>Cluster on-site</strong></p>
 <p>The cluster version is for a high availability on-site server install.</p>
 <p><right><img src="images/tercen_cluster.png" /></right></p>
@@ -211,10 +207,11 @@ gitbook.start({
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",

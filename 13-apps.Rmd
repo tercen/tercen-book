@@ -80,9 +80,9 @@ If you are familiar with reading code then take some time to look at the operato
 There is currently an R package in the tercen repository to help in creating operators called [teRcen](https://github.com/tercen/teRcen) 
 
 ## Creating an operator app {-}
-Tercen allows programmers to easily build new operators from the comfort of their favorite interactive development environment (IDE). From the IDE it is possible to access all Tercen features. Access the input data and returning results is essential when developing your __operator app__ in the IDE on your local machine.  
+Tercen allows programmers to easily build new operators from the comfort of their favorite interactive development environment (IDE). From the IDE it is possible to access all Tercen features. The ability to access the input data (from Tercen) and returning results (to Tercen) is essential.  
 
-The ability to create a new Tercen operator requires basic programming skills and is straight forward.
+The ability to create a new Tercen operator requires basic programming skills.
 
 Here is a development process to create an __operator app__:
 
@@ -135,6 +135,8 @@ This can always re-init packrat by performing the following
     + Run `packrat::init` again
 * upload to github in a public repository, let call it the operator git repo.
 
+R operators require packages, especially the same version of packages you used when you developed. This package environment is managed by `packrat`. The ability to run an operator with exactly the same packages you used when you developed is essential for reproducible science.
+
 You can now install your __operator__  into your Tercen server via the github install menu from the __site library__ or any __project library__ 
 If you want it available to the Tercen community send an email to Tercen.
 Tercen administrator makes it available by modify app library on tercen github.
@@ -180,4 +182,6 @@ An __operator app__ which performs computation follows either one of the followi
 * per col
 * per row and per col (i.e. per cell)
 
-
+## App versioning
+In science, it is essential to reproduce the analysis you may have published many years ago. Tercen manages versions very tightly. This is particular important when you consider the three app layers in Tercen. Each layer requires vesioning. 
+Tercen manages the __workflow__ and __workflow apps__ using the metadata associated with both those apps. For __operator apps__ written in R, it uses the `packrat` package. `packrat` makes sure when the researchers chooses to use an operators from the __app library__ it uses exactly the same version of R packages used by the developer who developed the operator and uploaded it in the __app library__.

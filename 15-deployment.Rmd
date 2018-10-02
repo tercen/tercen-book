@@ -8,7 +8,7 @@ When Tercen is running on servers in a remote data center, we consider this to a
 __Public Cloud__
 
 The __TercenCloud__ is found at: (http://www.tercen.com).
-Currently the cloud is running the alpha version of __Tercen__. It will be shortly upgraded.
+Currently the cloud is running the beta version of __Tercen__.
 
 ![](images\tercen_cloud.png)
 
@@ -32,7 +32,7 @@ The desktop version is for a local on-site install on a user's machine. This ver
 
 __Server on-site__
 
-The server version is for a on-site server install.
+The server version is for a on-site server install. It is packaged as a docker version. The current version runs Linux, Mac, Windows.
 
 ![](images\tercen_server.png)
 

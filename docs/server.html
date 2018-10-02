@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tercen Book</title>
   <meta name="description" content="This is a book about Tercen">
-  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
 
   <meta property="og:title" content="Tercen Book" />
   <meta property="og:type" content="book" />
@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="This is a book about Tercen" />
   
 
-<meta name="author" content="Tercen info">
+<meta name="author" content="Tercen support document">
 
 
 
@@ -117,6 +117,7 @@
 <li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#creating-a-step-app"><i class="fa fa-check"></i>Creating a step app</a></li>
 <li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#creating-a-workflow-app"><i class="fa fa-check"></i>Creating a workflow app</a></li>
 <li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#app-examples"><i class="fa fa-check"></i>App examples</a></li>
+<li class="chapter" data-level="13.1" data-path="apps.html"><a href="apps.html#app-versioning"><i class="fa fa-check"></i><b>13.1</b> App versioning</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="programmatic-access.html"><a href="programmatic-access.html"><i class="fa fa-check"></i><b>14</b> Programmatic access</a></li>
 <li class="chapter" data-level="15" data-path="deployment.html"><a href="deployment.html"><i class="fa fa-check"></i><b>15</b> Deployment</a><ul>
@@ -149,13 +150,15 @@
             <section class="normal" id="section-">
 <div id="server" class="section level1">
 <h1><span class="header-section-number">Chapter 16</span> Running a server</h1>
-<p>If you require the on-site version of Tercen then send an email to <code>info@tercen.com</code>. Currently the on-site versions is the <strong>beta</strong> of Tercen.</p>
+<p>If you require the on-site version of Tercen then send an email to <code>info@tercen.com</code>.
+Currently the on-site versions is the <strong>beta</strong> of Tercen.</p>
 <div id="server-resources" class="section level2 unnumbered">
 <h2>Server resources</h2>
 <p>A Tercen server allows for multiple researchers using the same server. Each researcher is using CPU and Storage resources. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different categories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilization (i.e. 0,1,2) where 0 represents the lowest level of resource utilization. Ideally the right level of resources should be assigned for different users. A researcher who exceeds their limit gets an error. A resource utilization information bar is shown to each user in the graphical user interface. The bar indicates the level of resource utilization and the amount left.</p>
 <p>Server resources are configured using <code>config.yaml</code> file.</p>
 <p>Go to the folder named <code>resources\tercen</code> in the Tercen installation folder (usually <code>C:\Tercen</code>), in it there is a file called <code>config.yaml</code>.</p>
-<p>The file contains three profile levels: 0,1,2 Each user is associated with one of the levels. The default is 0 (the lowest level of resource allocation).</p>
+<p>The file contains three profile levels: 0,1,2
+Each user is associated with one of the levels. The default is 0 (the lowest level of resource allocation).</p>
 <table>
 <thead>
 <tr class="header">
@@ -248,10 +251,11 @@ gitbook.start({
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",

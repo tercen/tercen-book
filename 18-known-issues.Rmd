@@ -8,7 +8,8 @@ __Alpha__ known issues:
 * Cannot run python scripts
 
 __Beta__ known issues:
-The beta version of __Tercen__ is currently being tested.
+
+The beta version of __Tercen__ is currently being tested. We are looking for beta testers.
 
 
 <center>![](images/alpha2beta.png)</center>
