@@ -1,4 +1,5 @@
 # About the authors {-}
 
-It is tercen support document and many authors contributed to this book.
-We thank them all.
+This is tercen support document and many authors contributed to this book.
+We would like to thank them all.
+
