@@ -1,5 +1,5 @@
 # Workflow and Steps {#workflow-and-steps}
-Researchers want to control the data processing steps involved in the analyis of large complex data. A record of what analysis is performed is key for reproducible science. Hence Tercen has a graphical workflow editor. This allows researchers to use pre-defined workflows (e.g. taken from the app library) or if the researcher wishes, can create workflows from scratch.
+Researchers want to control the data processing steps involved in the analysis of large complex data. A record of what analysis is performed is key for reproducible science. Hence Tercen has a graphical workflow editor. This allows researchers to use pre-defined workflows (e.g. taken from the app library) or if the researcher wishes, can create workflows from scratch.
 
 A workflow consists of a series of steps. Each step is explained below.
 

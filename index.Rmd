@@ -32,7 +32,7 @@ The book has a chapter for each of the tool's main features. The final chapters 
 
 ## Acknowledgement {-}
 
-We would like to thank all the users for their feedback about __Tercen__. It has helped us improve __Tercen__.
+We would like to thank all the users for their feedback about __Tercen__. It really helped us improve __Tercen__.
 
 ## Typography conventions {-}
 

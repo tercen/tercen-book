@@ -1,10 +1,10 @@
 # Visualization
 
-Researchers want to control the data they generate. Hence visualization of the data is key. Researcher want the overview and they search for known (e.g. effects) or unknown patterns (e.g. biases) in the data. The current classical tools (e.g. graphpad, excel) are not made to visualize large complex data sets. Tercen __cross tab  window__ allows researchers to interact and configure complex views.
+Researchers want to control the data they generate. Hence visualization of the data is key. Researcher want the overview and they search for known (e.g. effects) or unknown patterns (e.g. biases) in the data. The current classical tools (e.g. GraphPad, excel) are not made to visualize large complex data sets. Tercen __cross tab  window__ allows researchers to interact and configure complex views.
 
 ## Cross-tab window
 
-The __cross-tab window__ is opened by double clicking on a __data step__ in a __workflow__. The __cross-tab window__ allows the researchers to create any visual by dragging-n-dropping factors to the appropiate section of the cross-tab window.
+The __cross-tab window__ is opened by double clicking on a __data step__ in a __workflow__. The __cross-tab window__ allows the researchers to create any visual by dragging-n-dropping factors to the appropriate section of the cross-tab window.
 
 The cross-tab windows is composed of six sections.
 
@@ -75,11 +75,13 @@ __Single Scatter Plot__
 __Maps__
 <center> ![](images/ireland.png) </center>
 
-## Interacting with the cross-tab
-There are three ways to navigate the data
-* zooming
+## Navigating the data in the cross-tab
+Here are the main navigation modes to move around in the data:
+
+* zooming in and out
 * scrolling
-* gating
+
+
 
 
 <center>![](images\visual1.png)</center>

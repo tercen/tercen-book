@@ -2,7 +2,7 @@
 Spending some time on the important concepts helps in the understanding the logic behind __Tercen__.  The following questions highlight some core concepts.
 
 ## What is a measurement, variable and observation?
-It may sound like an obvious questions but it goes to the heart of Tercen. It also determines how a __measurement__ is represented. Think of a laboratory instrument generating __measurements__, say a protein or gene value `mt`, and each __measurement__ has an annotation context, i.e. sample name (`sn`), temperature(`tm`), time(`ti`), Ph (`Ph`) etc. So each `mt` (i.e. a __measurement__) is annotated with many other values `sn`, `tm`, `ti`, `Ph`. Describing `mt` can be done by using a long format such as:
+What is a measurement, variable and observation? This question may have an answer so obvious but it goes to the structural heart of Tercen. Tercen takes a very __measurement__ eccentric structure. For example, think of a laboratory instrument generating __measurements__, say a protein or gene measurement value `mt`, and each __measurement__ is taken with an annotation context, i.e. the sample name (`sn`), the temperature(`tm`), the time(`ti`), the Ph (`Ph`) etc. So each `mt` (i.e. a __measurement__) value is annotated with many other values `sn`, `tm`, `ti`, `Ph`. Describing `mt` can be done by using a data table using a long format such as:
 
 `mt`| `sn`  |`tm` |`ti` |`Ph` |
 :---| :---- |:--- |:--- |:--- |
@@ -10,11 +10,13 @@ It may sound like an obvious questions but it goes to the heart of Tercen. It al
 4.1 | sample2 |37 |70 | 8.0|
 2.0 | sample3 |37 |80 | 7.0|
 
-Each row represents an __observation__. This format may seem verbose but it is `measurement` centric and comes with the complete annotation of each `measurement` (i.e. rows). Tercen uses such a row like structure itself. Each __measurement__ is recorded with a full experimental context of annotation values. A __varaible__ is `mt`. In the above example there is one __variable__ `mt`, three __observations__, and three __measurements__. 
+Each row represents a individual measurement with all its corresponding annotation values. The number of __observations__ are the number of rows. The number of columns is the number of __variables__. This format may seem verbose but it is `measurement` centric and comes with the complete annotation of each `measurement` (i.e. rows). Internally Tercen uses such a row like structure. Each __measurement__ is recorded with a full experimental context of annotation values. In the above example there is one measurement __variable__ `mt`, three __observations__ and four annotation __variables__ in one data table.
+
+Tercen is geared to work with __measurements__. Visuals and computations are performed on __measurements__. Remembering this helps in understanding Tercen.
 
 In Tercen __measurements__ are usually on the y-axis of most projection views (defined by the cross-tab window) and the others are used to define the row, col, x-axis etc. 
 
-Statistician traditionally use column headers to describe a __variable__ and rows to describe an __observation__. The Tercen data model allows the __measurement__, __variable__ and __observation__ to be positioned anywhere (col, row, x-axis, y-axis, color, label) and therefore there is great flexibility. However most Tercen operators require to know what is the __variable__ in order to compute the appropriate results. Therefore we have adopted the convention of using __variable__ on the row. This is inspired by the genomics world where the gene (i.e. a __variable__) is a row and the samples are the __observation__. Most Tercen operators or apps use the row as a __variable__ and columns as __observations__ and the y-axis for the __measurement__. The documentation associated with the operator indicates what the operator is expecting in terms of position and input. Note, there are operators which do not follow these conventions.
+Statistician traditionally use column headers to describe a __variable__ and rows to describe an __observation__. The Tercen data model allows the __measurement__, __variable__ and __observation__ to be positioned anywhere in the visuals (col, row, x-axis, y-axis, color, label) and therefore there is great flexibility. However most Tercen operators require to know what is the __variable__ in order to compute the appropriate results. Therefore we have adopted the convention of using __variable__ on the row. This is inspired by the genomics world where the gene (i.e. a __variable__) is a row and the samples are the __observation__. Most Tercen operators or apps use the row as a __variable__ and columns as __observations__ and the y-axis for the __measurement__. The documentation associated with the operator indicates what the operator is expecting in terms of position and input. Note, there are operators which do not follow these conventions.
 
 ## What is a step, app and workflow?
 Typically, researchers perform many computations on their measurements. Tercen supports this by having the concepts of step, apps and workflows. An individual __step__ is a projection and potentially a computation of the data. Projections are defined visually using the cross-tab window associated with a __step__. A  __workflow app__ is composed of several __steps__. A __workflow__ is composed of several __apps__ and __steps__.
@@ -22,6 +24,6 @@ Typically, researchers perform many computations on their measurements. Tercen s
 ## What is visual computation?
 It allows researchers to define a visual projection of the data, this projection also defines the computation to be executed. This done by interacting with the Tercen cross-tab window. For those readers who are interested, these projections are in fact using a __universal table__ and __relational algebra__ (see below). 
 
-## What is an universal table and __relatonal algebra__?
+## What is an universal table and __relational algebra__?
 A researcher avoids complexity by using the Tercen's universal table concept. A __universal table__ is essentially an abstract table. It presents itself as one table even though underneath it is composed of several actual tables. The __universal table__ allows Tercen to always represent a unified data model throughout the Tercen workflow and visual projections. The underlying tables are all linked using __relational algebra__.
 The researchers can make these sophisticated relationships without requiring to understand __relational algebra__.

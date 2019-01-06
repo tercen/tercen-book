@@ -1,19 +1,19 @@
 # Apps (i.e. plug-ins) {#apps}
-Lets say a researcher begins a brand new research project and requires to analyze many RNAseq measurements. The researcher opens Tercen and proceeds to browse the Tercen library for a relevant workflow and eventually discovers a workflow app called "RNAseq" and installs it and voilà the research can begin. This is the concept of an __app__. An __app__ is a sort of plug-in, just like i-phone apps.
+Lets say a researcher begins a brand new research project and requires to analyze many RNAseq measurements. The researcher opens Tercen and proceeds to browse the Tercen library for a relevant workflow and eventually discovers a workflow template called "RNAseq" and installs it and voilà the research can begin. This is the concept of an __app__. An __app__ is a sort of plug-in, just like an iPhone app.
 
-There are currently three types of apps: __workflows__ (e.g. RNAseq), __workflow apps__ (e.g. two group comparison, PCA), and __operators__ (e.g. mean, PCA, t-test). Each __app__ has an __app version__ and is located in an __app library__. 
+There are currently three types of apps: __template app_ (e.g. RNAseq), __workflow app__ (e.g. two group comparison, PCA), and __operator app__ (e.g. mean, PCA, t-test). Each __app__ has an __app version__ and is located in an __app library__. 
 
 The three types of __apps__ including some examples are:
 
-An app __workflow__ is a type of template data analysis pipeline and it allows a researcher to start a complete standard analysis defined by the template (e.g. a RNAseq workflow, or a bioconductor workflow). The researcher would install a RNAseq workflow app from the Tercen library.
+A __template app__ is a type of template data analysis pipeline and it allows a researcher to start a complete standard analysis defined by the template (e.g. a RNAseq workflow, or a bioconductor workflow). The researcher would install a RNAseq workflow app from the Tercen library.
 
-An app __workflow app__ is a mini workflow and allows a researcher to perform a set of computations and/or visualizations e.g. the researcher requires to perform a PCA including some automated visuals of the results. The researcher would install a PCA step app from the Tercen library.
+A __workflow app__ is a mini workflow and allows a researcher to perform a set of computations and/or visualizations e.g. the researcher requires to perform a PCA including some automated visuals of the results. The researcher would install a PCA step app from the Tercen library.
 
-An app __operator__ performs a computation on the projection views in the cross-tab window (e.g. a PCA function) e.g. the researcher requires to perform a simple PCA without any automated visuals. The researcher would install a PCA operator app from the Tercen library.
+A __operator app__ performs a computation on the projection views in the cross-tab window (e.g. a PCA function) e.g. the researcher requires to perform a simple PCA without any automated visuals. The researcher would install a PCA operator app from the Tercen library.
 
-Typically a there is a hierarchy of apps where a __workflow__ contains __workflow apps__ and a __workflow app__ contains __operators__.
+Typically a there is a hierarchy of apps where a __template app__ contains __workflow app__ and a __workflow app__ contains __operator app__.
 
-As an example, think of an RNAseq app __workflow__ in which there is a PCA __workflow app__ and this in turn contains a PCA __operator__.
+As an example, think of an RNAseq app __template app__ in which there is a PCA __workflow app__ and this in turn contains a PCA __operator app__.
 
 
 ## App libraries {-}
@@ -33,7 +33,7 @@ A library consists of a set of __apps__ and their __versions__.
 
 __Tercen app library:__
 
-All public Tercen operators and apps are on a tercen github. 
+All public Tercen operators and apps are found on the (tercen github)[https://github.com/tercen]. 
 
 The contents of the public Tercen app library are found in a json file in [github app library](https://github.com/tercen/app-library)
 
@@ -43,12 +43,11 @@ The public operators and apps are also found on the Tercen area, see (https://gi
 
 A researcher installs an app by sourcing it from any of the libraries (tercen app library, site library, my library) or from a git repository.
 
-
 ## Structure of an operator app {-}
 A Tercen operator is composed of three main activities:
 
 * Getting the data
-* Operating on the data
+* Operating on the data 
 * Returning the results
 
 A Tercen operator requires a Tercen __data step__ in order to work. The operator is defined in a __data step__ and the __data step__ contains all that is necessary for the operator, namely structure data. The structure of the data becomes clear when you explore the table data structure of a __data step__. Go ahead and open a __data step__ and you will notice three vertical tabs on the left of the window. The first tab is the default view is called the __cross tab__ view. The other two are associated with data tables. For each __data step__ there are two tables tabs:
@@ -67,17 +66,21 @@ The __Tables tab__ contain the following three tables:
 * __Col table__
 
 
-The __Main table__ contains the data to be used to compute. It is described using standard system names, usually beginning with a dot `.`, examples are
+The __Main table__ contains the data to be used to compute in __long format__. Each row represents a value and the column names are a mixture of the the original table names and Tercen system column names. The Tercen system table names are there for the correct operation of Tercen and are automatically added by Tercen. They usually begin with a dot `.`, examples are:
+
 ``.ri``  row index of data, represented by an integer
 
 ``.ci``  col index of data, represented by an integer
+
+Using these table column names you can see the structure of Tercen and how Tercen 'thinks'.
 
 The __Computed tables__ only appears when the data step is computed. It contains the following the results of the computation.
 
 If you are familiar with reading code then take some time to look at the operator code on the public tercen github. It gives a good outline on how operators are structured. Look at the file called `main.R` file. This is the key code for performing the operator.
 
 ## Tercen R package {-}
-There is currently an R package in the tercen repository to help in creating operators called [teRcen](https://github.com/tercen/teRcen) 
+There is currently an R package in the tercen repository to help in creating R operators called [teRcen](https://github.com/tercen/teRcen).
+If you wish to use other programming languages then it is possible by using the Tercen API directly. The tercen R package is purely a wrapper package for the Tercen API.
 
 ## Creating an operator app {-}
 Tercen allows programmers to easily build new operators from the comfort of their favorite interactive development environment (IDE). From the IDE it is possible to access all Tercen features. The ability to access the input data (from Tercen) and returning results (to Tercen) is essential.  
@@ -149,28 +152,30 @@ options("tercen.password"="YYYY")
 ```
 where `XXXX` and `YYYY` are the appropriate username and password of the developer.
 
-## Creating a step app {-}
-* Make a workflow first
-* Save the workflow
-* Set the property of the workflow to “step”
-* Download the zip of the __step app__
-* Unzip the folder
-* Add `README.md` file
-* Add `.gitignore` file
-* Create a git repository for the new __step app__
-* Upload the files to the new __step app__ git repository
-
-
 ## Creating a workflow app {-}
 * Make a workflow first
 * Save the workflow
-* Set the property of the workflow to "workflow"
-* Download the zip of the  __workflow app__
+* Set the property of the workflow to “app”
+* Download the workflow (as zip) of the __step app__
 * Unzip the folder
 * Add `README.md` file
 * Add `.gitignore` file
-* Create a git repository for the new __workflow app__ git repository
+* Choose a repsoitory name and add a suffice `_template`.
+* Create a git repository for the new __workflow app__
 * Upload the files to the new __workflow app__ git repository
+
+
+## Creating a template app {-}
+* Make a workflow first
+* Save the workflow
+* Set the property of the workflow to "template"
+* Download the template (as zip) of the  __template app__
+* Unzip the folder
+* Add `README.md` file
+* Add `.gitignore` file
+* Choose a repository name and add a suffice `_app`.
+* Create a git repository for the new __template__ git repository
+* Upload the files to the new __template__ git repository
 
 ## App examples {-}
 
@@ -183,5 +188,10 @@ An __operator app__ which performs computation follows either one of the followi
 * per row and per col (i.e. per cell)
 
 ## App versioning
-In science, it is essential to reproduce the analysis you may have published many years ago. Tercen manages versions very tightly. This is particular important when you consider the three app layers in Tercen. Each layer requires vesioning. 
+In science, it is essential to reproduce the complete analysis you may have published many years ago. Tercen manages versions very tightly. This is particular important when you consider the three app layers in Tercen. Each layer requires versioning. 
 Tercen manages the __workflow__ and __workflow apps__ using the metadata associated with both those apps. For __operator apps__ written in R, it uses the `packrat` package. `packrat` makes sure when the researchers chooses to use an operators from the __app library__ it uses exactly the same version of R packages used by the developer who developed the operator and uploaded it in the __app library__.
+
+# App builders guide
+For further documentation regarding building apps. Please go the (app builders guide) [https://tercen.github.io/appbuilders-guide/]
+
+<center>![](images/app.png)</center>

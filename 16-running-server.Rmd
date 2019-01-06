@@ -28,7 +28,7 @@ The current categories are:
 Category  | Description | Name in yaml file
 :-----    | :-------    | :-------  
 Table     | resource  for table (i.e. size)  | `TableProfile`
-CPU time  | resources for cpu time  | `CputimeProfile`
+CPU time  | resources for CPU time  | `CputimeProfile`
 Storage   | resources for storage   | `StorageProfile`
 Run       | resources for a run     | `RunProfile`
 API calls | resources fro the API   | `ApiCallProfile`
