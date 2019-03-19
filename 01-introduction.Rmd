@@ -32,15 +32,15 @@ __Bioinformatician's__ challenges:
 
 ## Way forward {-}
 
-A new generation of tools and approaches are necessary. __TercenCloud__ aims to be such an approach. __TercenCloud__ is a platform where __biologist__ and __bioinformatician__ work easily together and upload, store and compute data.
+A new generation of tools and approaches are necessary. __Tercen__ aims to be such an approach. __Tercen__ is a platform where __biologist__ and __bioinformatician__ work easily together and upload, store and compute data.
 
 <center>![](images/tercencloud.png)</center>
 
-A more harmonious state between the programmers and non-programmers is achieved using __TercenCloud__.
+A more harmonious state between the programmers and non-programmers is achieved using __Tercen__.
 
 <center>![](images/harmony.png)</center>
 
-The main features of __TercenCloud__ are:
+The main features of __Tercen__ are:
 
 * Generate any visual
 * Visual computation
@@ -57,4 +57,4 @@ The main features of __TercenCloud__ are:
 * Zero install
 
 
-For a deeper understanding about __TercenCloud__ read the next chapter and consult the specific chapter on a particular feature.
+For a deeper understanding about __Tercen__ read the next chapter and consult the specific chapter on a particular feature.
