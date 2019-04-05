@@ -135,7 +135,7 @@ __Deploy the operator__:
 This can always re-init packrat by performing the following
     + Remove the `packrat` folder in the Rstudio project folder
     + Remove the `.Rprofile` file in the project folder
-    + Run `packrat::init` again
+    + Run `packrat::init(options = list(use.cache = TRUE))` again
 * upload to github in a public repository, let call it the operator git repo.
 
 R operators require packages, especially the same version of packages you used when you developed. This package environment is managed by `packrat`. The ability to run an operator with exactly the same packages you used when you developed is essential for reproducible science.
