@@ -1,0 +1,13 @@
+# Exporting {#export}
+
+To export images and data from a __workflow__.
+
+
+## Export images
+
+We currently recommend using fireshot (a google chrome plugin) to capture the visuals
+
+## Export data
+You requrie to add an __export step__ in the workflow.
+
+<center>![](images\share.png)</center>

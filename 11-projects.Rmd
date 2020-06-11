@@ -4,9 +4,9 @@ Science is performed by teams in the context of research projects. Both concepts
 
 A __team__ is:
 
-* created by an __admin__
-* a set of __users__ (i.e. researchers)
-* a set of __apps__ (called __my library__)
+* created by a __user__
+* composed of members, a set of __users__ (i.e. researchers)
+* a library (i.e. set) of __apps__ (called __library__)
 
 A __project__ is:
 

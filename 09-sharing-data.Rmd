@@ -3,7 +3,7 @@ Researchers require to share their data with the team Using the a URL is one eas
 
 All entities in Tercen, i.e. data, steps, views, workflows, groups, projects are shared via a permanent URL.
 
-If sharing a data URL is not possible for whatever reasons then a researcher downloads data from any of the _data steps_ in the data analysis workflow (i.e. pipeline). If the data is required for a different data analysis workflow then the researcher uses an __export step__ (see chapter \@ref(workflow-and-steps)).  
+If sharing a data URL is not possible for whatever reasons then a researcher downloads data from any of the _data steps_ in the data analysis workflow (i.e. pipeline). If the data is required for a different data analysis workflow then the researcher uses an __export step__ (see chapter \@ref(export)).  
 
 
 <center>![](images\share.png)</center>

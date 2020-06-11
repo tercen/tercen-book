@@ -1,0 +1,28 @@
+# Data Analysis {#analysis}
+
+Data analysis using __Tercen__ is composed of the following steps:
+
+* create a __team__
+* create a __project__
+* upload the data to the project
+* create a workflow to perform  the following
+    * overview of raw data
+    * quality check (outlier samples, batch effects)
+    * normalization (if there is a systematic effect)
+    * transformation (usually a log function)
+    * exploration
+        * heatmaps. PCA, tSNE, fold changes, profiles
+        * clustering
+    * statistical testing
+        * t-test, anova
+    * biological interpretation 
+        * pathway analysis, enrichment analysis
+        * network analysis
+
+The parameters you adjust for are:
+
+* kicking out samples (outliers)
+* normalization or not (depends on the data)
+* statistical test (t-test or anova)
+
+<center>![](images\share.png)</center>

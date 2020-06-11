@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Visual computation | Tercen Book</title>
+  <title>Chapter 12 Data Analysis | Tercen Book</title>
   <meta name="description" content="This is a book about Tercen" />
   <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Visual computation | Tercen Book" />
+  <meta property="og:title" content="Chapter 12 Data Analysis | Tercen Book" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="tercen/tercen-book" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Visual computation | Tercen Book" />
+  <meta name="twitter:title" content="Chapter 12 Data Analysis | Tercen Book" />
   
   <meta name="twitter:description" content="This is a book about Tercen" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="visualization.html"/>
-<link rel="next" href="workflow-and-steps.html"/>
+<link rel="prev" href="projects.html"/>
+<link rel="next" href="export.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -157,13 +157,43 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="visual-computation" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Visual computation</h1>
-<p>Researchers want to control the data they generate. Hence easily performing any computing on the data is key. In a previous chapter we discussed the cross tab window. Its flexibility and interactability are important features to create any visualization the researcher desires. The <strong>cross tab window</strong> is also capable of computing, in what we call <strong>WYSIWYC</strong>, <strong>W</strong> hat <strong>Y</strong>ou <strong>S</strong>ee <strong>I</strong>s <strong>W</strong>hat <strong>Y</strong>ou <strong>C</strong>ompute.</p>
-<p>Every view is potentially a computation. You require to select an <strong>operator</strong> to compute on the chosen projection.</p>
-<p>Note: Some operators require a specific projection e.g. a PCA requires to have observations on the <code>columns</code> and variables on the <code>rows</code>.</p>
+<div id="analysis" class="section level1">
+<h1><span class="header-section-number">Chapter 12</span> Data Analysis</h1>
+<p>Data analysis using <strong>Tercen</strong> is composed of the following steps:</p>
+<ul>
+<li>create a <strong>team</strong></li>
+<li>create a <strong>project</strong></li>
+<li>upload the data to the project</li>
+<li>create a workflow to perform the following
+<ul>
+<li>overview of raw data</li>
+<li>quality check (outlier samples, batch effects)</li>
+<li>normalization (if there is a systematic effect)</li>
+<li>transformation (usually a log function)</li>
+<li>exploration
+<ul>
+<li>heatmaps. PCA, tSNE, fold changes, profiles</li>
+<li>clustering</li>
+</ul></li>
+<li>statistical testing
+<ul>
+<li>t-test, anova</li>
+</ul></li>
+<li>biological interpretation
+<ul>
+<li>pathway analysis, enrichment analysis</li>
+<li>network analysis</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>The parameters you adjust for are:</p>
+<ul>
+<li>kicking out samples (outliers)</li>
+<li>normalization or not (depends on the data)</li>
+<li>statistical test (t-test or anova)</li>
+</ul>
 <center>
-<img src="images/visual2.png" />
+<img src="images/share.png" />
 </center>
 
 </div>
@@ -172,8 +202,8 @@
           </div>
         </div>
       </div>
-<a href="visualization.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="workflow-and-steps.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="projects.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="export.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
