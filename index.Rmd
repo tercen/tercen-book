@@ -19,7 +19,7 @@ graphics: yes
 
 This is a book about the __Tercen__ platform and covers the motivation, design ideas, features, deployment, server administration aspects and roadmap. It is currently a draft and aims to eventually be the definitive guide to __Tercen__. It is incrementally written and changes often as we are constantly adding to the __Tercen__ project.
 
-<center>![](images/tercen-book.png)</center>
+<center>![](images/cover.png)</center>
 
 
 ## Why read this book? {-}
@@ -42,10 +42,5 @@ Important terms and concepts are in __bold__ (e.g. __workflow__, __step__, __bio
 
 If you wish to give feedback then please do not hesitate to create an entry in the [issue tracker](https://github.com/tercen/tercen-book/issues).
 The book is in a public github repository [tercen book](https://github.com/tercen/tercen-book), therefore feel free to interact with the repository by cloning, modifying, pushing content. 
-
-
-
-
-
 
 
