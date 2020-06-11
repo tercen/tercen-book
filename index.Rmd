@@ -24,7 +24,7 @@ This is a book about the __Tercen__ platform and covers the motivation, design i
 
 ## Why read this book? {-}
 
-It is the centralized knowledge of __Tercen__ in a book format. It is intended to be detailed and is aimed for researchers who require an understanding of __Tercen__. If you require a quick intro to __Tercen__ then we suggest the [starters guide](https://tercen.github.io/starters-guide2/). 
+It is the centralized knowledge of __Tercen__ in a book format. It is intended to be detailed and is aimed for researchers who require an understanding of __Tercen__. If you require a quick intro to __Tercen__ then we suggest the [starters guide](https://tercen.github.io/starters-guide/). 
 
 ## Structure of the book {-}
 

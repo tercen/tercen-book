@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Tercen Book</title>
-  <meta name="description" content="This is a book about Tercen">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Concepts | Tercen Book</title>
+  <meta name="description" content="This is a book about Tercen" />
+  <meta name="generator" content="bookdown 0.17.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Tercen Book" />
+  <meta property="og:title" content="Chapter 3 Concepts | Tercen Book" />
   <meta property="og:type" content="book" />
   
   
@@ -17,28 +16,32 @@
   <meta name="github-repo" content="tercen/tercen-book" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Tercen Book" />
+  <meta name="twitter:title" content="Chapter 3 Concepts | Tercen Book" />
   
   <meta name="twitter:description" content="This is a book about Tercen" />
   
 
-<meta name="author" content="Tercen support document">
+<meta name="author" content="Tercen support document" />
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="tercen-features.html">
-<link rel="next" href="visualization.html">
+<link rel="prev" href="tercen-features.html"/>
+<link rel="next" href="visualization.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -192,7 +195,7 @@
 <p>Each row represents a individual measurement with all its corresponding annotation values. The number of <strong>observations</strong> are the number of rows. The number of columns is the number of <strong>variables</strong>. This format may seem verbose but it is <code>measurement</code> orientated and comes with the complete annotation of each <code>measurement</code> (i.e. rows). Internally Tercen uses such a row like structure. Each <strong>measurement</strong> is recorded with a full experimental context of annotation values. In the above example there is one measurement <strong>variable</strong> <code>mt</code>, three <strong>observations</strong> and four annotation <strong>variables</strong> in one data table.</p>
 <p>Tercen is geared to work with <strong>measurements</strong>. Visuals and computations are performed on <strong>measurements</strong>. Remembering this helps in understanding Tercen.</p>
 <p>In Tercen <strong>measurements</strong> are usually placed on the y-axis of most projection views (defined by the cross-tab window) and the others are used to define the row, col, x-axis etc.</p>
-<p>Statistician traditionally use column headers to describe a <strong>variable</strong> and rows to describe an <strong>observation</strong>. The Tercen data model allows the <strong>measurement</strong>, <strong>variable</strong> and <strong>observation</strong> to be positioned anywhere in the visuals (col, row, x-axis, y-axis, color, label) and therefore there is great flexibility. However most Tercen operators require to know what is the <strong>variable</strong> in order to compute the appropriate results. Therefore we have adopted the convention of using <strong>variable</strong> on the row. This is inspired by the genomics world where the gene (i.e. a <strong>variable</strong>) is a row and the samples are the <strong>observation</strong>. Most Tercen operators or apps use the row as a <strong>variable</strong> and columns as <strong>observations</strong> and the y-axis for the <strong>measurement</strong>. The documentation associated with the operator indicates what the operator is expecting in terms of position and input. Note, there are operators which do not follow these conventions.</p>
+<p>Statistician traditionally use column headers to describe a <strong>variable</strong> and rows to describe an <strong>observation</strong>. The Tercen data model allows the <strong>measurement</strong>, <strong>variable</strong> and <strong>observation</strong> to be positioned anywhere in the visuals (col, row, x-axis, y-axis, color, label) and therefore there is great flexibility. However most Tercen operators require to know what is the <strong>variable</strong> in order to compute the appropriate results. Therefore we have adopted the convention of using <strong>variable</strong> on the row. This is inspired by the genomics world where the gene (i.e. a <strong>variable</strong>) is a row and the samples are the <strong>observation</strong>. Most Tercen operators or apps use the row as a <strong>variable</strong> and columns as <strong>observations</strong> and the y-axis for the <strong>measurement</strong>. The documentation associated with the operator indicates what the operator is expecting in terms of position and input. Note, there are Tercen <strong>operators</strong> which do not follow these conventions.</p>
 </div>
 <div id="what-is-a-step-app-and-workflow" class="section level2">
 <h2><span class="header-section-number">3.2</span> What is a step, app and workflow?</h2>
@@ -220,11 +223,13 @@ The researchers can make these sophisticated relationships without requiring to 
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -232,12 +237,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -245,6 +249,14 @@ gitbook.start({
 "size": 2
 },
 "edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
