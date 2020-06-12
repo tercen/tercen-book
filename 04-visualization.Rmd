@@ -2,7 +2,7 @@
 
 Researchers want to control the data they generate. Hence visualization of the data is key. Researcher want the overview and they search for known (e.g. effects) or unknown patterns (e.g. biases) in the data. The current classical tools (e.g. GraphPad, excel) are not made to visualize large complex data sets. Tercen __cross tab  window__ allows researchers to interact and configure complex views.
 
-## Cross-tab window
+## Cross-tab window {-}
 
 The __cross-tab window__ is opened by double clicking on a __data step__ in a __workflow__. The __cross-tab window__ allows the researchers to create any visual by dragging-n-dropping factors to the appropriate section of the cross-tab window.
 
@@ -34,17 +34,17 @@ The factors are both the variables and annotations of your data (e.g. column hea
 
 The cross-tab window also allows the concept of __layers__. A __layer__ allows the researcher to superimpose different views and build up sophisticated graphics. 
 
-## Layers
+## Layers {-}
 
 __Layers__ are created in the cross-tab window. Each created __layer__ has the same __row__, __column__, __x-axis__ definition but allows the researcher to configure a different __y-axis__, __filter__, __color__, __label__ and __error bar__ which are all found in the `layer` section.
 
-## Filters
+## Filters {-}
 
 __Filters__ are found in the `filter` zone of the cross-tab window. The filter allows the researcher to remove data from the view. A __filter__ is created, modified or deleted.
 To create a filter you require to drag over a factor from the factor section to the filter section. The filter is configurable by double clicking on the filter itself. A previously defined filter may also be added by click on the `+` button. A list of previously defined filters appear and can be selected.
 
 
-## Multi-pairwise
+## Multi-pairwise  {-}
 Researchers typically compare conditions using a scatter plots. These plot are often repeated over and over again, imagine if researcher could generate many scatter plots, for all the conditions, in one go. This is possible with the __multi-pairwise__ view.
 
 __Multi-pairwise__ is configured in the __cross-tab window__. It is created by dragging-n-dropping the same factor in the `row` zone and in the `column` zone. Note, a factor requires to be defined in the `label` zone. This allows the projection to know what factor separates data points in the pairwise plot. 
@@ -52,7 +52,7 @@ __Multi-pairwise__ is configured in the __cross-tab window__. It is created by d
 A typically configuration example is when researchers are comparing different gene measurements in different samples and wish to have a sample to sample pairwise plot. The factor (say `sample_id`), representing the sample, is placed in the `row` and `column` zone. The factor (say `measurement`) representing the values is placed in the `y-axis` zone. The factor (say `gene_id`), representing the different genes which were measured, is placed in the `label` zone.
 
 
-## Examples
+## Examples  {-}
 
 Here are a few examples of the configuration flexibility of the views.
 

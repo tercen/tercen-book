@@ -1,5 +1,5 @@
 # Programmatic access {#programmatic-access}
-Let's say researchers wish to execute the same Tercen workflow over and over again. They may even have an existing pipeline they wish to convert into a Tercen workflow. Either way they are seeking a one button execution of a workflow from the security of their desktop PC. One method to do this is to use the Tercen API.
+Let's say researchers wish to execute the same Tercen workflow over and over again. They may even have an existing pipeline they wish to convert into a __Tercen__ workflow. Either way they are seeking a one button execution of a workflow from the security of their desktop PC. One method to do this is to use the Tercen API.
 
 Researchers who wish to interact with Tercen programmatically through the API can do so. Any functionality available graphically in Tercen is also available programmatically. This powerful capability means researchers can do the following:
 
@@ -10,10 +10,10 @@ Researchers who wish to interact with Tercen programmatically through the API ca
 * automate the creation of projects
 * automate the creation of operators
 
-Tercen itself auto-generates the API for the different programming languages. At the moment we auto-generated a package for the R programming language. We will rapidly auto-generate for Python and Matlab very soon (during summer of 2018). if you have an immediate need, do not hesitate to contact us by email to `info@tercen.com` with the request.
+Tercen itself auto-generates the API for the different programming languages. At the moment we auto-generated a package for the R programming language. We are aiming to rapidly auto-generate for Python and Matlab very soon (during summer of 2020). if you have an immediate need, do not hesitate to contact us by email to `support@tercen.com` with the request.
 
 The [`teRcen`](https://github.com/tercen/teRcen)  R package on the Tercen github allows complete programmatic control. For the full API please refer to the [teRcen R package](https://github.com/tercen/teRcen).
 
-Note: when using R Studio as a programming environment, it has a useful auto-complete feature. When you have loaded the teRcen R package, the available methods for tercen client and tercen query object will automatically appear as you type. It is a handy manner to discover the different methods in the Tercen API.
+Note: Install the __Tercen Studio__ product and its a ready to go development environment.
 
 <center>![](images\API.png)</center>

@@ -1,11 +1,10 @@
 # Running a server {#server}
 
-If you require the on-site version of Tercen then send an email to `info@tercen.com`.
-Currently the on-site versions is the __beta__ of Tercen.
+If you require the on-site version of Tercen then send an email to `support@tercen.com`.
 
 
 ## Server resources {-}
-A Tercen server allows for multiple researchers using the same server. Each researcher is using CPU and Storage resources. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different categories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilization (i.e. 0,1,2) where 0 represents the lowest level of resource utilization. Ideally the right level of resources should be assigned for different users. A researcher who exceeds their limit gets an error. A resource utilization information bar is shown to each user in the graphical user interface. The bar indicates the level of resource utilization and the amount left.  
+A __Tercen Enterprise__ server allows for multiple researchers using the same server. Each researcher is using CPU and Storage resources. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different categories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilization (i.e. 0,1,2) where 0 represents the lowest level of resource utilization. Ideally the right level of resources should be assigned for different users. A researcher who exceeds their limit gets an error. A resource utilization information bar is shown to each user in the graphical user interface. The bar indicates the level of resource utilization and the amount left.  
 
 Server resources are configured using `config.yaml` file.
 

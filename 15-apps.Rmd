@@ -1,7 +1,7 @@
 # Apps (i.e. plug-ins) {#apps}
 Lets say a researcher begins a brand new research project and requires to analyze many RNAseq measurements. The researcher opens Tercen and proceeds to browse the Tercen library for a relevant workflow and eventually discovers a workflow template called "RNAseq" and installs it and voilà the research can begin. This is the concept of an __app__. An __app__ is a sort of plug-in, just like an iPhone app.
 
-There are currently three types of apps: __template app_ (e.g. RNAseq), __workflow app__ (e.g. two group comparison, PCA), and __operator app__ (e.g. mean, PCA, t-test). Each __app__ has an __app version__ and is located in an __app library__. 
+There are currently three types of apps: __template app__ (e.g. RNAseq), __workflow app__ (e.g. two group comparison, PCA), and __operator app__ (e.g. mean, PCA, t-test). Each __app__ has an __app version__ and is located in an __app library__. 
 
 The three types of __apps__ including some examples are:
 
@@ -187,7 +187,7 @@ An __operator app__ which performs computation follows either one of the followi
 * per col
 * per row and per col (i.e. per cell)
 
-## App versioning
+## App versioning {-}
 In science, it is essential to reproduce the complete analysis you may have published many years ago. Tercen manages versions very tightly. This is particular important when you consider the three app layers in Tercen. Each layer requires versioning. 
 Tercen manages the __workflow__ and __workflow apps__ using the metadata associated with both those apps. For __operator apps__ written in R, it uses the `packrat` package. `packrat` makes sure when the researchers chooses to use an operators from the __app library__ it uses exactly the same version of R packages used by the developer who developed the operator and uploaded it in the __app library__.
 

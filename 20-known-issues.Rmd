@@ -1,18 +1,6 @@
 # Known issues {#known-issues}
 
-__Alpha__ known issues:
-
-* By default users are not allowed to create operators unless explicitly given permission by a __Tercen__ administrator
-* Cannot perform an operator on multi-pairwise projections
-* If your local computer's date and clock time is not the same as the __Tercen__ server then you may get delays and errors
-* Cannot run python scripts
-
-__Beta__ known issues:
-
-The beta version of __Tercen__ is currently being tested. We are looking for beta testers. So far the feedback is positive.
-Some feedback so far:
-
-* ability to run a computation on a server of your choosing (we are currently implementing)
+* There are no categories associated with the operators
 
 
 <center>![](images/roadmap.png)</center>
