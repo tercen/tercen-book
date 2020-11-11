@@ -12,5 +12,7 @@ The __tercen.com__ requires no installation and can be found at http:\\tercen.co
 
 The  __tercen enterprise__ is a docker installation and runs any server or desktop, it runs on Windows, Linux and Mac.
 
-The * __tercen studio__ is for developers and runs as docker installation and includes the __tercen enterprise__ and a free __RStudio Server__.
+The __tercen studio__ is for developers and runs as docker installation and includes the __tercen enterprise__ and a free __RStudio Server__.
+
+It can be found on our [github tercen studio repository](https://github.com/tercen/tercen_studio)
 
