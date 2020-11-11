@@ -58,3 +58,5 @@ The main features of __Tercen__ are:
 
 
 For a deeper understanding about __Tercen__ read the next chapter and consult the specific chapter on a particular feature.
+
+There are also online videos, found in the [Tercen youtube channel](https://www.youtube.com/channel/UCNM03GeEXQlz9kO-yhtLtfA)

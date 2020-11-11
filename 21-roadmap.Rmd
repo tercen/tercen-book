@@ -1,12 +1,15 @@
 # Roadmap {#roadmap}
 
-The initial __tercen.com__ is launched in the year 2020.
+The initial __tercen.com__ was launched in the year 2020.
 
-The following improvements are planned.
+The following improvements are planned during year 2020.
 
-* improvements in the importation of steps
-* improvements in the __apps__ support
-* Python support 
+* Better documentation, guides and videos (2020)
+* Adding more operators (2020)
+* improvements in the importation of data (2020)
+* improvements in the __apps__ support (2020)
+* Performance improvements (2020)
+* Python support (2021)
 
 
 <center>![](images/tercen_logo.png)</center>

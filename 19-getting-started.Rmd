@@ -2,6 +2,7 @@
 Here are some ideas:
 
 * Try the [starters guide](https://tercen.github.io/starters-guide2/)
+* Look at the [Tercen youtube channel](https://www.youtube.com/channel/UCNM03GeEXQlz9kO-yhtLtfA)
 * For app developers read the online [__app builders guide__](https://tercen.github.io/appbuilders-guide/)
 * [Contact us](mailto:info@tercen.com) for an online one-2-one session
 * Give feedback on this book by creating an [issue](https://github.com/tercen/tercen-book/issues)

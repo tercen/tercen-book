@@ -5,4 +5,7 @@ Every view is potentially a computation. You require to select an __operator__ t
 
 Note: Some operators require a specific projection e.g. a PCA requires to have observations on the `columns` and variables on the `rows`.
 
+The list of operators grows all the time. For the current list of the operators please go to the [operator list](https://tercen.github.io/operator_catalog/)
+
+
 <center>![](images\visual2.png)</center>

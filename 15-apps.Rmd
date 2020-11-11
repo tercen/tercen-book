@@ -192,6 +192,6 @@ In science, it is essential to reproduce the complete analysis you may have publ
 Tercen manages the __workflow__ and __workflow apps__ using the metadata associated with both those apps. For __operator apps__ written in R, it uses the `packrat` package. `packrat` makes sure when the researchers chooses to use an operators from the __app library__ it uses exactly the same version of R packages used by the developer who developed the operator and uploaded it in the __app library__.
 
 # App builders guide
-For further documentation regarding building apps. Please go the (app builders guide) [https://tercen.github.io/appbuilders-guide/]
+For further documentation regarding building apps. Please go the [app builders guide](https://tercen.github.io/appbuilders-guide/).
 
 <center>![](images/app.png)</center>

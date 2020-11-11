@@ -5,9 +5,10 @@ To export images and data from a __workflow__.
 
 ## Export images {-}
 
-We currently recommend using fireshot (a google chrome plugin) to capture the visuals
+We currently recommend using [fireshot](https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg?hl=en) (a google chrome plugin) to capture the visuals. Once installed, with one click you can capture any view generated in Tercen.
 
 ## Export data {-}
-You requrie to add an __export step__ in the workflow.
+You require to add an __export step__ in the workflow.
+The step, once added to the workflow, is executed and the export file appears in your project area.
 
 <center>![](images\share.png)</center>

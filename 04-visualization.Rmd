@@ -75,13 +75,29 @@ __Single Scatter Plot__
 __Maps__
 <center> ![](images/ireland.png) </center>
 
-## Navigating the data in the cross-tab
-Here are the main navigation modes to move around in the data:
+For more examples of visuals please look at the public Tercen projects called "Data visualization gallery", or click this [link](https://tercen.com/tercen/p/5c2aeff61fb2c2c6f38ad6c93a338d5f)
 
-* zooming in and out
-* scrolling
+## Data Navigation {-}
+
+Here are two main navigation modes to move around in the data in the cross-tab view:
+
+* squashing the cross-tab view in and out
+* scrolling the cross-tab view vertically and horizontally
 
 
+To perform squashing on the columns:
+
+* position the mouse cursor on the columns
+* press the Ctrl key and roll the mouse upward and downwards
+  * the view changes by squashing in the horizontal direction
+
+To perform squashing on the rows:
+
+* position the mouse cursor on the rows
+* press the Ctrl key and roll the mouse upward and downwards
+  * the view changes by squashing in the vertical direction
+  
+The perform scrolling, there is a vertical and horizontal scroll bar.
 
 
 <center>![](images\visual1.png)</center>
