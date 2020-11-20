@@ -196,7 +196,7 @@
 <td align="left">Site only</td>
 </tr>
 <tr class="odd">
-<td align="left">My app library</td>
+<td align="left">Team app library</td>
 <td align="left">tercen team area</td>
 <td align="left">Team only</td>
 </tr>
@@ -211,7 +211,7 @@
 </div>
 <div id="installing-apps" class="section level2 unnumbered">
 <h2>Installing apps</h2>
-<p>A researcher installs an app by sourcing it from any of the libraries (tercen app library, site library, my library) or from a git repository.</p>
+<p>A researcher installs an app by sourcing it from any of the libraries (tercen app library, site library, team library) or from a git repository.</p>
 </div>
 <div id="structure-of-an-operator-app" class="section level2 unnumbered">
 <h2>Structure of an operator app</h2>
@@ -248,72 +248,14 @@ If you wish to use other programming languages then it is possible by using the 
 </div>
 <div id="creating-an-operator-app" class="section level2 unnumbered">
 <h2>Creating an operator app</h2>
-<p>Tercen allows programmers to easily build new operators from the comfort of their favorite interactive development environment (IDE). From the IDE it is possible to access all Tercen features. The ability to access the input data (from Tercen) and returning results (to Tercen) is essential.</p>
 <p>The ability to create a new Tercen operator requires basic programming skills.</p>
-<p>Here is a development process to create an <strong>operator app</strong>:</p>
-<p><strong>Getting setup</strong>:</p>
+<p>Here is the top-level development process to create an <strong>operator app</strong>:</p>
 <ul>
-<li>Install R</li>
-<li>Install R Studio</li>
-<li>Install the <a href="https://github.com/tercen/teRcen">teRcen R package</a></li>
-<li>Open R Studio and create an empty project and init the git</li>
-<li>Copy four files into project, you can find them in any operator in tercen github.
-<ul>
-<li><code>operator.json</code></li>
-<li><code>main.R</code></li>
-<li><code>README.md</code></li>
-<li><code>.gitignore</code></li>
-</ul></li>
-<li>Modify appropriately each of the files</li>
-<li>Create the <code>workspace.R</code> file by:
-<ul>
-<li>Copy <code>main.R</code> and rename to <code>workspace.R</code> file</li>
-<li>Add the following lines to <code>workspace.R</code> file:</li>
+<li>Download and setup tercen studio</li>
+<li>Write the operator (with tercen studio)</li>
+<li>Deploy the operator (with tercen studio)</li>
 </ul>
-<pre><code>source(&#39;~/.Rprofile&#39;)
-options(&quot;tercen.workflowId&quot;= &quot;76a4dcffd551802fd23d42bd862e8300&quot;)
-options(&quot;tercen.stepId&quot;= &quot;3-2&quot;)</code></pre>
-The values indicated above are examples. The real values come from the next section.</li>
-</ul>
-<p><strong>Writing and testing the operator app</strong>:</p>
-<ul>
-<li>Develop and test the <strong>operator app</strong> within the <code>workspace.R</code> file</li>
-<li>Determine the input data for the <strong>operator app</strong>
-<ul>
-<li>Start Tercen</li>
-<li>Use the browser to go to <a href="http://127.0.0.1:5400" class="uri">http://127.0.0.1:5400</a></li>
-<li>Login</li>
-<li>Go to the workflow which contains the data</li>
-<li>Add a <strong>data step</strong></li>
-<li>Configure a project view in cross-tab window of the <strong>data step</strong></li>
-<li>Record the <strong>stepId</strong> and <strong>workflowId</strong> of this <strong>data step</strong></li>
-<li>Get data using the tercen api <code>tercen::ctx$select</code></li>
-<li>Execute the <strong>operator app</strong> locally</li>
-<li>Push results back to Tercen using the tercen API <code>tercen::ctx$save</code></li>
-</ul></li>
-</ul>
-<p>The actions above may happen multiple times as you develop your operator. Once the <strong>operator app</strong> is finalized then proceed:</p>
-<p><strong>Deploy the operator</strong>:</p>
-<ul>
-<li>Modify <code>workshop.R</code> and copy it to <code>main.R</code></li>
-<li>Run <code>packrat::init</code>
-This can always re-init packrat by performing the following
-<ul>
-<li>Remove the <code>packrat</code> folder in the Rstudio project folder</li>
-<li>Remove the <code>.Rprofile</code> file in the project folder</li>
-<li>Run <code>packrat::init(options = list(use.cache = TRUE))</code> again</li>
-</ul></li>
-<li>upload to github in a public repository, let call it the operator git repo.</li>
-</ul>
-<p>R operators require packages, especially the same version of packages you used when you developed. This package environment is managed by <code>packrat</code>. The ability to run an operator with exactly the same packages you used when you developed is essential for reproducible science.</p>
-<p>You can now install your <strong>operator</strong> into your Tercen server via the github install menu from the <strong>site library</strong> or any <strong>project library</strong>
-If you want it available to the Tercen community send an email to Tercen.
-Tercen administrator makes it available by modify app library on tercen github.</p>
-<p><strong>Content of <code>.Rprofile:</code> file in your home directory</strong></p>
-<pre><code>options(&quot;tercen.serviceUri&quot;=&quot;http://127.0.0.1:5400/api/v1/&quot;)
-options(&quot;tercen.username&quot;=&quot;XXXX&quot;)
-options(&quot;tercen.password&quot;=&quot;YYYY&quot;)</code></pre>
-<p>where <code>XXXX</code> and <code>YYYY</code> are the appropriate username and password of the developer.</p>
+<p>For further documentation regarding building operators. Please go the <a href="https://tercen.github.io/appbuilders-guide/">app builders guide</a>.</p>
 </div>
 <div id="creating-a-workflow-app" class="section level2 unnumbered">
 <h2>Creating a workflow app</h2>
