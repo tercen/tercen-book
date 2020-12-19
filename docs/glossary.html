@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 23 Glossary | Tercen Book</title>
   <meta name="description" content="This is a book about Tercen" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 23 Glossary | Tercen Book" />
   <meta property="og:type" content="book" />
@@ -50,6 +50,8 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -165,29 +167,131 @@
             <section class="normal" id="section-">
 <div id="glossary" class="section level1">
 <h1><span class="header-section-number">Chapter 23</span> Glossary</h1>
-<p><strong>Measurement</strong>: A numerical variable</p>
-<p><strong>Observation</strong>: An observation is the factor name given to a value (measurement), at a particular moment in time, of a particular variable.</p>
-<p><strong>Variable</strong>: A variable is a characteristic of a unit being observed that may assume more than one of a set of values to which a numerical measure or a category from a classification can be assigned (e.g. income, age, weight, etc., and “occupation”, “industry”, “disease”, etc.</p>
-<p><strong>Cross-tab window</strong>:
-A Tercen interface window to define a projection view (i.e. what is on the: row, col, y-axis, x-axis, color, label).</p>
-<p><strong>Projection</strong>:
-A projection is defined using the <strong>cross-tab window</strong>.</p>
-<p><strong>Long format</strong>:
-A format where every row is a measurement.</p>
-<p><strong>Wide format</strong>:
-A format where every column is a variable.</p>
+<p>A:</p>
+<p><strong>Activities Log</strong>
+The section of a Tercen project where actions are taken in the project is recorded. Links to the object where the change happened are included.</p>
 <p><strong>App</strong>:
-A plug-in to Tercen. It can be an <strong>operator</strong>, <strong>step</strong>, <strong>workflow app</strong>, or <strong>workflow</strong>.</p>
+A plug-in to Tercen. It can be one of three types: operator, app, template.</p>
 <p><strong>App library</strong>:
-A repository of Tercen <strong>apps</strong>. There are many repository locations, (e.g. github, team library).</p>
-<p><strong>Workflow</strong>:
-A sequence of <strong>steps</strong> or <strong>apps</strong> to achieve an analysis pipeline.</p>
-<p><strong>Workflow app</strong>:
-A small workflow composed of <strong>steps</strong>, visuals and <strong>operators</strong>. Typically it achieves one task, e.g. PCA app. The PCA app is composed of one result visual and one computation and one data wrangling step.</p>
-<p><strong>Step</strong>:
-A single step allows for a visual <strong>projection</strong> and optionally a computation using an <strong>operator</strong>.</p>
+A repository of Tercen apps. There are many repository locations, (e.g. GitHub, team library).</p>
+<p>B:</p>
+<p><strong>Breadcrumb</strong>:
+A dynamic URL link-line at the top of the Tercen interface. The Breadcrumb displays a path to the user’s current location in the system. It is built up of individual links to each step on the path. Users can navigate to any part of the path by clicking the step link.</p>
+<p>C:</p>
+<p><strong>Clone</strong>:
+Takes a copy of the element selected and saves it into an equivalent location selected by the user. The user can modify the clone without disturbing the original research. Full projects can be cloned as can parts of projects such as Workflow.</p>
+<p><strong>Color box</strong>:
+Part of the cross tab projection screen. When a factor is dropped on this box Tercen will assign a color to the value of that factor in the projection grid. Colors grade from warm (red) through to cold (blue) from highest plus number to lowest minus number. A rainbow palette is a default but other pallets can be selected for different effects.</p>
+<p><strong>Cross-tab window</strong>:
+A Tercen interface window to define a projection view (i.e. what is on the row, col, y-axis, x-axis, color, label).</p>
+<p>D:</p>
+<p><strong>Data Set</strong>:
+A collection of measurements uploaded to Tercen or created by Tercen after manipulation in a workflow. Usually, Datasets take the form of a data table but can be linked to other sources such as databases.</p>
+<p><strong>Data Step</strong>:
+The basic Calculation or Projection unit of a Tercen workflow. All the heavy lifting of Data Analysis in Tercen is done here. Data steps contain a layout of Factors into a projection grid and settings to create a visualization from this. Operators can be applied to Data Steps so their calculations are passed down to data steps linked below it.</p>
+<p><strong>Docker</strong>:
+A platform that allows software applications to be packaged into a container. Containers run on Dockers virtual environment within a computer. The container holds the dependencies that the app needs to run so this way it can operate independently of the operating system on the computer which might conflict with it.</p>
+<p>E:</p>
+<p><strong>Enterprise</strong>:
+A version of Tercen that can run on a local server and be available through an organization’s network. Organizations with strict access control requirements, restrictions on internet access, or regulatory commitments to local data storage should choose this option.</p>
+<p><strong>Explore</strong>:
+The community section of Tercen. Public projects are made available to everybody here.</p>
+<p>F:</p>
+<p><strong>Factor</strong>:
+The Tercen name for the smallest group of data you can work with. If a table has 10 columns then there will be 10 factors to make projections with. If a spreadsheet has names and addresses then [FirstName] [Surname] {Street} and {City} will all be factors. Operators can also create new factors when they run. These are the calculated values and they are available for the next data steps in the workflow.</p>
+<p><strong>Filter</strong>:
+A method of subdividing data in Tercen. Simple filters might exclude data zero values from a graph. Filters are made on the Cross-Tab Projection screen. There are two ways to apply a filter. Drag a factor to the filters section and set a rule for how its data is included or excluded. Or Highlight rows in the projection and right-click to set the rules. Multiple filters can be applied to the same data set at the same time.</p>
+<p><strong>Filter box</strong>:
+The part of the cross-tab projection screen where filter settings can be created, modified or deleted. Factors can be dragged here to create a filter.</p>
+<p>G:</p>
+<p><strong>GitHub</strong>:
+GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. Tercen connects to GitHub and we store all of our operators there for anyone to access</p>
+<p><strong>Git Repository</strong>:
+A folder or room where any type of file can be stored. GitHub will track changes to the files, even if multiple people are changing them at the same time. It allows rollbacks to any previous version and makes the files available to be downloaded according to your privacy settings.</p>
+<p>H:
+<strong>Home</strong>:
+Your personal page. It works like a Team but with only one member… You. Your personal Projects are hosted here as well as access to administration areas such as your Tercen subscription or settings.</p>
+<p>I:</p>
+<p>J:</p>
+<p>K:</p>
+<p>L:</p>
+<p><strong>Layer</strong>:
+Created in the cross-tab window. Each layer has the same row, column, x-axis definition but allows the user to configure a different y-axis, filter, color, label, and error bar. This allows multiple graphical projections of the same data layout without having to create multiple data steps.</p>
+<p><strong>Library</strong>:
+A collection of Operators or Apps which have been made available to be used on a Project. Libraries can be used to control what calculations are available to a project team. Operators and Apps must be added to a Library by a Team member with the right permissions level.</p>
+<p><strong>Long format</strong>:
+A table format where every row has a single measurement. It is a list format that makes data more easily processed by computer code working from top to bottom rather than a human preferred left to right.</p>
+<p>M:
+<strong>Measurement</strong>:
+A numerical variable representing a single point of data.</p>
+<p><strong>Multi-pairwise</strong>:
+A data projection in the crosstab grid lays out multiple scatter-plots in a matrix.</p>
+<p>It is created by dragging and dropping the same factor into both the row zone and the column zone. A factor must also be defined in the label zone. This allows the projection to know what factor separates data points in the pairwise plot.</p>
+<p>N:</p>
+<p>O:
+<strong>Observation</strong>:
+A gathering of data at a particular moment in time. Observations can consist of one or more measurement variables.</p>
 <p><strong>Operator</strong>:
-An operator computes on data supplied to it by the <strong>projection</strong> view defined using the <strong>cross-tab window</strong>.</p>
+Is an algorithm that computes data supplied to it by the input projection view defined using the cross-tab window. Tercen operators pass their calculations downstream to linked Data Steps.</p>
+<p>P:
+<strong>Project</strong>:
+A folder containing all the elements of data analysis. Data files, workflows, and supporting documents are held here. Tercen provides an activity tracker on each Project to show a history of actions. Creating a README.md adds a web page to the project where research, data, and graphs can be displayed.</p>
+<p><strong>Projection</strong>:
+A projection is defined using the cross-tab window. It is a representation of the data factors laid out by dragging and dropping. Usually, it is in the form of a graph.</p>
+<p>Q:</p>
+<p>R:</p>
+<p><strong>Run</strong>:
+Appears in Tercen as a button or select from a drop-down list. Choosing this will cause the algorithms in an Operator to start their calculations. To help you remember to run your calculations Tercen puts a little green light on a Data Step when they are successful or a red light when there is a problem.</p>
+<p>S:</p>
+<p><strong>Step</strong>:
+An event on a Tercen workflow. Events include Data Table Import, Visual Projection, Calculations, Joins, and Exports. A single step allows for a visual projection and optionally a computation using an operator.</p>
+<p><strong>Subscription</strong>:
+The fee you pay to access Tercen’s advanced features. Normally charged monthly to a credit card.</p>
+<p>T:</p>
+<p><strong>Tag</strong>:
+A label is given to a piece of data. Normally issued on an ad-hoc basis but computer systems can track them and perform functions based on them.</p>
+<p><strong>Table</strong>:</p>
+<p>A basic collection of data. Very like a spreadsheet, and indeed many data tables start out as spreadsheets. It normally has titles for the data in the first row and lists of individual data underneath those titles in the columns.</p>
+<p><strong>Team</strong>:
+A group of users on Tercen who are collaborating on one or more projects. Users can have different permissions to access and modify the elements of a project: Admin, Read Write, or Read Only.</p>
+<p><strong>Tercen</strong>:
+The next-generation data analytics platform. It’s drag and drops, and it lives in the cloud, so no coding is required. There are also a powerful community and sharing functions that you won’t find anywhere else.</p>
+<p><strong>Tercen GitHub</strong>:
+You can find everything Tercen here in our Tercen Repository. Sample data files, instruction manuals, and guides, and Mathematical operators for your analysis.</p>
+<p><strong>Tercen Studio</strong>:
+The development environment for Tercen integrates coding and testing features. Integrates RStudio to Tercen through your browser.</p>
+<p>U:</p>
+<p><strong>Universal Table</strong>:
+An abstract internal table built by Tercen from all data sources uploaded to it. This unified data model allows Tercen to perform calculations on data throughout the workflow or visual projections regardless of the original source.</p>
+<p><strong>Username</strong>:
+Your unique personal identifier on Tercen. We even generate a unique icon from it so everybody can see who you are.</p>
+<p>V:</p>
+<p><strong>Variable</strong>:
+A variable is a characteristic of a unit being observed that may assume more than one of a set of values to which a numerical measure or a category from a classification can be assigned (e.g. income, age, weight, etc., and “occupation”, “industry”, “disease”, etc.</p>
+<p><strong>Visual computation</strong>:
+Users of Tercen define a computation visually for example by dragging and dropping elements, setting filters and lines, or adding operators. The Tercen engine performs the calculations on the fly as visual adjustments are made.</p>
+<p>W:</p>
+<p><strong>Wide-format</strong>:
+A format where every column is a variable. Considered the traditional layout for a spreadsheet with titles along the top and individuals down the side. This layout is optimized for human reading. For machine reading layouts see Long format.</p>
+<p><strong>Workflow</strong>:
+A sequence of steps or apps to achieve an analysis pipeline. Calculations made in a data step are passed downwards to steps which are linked below. Multiple branches of analysis can be created.</p>
+<p><strong>Workflow app</strong>:
+A small workflow composed of steps, visuals, and operators. Typically it achieves one task, e.g. PCA app. The PCA app is composed of one result visual and one computation and one data wrangling step.</p>
+<p>X:</p>
+<p>Y:</p>
+<p>Z:</p>
+<p><strong>Zone</strong>:
+Part of the cross-tab projection screen. They are loaded with Factors dragged and dropped from the data and are used to form the layout of a projection. There are four zone types that run from inside to outside on the X and Y-Axis.</p>
+<p><strong>x-axis zone</strong>:
+The bottom-most division of the Data runs across the top of the cross-tab projection grid. Its primary function is to divide data. There can be only one X-axis zone.</p>
+<p><strong>y-axis zone</strong>:
+The right-most division of the Data that runs down the side of the cross-tab projection grid. Its primary function is to divide data. There can be only one Y-axis zone. This zone is often the most important one in a projection. It should be loaded first.</p>
+<p><strong>row zone</strong>:
+Zones running down the side of the grid parallel to the Y-Axis. Their primary function is to sort the information in the Y-Axis. There can be multiple Row zone factors but their order is important as Tercen applies to sort from the outside-in.</p>
+<p><strong>column zone</strong>:
+Zones running along the top of the grid parallel to the X-Axis. Their primary function is to sort the information in the X-Axis. There can be multiple Column zone factors but their order is important as Tercen applies to sort from the outside-in.</p>
+<p><strong>Label box</strong>:
+Part of the cross tab projection screen.</p>
 <center>
 <img src="images/goldfish.png" />
 </center>
