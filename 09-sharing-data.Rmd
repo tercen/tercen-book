@@ -5,7 +5,7 @@ All entities in Tercen, i.e. data, steps, views, workflows, groups, projects are
 
 If sharing a data URL is not possible for whatever reasons then a researcher downloads data from any of the _data steps_ in the data analysis workflow (i.e. pipeline). If the data is required for a different data analysis workflow then the researcher uses an __export step__ (see chapter \@ref(export)).  
 
-Projects can also be made public and therefore other researches may read and view the analysis and data. All public projects are found in the "explore aread" [link](https://tercen.com/explore)
+Projects can also be made public and therefore other researches may read and view the analysis and data. All public projects are found in the "explore area" [explore link](https://tercen.com/explore)
 
 
 <center>![](images\share.png)</center>

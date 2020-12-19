@@ -1,10 +1,34 @@
 # Results reporting {#results-reporting}
 
 The ability to publish results for scientific journals or even group presentation is key.
-The current version of beta implements a high quality image output. Any __data step__ allows the researcher to export a high quality image as a `*.png`.
+The current version requires to use screen-shot programs. 
 
 Tercen core architecture contains a rich amount information about the data analysis workflow. For example, Tercen know the relationship of any computed data with the source data (see chapter \@ref(data-provenance)), this is ideal information when creating a report on exactly what is computed and how.
 
-The final release of __Tercen__ is targeted to have a full reporting subsystem in order to convert __workflows__ into reports or methodology section of publications.
+There is a concept of `README.md` file for each project. It allows you to quickly create some documentation for the project.
+
+To create a `README.md` file for a project, perform the following
+
+* Go to the project folder
+* Create a file using the New file button
+* Name the file `README.md`
+* Save it
+
+Voila, you have an empty README.
+
+You can edit it anytime using the edit button, the syntax for the markdown is the standard syntax. Currently, we support the following markdown syntax:
+
+```
+# Section
+
+## Subsection
+```
+To embed a view of one of the workflow's data step use the following syntax.
+
+```
+<div workflowId="4d2ce64e3312592700d1d36dabe7c404" stepId="de008572-2b81-4a4e-9681-cad765c675ab"></div>
+```
+
+Replace the hexadecimal numbers (e.g. 4d2ce64e3312592700d1d36dabe7c404) of the workflowId and stepId to the one which contains the data step you wish to connect with.
 
 <center>![](images\report.png)</center>

@@ -168,9 +168,24 @@
 <div id="results-reporting" class="section level1">
 <h1><span class="header-section-number">Chapter 10</span> Results reporting</h1>
 <p>The ability to publish results for scientific journals or even group presentation is key.
-The current version of beta implements a high quality image output. Any <strong>data step</strong> allows the researcher to export a high quality image as a <code>*.png</code>.</p>
+The current version requires to use screen-shot programs.</p>
 <p>Tercen core architecture contains a rich amount information about the data analysis workflow. For example, Tercen know the relationship of any computed data with the source data (see chapter <a href="data-provenance.html#data-provenance">14</a>), this is ideal information when creating a report on exactly what is computed and how.</p>
-<p>The final release of <strong>Tercen</strong> is targeted to have a full reporting subsystem in order to convert <strong>workflows</strong> into reports or methodology section of publications.</p>
+<p>There is a concept of <code>README.md</code> file for each project. It allows you to quickly create some documentation for the project.</p>
+<p>To create a <code>README.md</code> file for a project, perform the following</p>
+<ul>
+<li>Go to the project folder</li>
+<li>Create a file using the New file button</li>
+<li>Name the file <code>README.md</code></li>
+<li>Save it</li>
+</ul>
+<p>Voila, you have an empty README.</p>
+<p>You can edit it anytime using the edit button, the syntax for the markdown is the standard syntax. Currently, we support the following markdown syntax:</p>
+<pre><code># Section
+
+## Subsection</code></pre>
+<p>To embed a view of one of the workflow’s data step use the following syntax.</p>
+<pre><code>&lt;div workflowId=&quot;4d2ce64e3312592700d1d36dabe7c404&quot; stepId=&quot;de008572-2b81-4a4e-9681-cad765c675ab&quot;&gt;&lt;/div&gt;</code></pre>
+<p>Replace the hexadecimal numbers (e.g. 4d2ce64e3312592700d1d36dabe7c404) of the workflowId and stepId to the one which contains the data step you wish to connect with.</p>
 <center>
 <img src="images/report.png" />
 </center>
