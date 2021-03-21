@@ -1,6 +1,7 @@
 # Known issues {#known-issues}
 
-* There are no categories associated with the operators
+* It is not possible to browse the operators by categories. Please browse the operators by going to the [operator catalog](https://tercen.github.io/operator_catalog/).
+* For large datasets (i.e. more than 30 million data points) the sorting of text is not optimum.
 
 
 <center>![](images/roadmap.png)</center>

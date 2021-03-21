@@ -2,13 +2,12 @@
 
 The initial __tercen.com__ was launched in the year 2020.
 
-The following improvements are planned during year 2020.
+The following improvements are planned during year 2021.
 
-* Better documentation, guides and videos (2020)
-* Adding more operators (2020)
-* improvements in the importation of data (2020)
-* improvements in the __apps__ support (2020)
-* Performance improvements (2020)
+* Better documentation, guides and videos (2021)
+* Adding more operators (2021)
+* improvements in the __apps__ support (2021)
+* Performance improvements (2021)
 * Python support (2021)
 
 
