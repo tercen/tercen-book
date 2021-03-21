@@ -9,7 +9,7 @@ Allows a researcher to select a dataset. The dataset requires to be uploaded to 
 
 __Data step__
 
-Allows a researcher to create a projection for visualization and computation. 
+Allows a researcher to create a projection for visualization and computation. For a list of computations see the [operator catalog](https://tercen.github.io/operator_catalog/).
 
 __Gather step__
 

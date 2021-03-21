@@ -10,6 +10,7 @@ A __template app__ is a type of template data analysis pipeline and it allows a 
 A __workflow app__ is a mini workflow and allows a researcher to perform a set of computations and/or visualizations e.g. the researcher requires to perform a PCA including some automated visuals of the results. The researcher would install a PCA step app from the Tercen library.
 
 A __operator app__ performs a computation on the projection views in the cross-tab window (e.g. a PCA function) e.g. the researcher requires to perform a simple PCA without any automated visuals. The researcher would install a PCA operator app from the Tercen library.
+For a complete list of operators go to the [operator catalog](https://tercen.github.io/operator_catalog/).
 
 Typically a there is a hierarchy of apps where a __template app__ contains __workflow app__ and a __workflow app__ contains __operator app__.
 
