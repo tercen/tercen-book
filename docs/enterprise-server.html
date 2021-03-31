@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 19 Running a server | Tercen Book</title>
+  <title>Chapter 19 Enterprise Server | Tercen Book</title>
   <meta name="description" content="This is a book about Tercen" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 19 Running a server | Tercen Book" />
+  <meta property="og:title" content="Chapter 19 Enterprise Server | Tercen Book" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="tercen/tercen-book" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 19 Running a server | Tercen Book" />
+  <meta name="twitter:title" content="Chapter 19 Enterprise Server | Tercen Book" />
   
   <meta name="twitter:description" content="This is a book about Tercen" />
   
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="deployment.html"/>
-<link rel="next" href="getting-started.html"/>
+<link rel="next" href="server.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -141,14 +141,14 @@
 <li class="chapter" data-level="16" data-path="app-builders-guide.html"><a href="app-builders-guide.html"><i class="fa fa-check"></i><b>16</b> App builders guide</a></li>
 <li class="chapter" data-level="17" data-path="programmatic-access.html"><a href="programmatic-access.html"><i class="fa fa-check"></i><b>17</b> Programmatic access</a></li>
 <li class="chapter" data-level="18" data-path="deployment.html"><a href="deployment.html"><i class="fa fa-check"></i><b>18</b> Deployment</a></li>
-<li class="chapter" data-level="19" data-path="server.html"><a href="server.html"><i class="fa fa-check"></i><b>19</b> Running a server</a><ul>
-<li class="chapter" data-level="" data-path="server.html"><a href="server.html#server-hardware"><i class="fa fa-check"></i>Server hardware</a></li>
+<li class="chapter" data-level="19" data-path="enterprise-server.html"><a href="enterprise-server.html"><i class="fa fa-check"></i><b>19</b> Enterprise Server</a></li>
+<li class="chapter" data-level="20" data-path="server.html"><a href="server.html"><i class="fa fa-check"></i><b>20</b> Running a server</a><ul>
 <li class="chapter" data-level="" data-path="server.html"><a href="server.html#server-resources"><i class="fa fa-check"></i>Server resources</a></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>20</b> Getting started</a></li>
-<li class="chapter" data-level="21" data-path="known-issues.html"><a href="known-issues.html"><i class="fa fa-check"></i><b>21</b> Known issues</a></li>
-<li class="chapter" data-level="22" data-path="roadmap.html"><a href="roadmap.html"><i class="fa fa-check"></i><b>22</b> Roadmap</a></li>
-<li class="chapter" data-level="23" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>23</b> Glossary</a></li>
+<li class="chapter" data-level="21" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>21</b> Getting started</a></li>
+<li class="chapter" data-level="22" data-path="known-issues.html"><a href="known-issues.html"><i class="fa fa-check"></i><b>22</b> Known issues</a></li>
+<li class="chapter" data-level="23" data-path="roadmap.html"><a href="roadmap.html"><i class="fa fa-check"></i><b>23</b> Roadmap</a></li>
+<li class="chapter" data-level="24" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>24</b> Glossary</a></li>
 </ul>
 
       </nav>
@@ -166,96 +166,16 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="server" class="section level1">
-<h1><span class="header-section-number">Chapter 19</span> Running a server</h1>
-<p>If you require the on-site version of Tercen (called <strong>Tercen Enterprise</strong>) then send an email to <code>info@tercen.com</code>.</p>
-<div id="server-hardware" class="section level2 unnumbered">
-<h2>Server hardware</h2>
-<p>The recommended hardware specification for a high-end server is:</p>
-<pre><code>CPU : Xeon, 8 Cores
-RAM : 64 Gig
-HD  : 1TB SSD
-OS  : Linux</code></pre>
-<p>Smaller servers can be used (e.g. not a Xenon CPU but i7 or i5).
-The number of users and the type of data analysis activity determines the size required.</p>
+<div id="enterprise-server" class="section level1">
+<h1><span class="header-section-number">Chapter 19</span> Enterprise Server</h1>
+<p>The enterprise server runs on your own servers.
+The recommended high-end server specs are:</p>
+<p><code>CPU : Xeon, 8 Cores RAM : 64 Gig HD  : 1TB SSD OS  : Linux</code>
+Smaller servers can be used (e.g. not a Xenon but i7 or i5).
+By default we recommend Linux but the Enterprise also runs on Windows and Mac OS servers.</p>
 <p>An important rule of thumb is to have at least 8Gigs of RAM per CPU.
 Hence (e.g. 4 Cores requires 32 Gigs).</p>
-<p>By default we recommend Linux but Tercen Enterprise also runs on Windows and Mac OS servers.</p>
-</div>
-<div id="server-resources" class="section level2 unnumbered">
-<h2>Server resources</h2>
-<p>A <strong>Tercen Enterprise</strong> server allows for multiple researchers using the same server. Each researcher is using CPU and Storage resources. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different categories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilization (i.e. 0,1,2) where 0 represents the lowest level of resource utilization. Ideally the right level of resources should be assigned for different users. A researcher who exceeds their limit gets an error. A resource utilization information bar is shown to each user in the graphical user interface. The bar indicates the level of resource utilization and the amount left.</p>
-<p>Server resources are configured using <code>config.yaml</code> file.</p>
-<p>Go to the folder named <code>resources\tercen</code> in the Tercen installation folder (usually <code>C:\Tercen</code>), in it there is a file called <code>config.yaml</code>.</p>
-<p>The file contains three profile levels: 0,1,2
-Each user is associated with one of the levels. The default is 0 (the lowest level of resource allocation).</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Level</th>
-<th align="left">Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">0</td>
-<td align="left">Low amount of resources</td>
-</tr>
-<tr class="even">
-<td align="left">1</td>
-<td align="left">Medium amount of resources</td>
-</tr>
-<tr class="odd">
-<td align="left">2</td>
-<td align="left">Highest amount of resources</td>
-</tr>
-</tbody>
-</table>
-<p>There are settings associated for each level for each category of resources.</p>
-<p>The current categories are:</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Category</th>
-<th align="left">Description</th>
-<th align="left">Name in yaml file</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Table</td>
-<td align="left">resource for table (i.e. size)</td>
-<td align="left"><code>TableProfile</code></td>
-</tr>
-<tr class="even">
-<td align="left">CPU time</td>
-<td align="left">resources for CPU time</td>
-<td align="left"><code>CputimeProfile</code></td>
-</tr>
-<tr class="odd">
-<td align="left">Storage</td>
-<td align="left">resources for storage</td>
-<td align="left"><code>StorageProfile</code></td>
-</tr>
-<tr class="even">
-<td align="left">Run</td>
-<td align="left">resources for a run</td>
-<td align="left"><code>RunProfile</code></td>
-</tr>
-<tr class="odd">
-<td align="left">API calls</td>
-<td align="left">resources fro the API</td>
-<td align="left"><code>ApiCallProfile</code></td>
-</tr>
-</tbody>
-</table>
-<p>Increasing the value for any of these settings gives extra resources.</p>
-<p>If you change these profile settings then you need to restart the Tercen application for your changes to take effect.</p>
-<center>
-<img src="images/deploy.png" />
-</center>
 
-</div>
 </div>
             </section>
 
@@ -263,7 +183,7 @@ Each user is associated with one of the levels. The default is 0 (the lowest lev
         </div>
       </div>
 <a href="deployment.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="getting-started.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="server.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

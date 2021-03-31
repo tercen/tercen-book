@@ -17,20 +17,3 @@ The __tercen studio__ is for developers and runs as docker installation and incl
 It can be found on our [github tercen studio repository](https://github.com/tercen/tercen_studio)
 
 
-# Enterprise Server
-
-The enterprise server runs on your own servers.
-The recommended high-end server specs are:
-
-`
-CPU : Xeon, 8 Cores
-RAM : 64 Gig
-HD  : 1TB SSD
-OS  : Linux
-`
-Smaller servers can be used (e.g. not a Xenon but i7 or i5).
-By default we recommend Linux but the Enterprise also runs on Windows and Mac OS servers.
-
-An important rule of thumb is to have at least 8Gigs of RAM per CPU.
-Hence (e.g. 4 Cores requires 32 Gigs).
-
