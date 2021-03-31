@@ -19,7 +19,7 @@ The number of users and the type of data analysis activity determines the size r
 An important rule of thumb is to have at least 8Gigs of RAM per CPU.
 Hence (e.g. 4 Cores requires 32 Gigs).
 
-By default we recommend Linux but Tercen Enterprise also runs on Windows and Mac OS servers.
+By default we recommend Linux but __Tercen Enterprise__ also runs on Windows and Mac OS servers.
 
 ## Server resources {-}
 A __Tercen Enterprise__ server allows for multiple researchers using the same server. Each researcher is using CPU and Storage resources. A server may be easily swamped with requests and therefore a system of resource management is in place. There are different categories (i.e. CPU, Data, Storage, API calls) of resources and different levels of utilization (i.e. 0,1,2) where 0 represents the lowest level of resource utilization. Ideally the right level of resources should be assigned for different users. A researcher who exceeds their limit gets an error. A resource utilization information bar is shown to each user in the graphical user interface. The bar indicates the level of resource utilization and the amount left.  
