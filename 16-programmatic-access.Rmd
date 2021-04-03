@@ -10,7 +10,7 @@ Researchers who wish to interact with Tercen programmatically through the API ca
 * automate the creation of projects
 * automate the creation of operators
 
-Tercen itself auto-generates the API for the different programming languages. At the moment we auto-generated a package for the R programming language. We are aiming to rapidly auto-generate for Python and Matlab very soon (during summer of 2020). if you have an immediate need, do not hesitate to contact us by email to `support@tercen.com` with the request.
+Tercen itself auto-generates the API for the different programming languages. At the moment we auto-generated a package for the R programming language. We are aiming to rapidly auto-generate for Python and Matlab very soon (during summer of 2021). if you have an immediate need, do not hesitate to contact us by email to <support@tercen.com> with the request.
 
 The [`teRcen`](https://github.com/tercen/teRcen)  R package on the Tercen github allows complete programmatic control. For the full API please refer to the [teRcen R package](https://github.com/tercen/teRcen).
 

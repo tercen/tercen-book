@@ -6,7 +6,7 @@ The following improvements are planned during year 2021.
 
 * Better documentation, guides and videos (2021)
 * Adding more operators (2021)
-* improvements in the __apps__ support (2021)
+* improvements in the wizard __apps__ support (2021)
 * Performance improvements (2021)
 * Python support (2021)
 

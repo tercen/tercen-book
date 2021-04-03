@@ -1,6 +1,6 @@
 # Running a server {#server}
 
-If you require the on-site version of Tercen (called __Tercen Enterprise__) then send an email to `info@tercen.com`.
+If you require the on-site version of Tercen (called __Tercen Enterprise__) then send an email to <support@tercen.com>.
 
 ## Server hardware {-}
 
