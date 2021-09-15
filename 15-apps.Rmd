@@ -98,27 +98,42 @@ For further documentation regarding building operators. Please go the [app build
 ## Creating a workflow app {-}
 * Make a workflow first
 * Save the workflow
-* Set the property of the workflow to “app”
 * Download the workflow (as zip) of the __step app__
 * Unzip the folder
 * Add `README.md` file
 * Add `.gitignore` file
-* Choose a repsoitory name and add a suffice `_template`.
+* Choose a repsoitory name and add a suffice `_app`.
 * Create a git repository for the new __workflow app__
 * Upload the files to the new __workflow app__ git repository
 
 
 ## Creating a template app {-}
+
+It is easy to create a __template app__. The first step is to create a Tercen workflow and the second step is to deploy it. There are two main methods of deployment. The first method makes it for you team members. The second method allows your template for any team wishing to use it.
+
+The first is:
+
 * Make a workflow first
 * Save the workflow
-* Set the property of the workflow to "template"
-* Download the template (as zip) of the  __template app__
+* Clone the worfklow into the `templates` folder for your team
+* It is now available to your team members
+
+The workflow is now available for use for your Team.
+
+The second is:
+
+* Make a workflow first
+* Save the workflow
+* Download the workflow (it downloads as .zip)
 * Unzip the folder
 * Add `README.md` file
 * Add `.gitignore` file
-* Choose a repository name and add a suffice `_app`.
+* Choose a repository name and add a suffice `_tmpl`.
 * Create a git repository for the new __template__ git repository
 * Upload the files to the new __template__ git repository
+* Tag your repository
+
+The workflow is now available for installation for any Team.
 
 ## App examples {-}
 
