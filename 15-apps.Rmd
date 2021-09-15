@@ -96,19 +96,30 @@ Here is the top-level development process to create an __operator app__:
 For further documentation regarding building operators. Please go the [app builders guide](https://tercen.github.io/appbuilders-guide/).
 
 ## Creating a workflow app {-}
+It is easy to create a __workflow app__. The first step is to create a Tercen workflow and the second step is to deploy it. There are two main methods of deployment.
+
+The first method to deploy:
+
+* Make a workflow first
+* Save the workflow
+* Clone the workflow into the `apps` folder for your team
+* It is now available to your team members
+
+The second method to deploy:
+
 * Make a workflow first
 * Save the workflow
 * Download the workflow (as zip) of the __step app__
 * Unzip the folder
 * Add `README.md` file
 * Add `.gitignore` file
-* Choose a repsoitory name and add a suffice `_app`.
+* Choose a repository name and add a suffice `_app`.
 * Create a git repository for the new __workflow app__
 * Upload the files to the new __workflow app__ git repository
 
+The __workflow app__ can now be installed as any other operator from github.
 
 ## Creating a template app {-}
-
 It is easy to create a __template app__. The first step is to create a Tercen workflow and the second step is to deploy it. There are two main methods of deployment. The first method makes it for you team members. The second method allows your template for any team wishing to use it.
 
 The first is:
@@ -124,6 +135,22 @@ The second is:
 
 * Make a workflow first
 * Save the workflow
+
+It is straight forward to create a __template app__. The first step is to create a Tercen workflow and the second step is to deploy it. There are two main methods of deployment. The first method makes it for you team members. The second method allows your template for any team wishing to use it.
+
+The first method to deploy:
+
+* Make a workflow first
+* Save the workflow
+* Clone the workflow into the `templates` folder for your team
+* It is now available to your team members
+
+The __template app__ is now available for use for your Team.
+
+The second method to deploy is:
+
+* Make a workflow first
+* Save the workflow
 * Download the workflow (it downloads as .zip)
 * Unzip the folder
 * Add `README.md` file
@@ -133,7 +160,10 @@ The second is:
 * Upload the files to the new __template__ git repository
 * Tag your repository
 
-The workflow is now available for installation for any Team.
+
+The __template app__ is now available for installation for any Team.
+
+The __template app__ can now be installed as any other operator from github.
 
 ## App examples {-}
 
@@ -147,7 +177,7 @@ An __operator app__ which performs computation follows either one of the followi
 
 ## App versioning {-}
 In science, it is essential to reproduce the complete analysis you may have published many years ago. Tercen manages versions very tightly. This is particular important when you consider the three app layers in Tercen. Each layer requires versioning. 
-Tercen manages the __workflow__ and __workflow apps__ using the metadata associated with both those apps. For __operator apps__ written in R, it uses the `packrat` package. `packrat` makes sure when the researchers chooses to use an operators from the __app library__ it uses exactly the same version of R packages used by the developer who developed the operator and uploaded it in the __app library__.
+Tercen manages the __workflow__ and __workflow apps__ using the metadata associated with both those apps. For __operator apps__ written in R, it uses the `renv` package. `renv` makes sure when the researchers chooses to use an operators from the __app library__ it uses exactly the same version of R packages used by the developer who developed the operator and uploaded it in the __app library__.
 
 # App builders guide
 For further documentation regarding building apps. Please go the [app builders guide](https://tercen.github.io/appbuilders-guide/).
