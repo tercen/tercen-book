@@ -16,6 +16,6 @@ The [`teRcen`](https://github.com/tercen/teRcen)  R package on the Tercen github
 
 Note: Install the __Tercen Studio__ product and its a ready to go development environment.
 
-For further documentation regarding __Tercen Studio__. Please go the [app builders guide](https://tercen.github.io/appbuilders-guide/).
+For further documentation regarding __Tercen Studio__. Please go the [developers guide](https://tercen.github.io/developers_guide/).
 
 <center>![](images\API.png)</center>

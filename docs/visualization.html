@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Visualization | Tercen Book</title>
   <meta name="description" content="This is a book about Tercen" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Visualization | Tercen Book" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a book about Tercen" />
   <meta name="github-repo" content="tercen/tercen-book" />
@@ -32,8 +31,8 @@
   
 <link rel="prev" href="concepts.html"/>
 <link rel="next" href="visual-computation.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +48,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -79,85 +78,85 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<li><a href="index.html#preface">Preface<span></span></a>
 <ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#why-read-this-book"><i class="fa fa-check"></i>Why read this book?</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#structure-of-the-book"><i class="fa fa-check"></i>Structure of the book</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgement"><i class="fa fa-check"></i>Acknowledgement</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#typography-conventions"><i class="fa fa-check"></i>Typography conventions</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#feedback"><i class="fa fa-check"></i>Feedback</a></li>
+<li><a href="index.html#why-read-this-book">Why read this book?<span></span></a></li>
+<li><a href="index.html#structure-of-the-book">Structure of the book<span></span></a></li>
+<li><a href="index.html#acknowledgement">Acknowledgement<span></span></a></li>
+<li><a href="index.html#typography-conventions">Typography conventions<span></span></a></li>
+<li><a href="index.html#feedback">Feedback<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
-<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<li><a href="about-the-authors.html#about-the-authors">About the authors<span></span></a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a>
 <ul>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#challenges"><i class="fa fa-check"></i>Challenges</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#way-forward"><i class="fa fa-check"></i>Way forward</a></li>
+<li><a href="introduction.html#motivation">Motivation<span></span></a></li>
+<li><a href="introduction.html#challenges">Challenges<span></span></a></li>
+<li><a href="introduction.html#way-forward">Way forward<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="tercen-features.html"><a href="tercen-features.html"><i class="fa fa-check"></i><b>2</b> Tercen features</a></li>
-<li class="chapter" data-level="3" data-path="concepts.html"><a href="concepts.html"><i class="fa fa-check"></i><b>3</b> Concepts</a>
+<li class="chapter" data-level="2" data-path="tercen-features.html"><a href="tercen-features.html"><i class="fa fa-check"></i><b>2</b> Tercen features<span></span></a></li>
+<li class="chapter" data-level="3" data-path="concepts.html"><a href="concepts.html"><i class="fa fa-check"></i><b>3</b> Concepts<span></span></a>
 <ul>
-<li class="chapter" data-level="" data-path="concepts.html"><a href="concepts.html#what-is-a-measurement-variable-and-observation"><i class="fa fa-check"></i>What is a measurement, variable and observation?</a></li>
-<li class="chapter" data-level="" data-path="concepts.html"><a href="concepts.html#what-is-a-step-app-and-workflow"><i class="fa fa-check"></i>What is a step, app and workflow?</a></li>
-<li class="chapter" data-level="" data-path="concepts.html"><a href="concepts.html#what-is-visual-computation"><i class="fa fa-check"></i>What is visual computation?</a></li>
-<li><a href="concepts.html#what-is-an-universal-table-and-relational-algebra">What is an universal table and <strong>relational algebra</strong>?</a></li>
+<li><a href="concepts.html#what-is-a-measurement-variable-and-observation">What is a measurement, variable and observation?<span></span></a></li>
+<li><a href="concepts.html#what-is-a-step-app-and-workflow">What is a step, app and workflow?<span></span></a></li>
+<li><a href="concepts.html#what-is-visual-computation">What is visual computation?<span></span></a></li>
+<li><a href="concepts.html#what-is-an-universal-table-and-relational-algebra">What is an universal table and <strong>relational algebra</strong>?<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="visualization.html"><a href="visualization.html"><i class="fa fa-check"></i><b>4</b> Visualization</a>
+<li class="chapter" data-level="4" data-path="visualization.html"><a href="visualization.html"><i class="fa fa-check"></i><b>4</b> Visualization<span></span></a>
 <ul>
-<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html#cross-tab-window"><i class="fa fa-check"></i>Cross-tab window</a></li>
-<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html#layers"><i class="fa fa-check"></i>Layers</a></li>
-<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html#filters"><i class="fa fa-check"></i>Filters</a></li>
-<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html#multi-pairwise"><i class="fa fa-check"></i>Multi-pairwise</a></li>
-<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html#examples"><i class="fa fa-check"></i>Examples</a></li>
-<li class="chapter" data-level="" data-path="visualization.html"><a href="visualization.html#data-navigation"><i class="fa fa-check"></i>Data Navigation</a></li>
+<li><a href="visualization.html#cross-tab-window">Cross-tab window<span></span></a></li>
+<li><a href="visualization.html#layers">Layers<span></span></a></li>
+<li><a href="visualization.html#filters">Filters<span></span></a></li>
+<li><a href="visualization.html#multi-pairwise">Multi-pairwise<span></span></a></li>
+<li><a href="visualization.html#examples">Examples<span></span></a></li>
+<li><a href="visualization.html#data-navigation">Data Navigation<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="visual-computation.html"><a href="visual-computation.html"><i class="fa fa-check"></i><b>5</b> Visual computation</a></li>
-<li class="chapter" data-level="6" data-path="workflow-and-steps.html"><a href="workflow-and-steps.html"><i class="fa fa-check"></i><b>6</b> Workflow and Steps</a></li>
-<li class="chapter" data-level="7" data-path="external-databases.html"><a href="external-databases.html"><i class="fa fa-check"></i><b>7</b> External databases</a></li>
-<li class="chapter" data-level="8" data-path="sharing-analysis.html"><a href="sharing-analysis.html"><i class="fa fa-check"></i><b>8</b> Sharing analysis</a></li>
-<li class="chapter" data-level="9" data-path="sharing-data.html"><a href="sharing-data.html"><i class="fa fa-check"></i><b>9</b> Sharing data</a></li>
-<li class="chapter" data-level="10" data-path="results-reporting.html"><a href="results-reporting.html"><i class="fa fa-check"></i><b>10</b> Results reporting</a></li>
-<li class="chapter" data-level="11" data-path="projects.html"><a href="projects.html"><i class="fa fa-check"></i><b>11</b> Team Projects</a></li>
-<li class="chapter" data-level="12" data-path="analysis.html"><a href="analysis.html"><i class="fa fa-check"></i><b>12</b> Data Analysis</a>
+<li class="chapter" data-level="5" data-path="visual-computation.html"><a href="visual-computation.html"><i class="fa fa-check"></i><b>5</b> Visual computation<span></span></a></li>
+<li class="chapter" data-level="6" data-path="workflow-and-steps.html"><a href="workflow-and-steps.html"><i class="fa fa-check"></i><b>6</b> Workflow and Steps<span></span></a></li>
+<li class="chapter" data-level="7" data-path="external-databases.html"><a href="external-databases.html"><i class="fa fa-check"></i><b>7</b> External databases<span></span></a></li>
+<li class="chapter" data-level="8" data-path="sharing-analysis.html"><a href="sharing-analysis.html"><i class="fa fa-check"></i><b>8</b> Sharing analysis<span></span></a></li>
+<li class="chapter" data-level="9" data-path="sharing-data.html"><a href="sharing-data.html"><i class="fa fa-check"></i><b>9</b> Sharing data<span></span></a></li>
+<li class="chapter" data-level="10" data-path="results-reporting.html"><a href="results-reporting.html"><i class="fa fa-check"></i><b>10</b> Results reporting<span></span></a></li>
+<li class="chapter" data-level="11" data-path="projects.html"><a href="projects.html"><i class="fa fa-check"></i><b>11</b> Team Projects<span></span></a></li>
+<li class="chapter" data-level="12" data-path="analysis.html"><a href="analysis.html"><i class="fa fa-check"></i><b>12</b> Data Analysis<span></span></a>
 <ul>
-<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#overview-of-raw-data"><i class="fa fa-check"></i>Overview of raw data</a></li>
-<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#quality-check-outlier-samples-batch-effects"><i class="fa fa-check"></i>Quality check (outlier samples, batch effects)</a></li>
-<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#normalization-if-there-is-a-systematic-effect"><i class="fa fa-check"></i>Normalization (if there is a systematic effect)</a></li>
-<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#transformation-usually-a-log-function"><i class="fa fa-check"></i>Transformation (usually a log function)</a></li>
-<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#exploration"><i class="fa fa-check"></i>Exploration</a></li>
-<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#statistical-testing"><i class="fa fa-check"></i>Statistical testing</a></li>
-<li class="chapter" data-level="" data-path="analysis.html"><a href="analysis.html#biological-interpretation"><i class="fa fa-check"></i>Biological interpretation</a></li>
+<li><a href="analysis.html#overview-of-raw-data">Overview of raw data<span></span></a></li>
+<li><a href="analysis.html#quality-check-outlier-samples-batch-effects">Quality check (outlier samples, batch effects)<span></span></a></li>
+<li><a href="analysis.html#normalization-if-there-is-a-systematic-effect">Normalization (if there is a systematic effect)<span></span></a></li>
+<li><a href="analysis.html#transformation-usually-a-log-function">Transformation (usually a log function)<span></span></a></li>
+<li><a href="analysis.html#exploration">Exploration<span></span></a></li>
+<li><a href="analysis.html#statistical-testing">Statistical testing<span></span></a></li>
+<li><a href="analysis.html#biological-interpretation">Biological interpretation<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="export.html"><a href="export.html"><i class="fa fa-check"></i><b>13</b> Exporting</a>
+<li class="chapter" data-level="13" data-path="export.html"><a href="export.html"><i class="fa fa-check"></i><b>13</b> Exporting<span></span></a>
 <ul>
-<li class="chapter" data-level="" data-path="export.html"><a href="export.html#export-images"><i class="fa fa-check"></i>Export images</a></li>
-<li class="chapter" data-level="" data-path="export.html"><a href="export.html#export-data"><i class="fa fa-check"></i>Export data</a></li>
+<li><a href="export.html#export-images">Export images<span></span></a></li>
+<li><a href="export.html#export-data">Export data<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="data-provenance.html"><a href="data-provenance.html"><i class="fa fa-check"></i><b>14</b> Data provenance</a></li>
-<li class="chapter" data-level="15" data-path="apps.html"><a href="apps.html"><i class="fa fa-check"></i><b>15</b> Apps (i.e. plug-ins)</a>
+<li class="chapter" data-level="14" data-path="data-provenance.html"><a href="data-provenance.html"><i class="fa fa-check"></i><b>14</b> Data provenance<span></span></a></li>
+<li class="chapter" data-level="15" data-path="apps.html"><a href="apps.html"><i class="fa fa-check"></i><b>15</b> Apps (i.e. plug-ins)<span></span></a>
 <ul>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#app-libraries"><i class="fa fa-check"></i>App libraries</a></li>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#installing-apps"><i class="fa fa-check"></i>Installing apps</a></li>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#structure-of-an-operator-app"><i class="fa fa-check"></i>Structure of an operator app</a></li>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#tercen-r-package"><i class="fa fa-check"></i>Tercen R package</a></li>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#creating-an-operator-app"><i class="fa fa-check"></i>Creating an operator app</a></li>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#creating-a-workflow-app"><i class="fa fa-check"></i>Creating a workflow app</a></li>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#creating-a-template-app"><i class="fa fa-check"></i>Creating a template app</a></li>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#app-examples"><i class="fa fa-check"></i>App examples</a></li>
-<li class="chapter" data-level="" data-path="apps.html"><a href="apps.html#app-versioning"><i class="fa fa-check"></i>App versioning</a></li>
+<li><a href="apps.html#app-libraries">App libraries<span></span></a></li>
+<li><a href="apps.html#installing-apps">Installing apps<span></span></a></li>
+<li><a href="apps.html#structure-of-an-operator-app">Structure of an operator app<span></span></a></li>
+<li><a href="apps.html#tercen-r-package">Tercen R package<span></span></a></li>
+<li><a href="apps.html#creating-an-operator-app">Creating an operator app<span></span></a></li>
+<li><a href="apps.html#creating-a-workflow-app">Creating a workflow app<span></span></a></li>
+<li><a href="apps.html#creating-a-template-app">Creating a template app<span></span></a></li>
+<li><a href="apps.html#app-examples">App examples<span></span></a></li>
+<li><a href="apps.html#app-versioning">App versioning<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="app-builders-guide.html"><a href="app-builders-guide.html"><i class="fa fa-check"></i><b>16</b> App builders guide</a></li>
-<li class="chapter" data-level="17" data-path="programmatic-access.html"><a href="programmatic-access.html"><i class="fa fa-check"></i><b>17</b> Programmatic access</a></li>
-<li class="chapter" data-level="18" data-path="deployment.html"><a href="deployment.html"><i class="fa fa-check"></i><b>18</b> Products</a></li>
-<li class="chapter" data-level="19" data-path="server.html"><a href="server.html"><i class="fa fa-check"></i><b>19</b> Running a server</a>
+<li class="chapter" data-level="16" data-path="developers-guide.html"><a href="developers-guide.html"><i class="fa fa-check"></i><b>16</b> Developers guide<span></span></a></li>
+<li class="chapter" data-level="17" data-path="programmatic-access.html"><a href="programmatic-access.html"><i class="fa fa-check"></i><b>17</b> Programmatic access<span></span></a></li>
+<li class="chapter" data-level="18" data-path="deployment.html"><a href="deployment.html"><i class="fa fa-check"></i><b>18</b> Products<span></span></a></li>
+<li class="chapter" data-level="19" data-path="server.html"><a href="server.html"><i class="fa fa-check"></i><b>19</b> Running a server<span></span></a>
 <ul>
-<li class="chapter" data-level="" data-path="server.html"><a href="server.html#server-hardware"><i class="fa fa-check"></i>Server hardware</a></li>
-<li class="chapter" data-level="" data-path="server.html"><a href="server.html#server-resources"><i class="fa fa-check"></i>Server resources</a></li>
+<li><a href="server.html#server-hardware">Server hardware<span></span></a></li>
+<li><a href="server.html#server-resources">Server resources<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>20</b> Getting started</a></li>
-<li class="chapter" data-level="21" data-path="known-issues.html"><a href="known-issues.html"><i class="fa fa-check"></i><b>21</b> Known issues</a></li>
-<li class="chapter" data-level="22" data-path="roadmap.html"><a href="roadmap.html"><i class="fa fa-check"></i><b>22</b> Roadmap</a></li>
-<li class="chapter" data-level="23" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>23</b> Glossary</a></li>
+<li class="chapter" data-level="20" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>20</b> Getting started<span></span></a></li>
+<li class="chapter" data-level="21" data-path="known-issues.html"><a href="known-issues.html"><i class="fa fa-check"></i><b>21</b> Known issues<span></span></a></li>
+<li class="chapter" data-level="22" data-path="roadmap.html"><a href="roadmap.html"><i class="fa fa-check"></i><b>22</b> Roadmap<span></span></a></li>
+<li class="chapter" data-level="23" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>23</b> Glossary<span></span></a></li>
 </ul>
 
       </nav>
@@ -175,11 +174,11 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="visualization" class="section level1" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Visualization</h1>
+<div id="visualization" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Visualization<a href="visualization.html#visualization" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Researchers want to control the data they generate. Hence visualization of the data is key. Researcher want the overview and they search for known (e.g. effects) or unknown patterns (e.g. biases) in the data. The current classical tools (e.g. GraphPad, excel) are not made to visualize large complex data sets. Tercen <strong>cross tab window</strong> allows researchers to interact and configure complex views.</p>
-<div id="cross-tab-window" class="section level2 unnumbered">
-<h2>Cross-tab window</h2>
+<div id="cross-tab-window" class="section level2 unnumbered hasAnchor">
+<h2>Cross-tab window<a href="visualization.html#cross-tab-window" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The <strong>cross-tab window</strong> is opened by double clicking on a <strong>data step</strong> in a <strong>workflow</strong>. The <strong>cross-tab window</strong> allows the researchers to create any visual by dragging-n-dropping factors to the appropriate section of the cross-tab window.</p>
 <p>The cross-tab windows is composed of six sections.</p>
 <table>
@@ -273,23 +272,23 @@
 <p>The factors are both the variables and annotations of your data (e.g. column headers in your uploaded data). The factors are dragged over to the zones in order to create the visualization or desired projection. Researchers may either create their own view or use an app pre-configured views.</p>
 <p>The cross-tab window also allows the concept of <strong>layers</strong>. A <strong>layer</strong> allows the researcher to superimpose different views and build up sophisticated graphics.</p>
 </div>
-<div id="layers" class="section level2 unnumbered">
-<h2>Layers</h2>
+<div id="layers" class="section level2 unnumbered hasAnchor">
+<h2>Layers<a href="visualization.html#layers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Layers</strong> are created in the cross-tab window. Each created <strong>layer</strong> has the same <strong>row</strong>, <strong>column</strong>, <strong>x-axis</strong> definition but allows the researcher to configure a different <strong>y-axis</strong>, <strong>filter</strong>, <strong>color</strong>, <strong>label</strong> and <strong>error bar</strong> which are all found in the <code>layer</code> section.</p>
 </div>
-<div id="filters" class="section level2 unnumbered">
-<h2>Filters</h2>
+<div id="filters" class="section level2 unnumbered hasAnchor">
+<h2>Filters<a href="visualization.html#filters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Filters</strong> are found in the <code>filter</code> zone of the cross-tab window. The filter allows the researcher to remove data from the view. A <strong>filter</strong> is created, modified or deleted.
 To create a filter you require to drag over a factor from the factor section to the filter section. The filter is configurable by double clicking on the filter itself. A previously defined filter may also be added by click on the <code>+</code> button. A list of previously defined filters appear and can be selected.</p>
 </div>
-<div id="multi-pairwise" class="section level2 unnumbered">
-<h2>Multi-pairwise</h2>
+<div id="multi-pairwise" class="section level2 unnumbered hasAnchor">
+<h2>Multi-pairwise<a href="visualization.html#multi-pairwise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Researchers typically compare conditions using a scatter plots. These plot are often repeated over and over again, imagine if researcher could generate many scatter plots, for all the conditions, in one go. This is possible with the <strong>multi-pairwise</strong> view.</p>
 <p><strong>Multi-pairwise</strong> is configured in the <strong>cross-tab window</strong>. It is created by dragging-n-dropping the same factor in the <code>row</code> zone and in the <code>column</code> zone. Note, a factor requires to be defined in the <code>label</code> zone. This allows the projection to know what factor separates data points in the pairwise plot.</p>
 <p>A typically configuration example is when researchers are comparing different gene measurements in different samples and wish to have a sample to sample pairwise plot. The factor (say <code>sample_id</code>), representing the sample, is placed in the <code>row</code> and <code>column</code> zone. The factor (say <code>measurement</code>) representing the values is placed in the <code>y-axis</code> zone. The factor (say <code>gene_id</code>), representing the different genes which were measured, is placed in the <code>label</code> zone.</p>
 </div>
-<div id="examples" class="section level2 unnumbered">
-<h2>Examples</h2>
+<div id="examples" class="section level2 unnumbered hasAnchor">
+<h2>Examples<a href="visualization.html#examples" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Here are a few examples of the configuration flexibility of the views.</p>
 <strong>Heatmap</strong>
 View configuration: column, row, color, heatmap
@@ -318,8 +317,8 @@ View configuration: column, row, color, heatmap
 </center>
 <p>For more examples of visuals please look at the public Tercen projects called “Data visualization gallery”, or click this <a href="https://tercen.com/tercen/p/5c2aeff61fb2c2c6f38ad6c93a338d5f">link</a></p>
 </div>
-<div id="data-navigation" class="section level2 unnumbered">
-<h2>Data Navigation</h2>
+<div id="data-navigation" class="section level2 unnumbered hasAnchor">
+<h2>Data Navigation<a href="visualization.html#data-navigation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Here are two main navigation modes to move around in the data in the cross-tab view:</p>
 <ul>
 <li>squashing the cross-tab view in and out</li>
@@ -343,7 +342,7 @@ View configuration: column, row, color, heatmap
 </ul>
 <p>The perform scrolling, there is a vertical and horizontal scroll bar.</p>
 <center>
-<img src="images/visual1.png" />
+<img src="images\visual1.png" />
 </center>
 
 </div>
@@ -358,7 +357,6 @@ View configuration: column, row, color, heatmap
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -398,6 +396,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

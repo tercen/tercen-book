@@ -4,10 +4,10 @@ Here are some ideas:
 * Try the [starters guide](https://tercen.github.io/starters-guide2/)
 * Look at the [Tercen youtube channel](https://www.youtube.com/channel/UCNM03GeEXQlz9kO-yhtLtfA)
 * There are also some extra online material found in the [learn section](https://learn.tercen.com) of our website.
-* For app developers read the online [__app builders guide__](https://tercen.github.io/appbuilders-guide/)
+* For app developers read the online [__developers guide__](https://tercen.github.io/developers_guide/)
 * [Contact us](support@tercen.com) for an online one-2-one session
 * Give feedback on this book by creating an [issue](https://github.com/tercen/tercen-book/issues)
-* Give feedback on Tercen by sending an email to `info@tercen.com`
+* Give feedback on Tercen by sending an email to `support@tercen.com`
 * Try the Tercen API by using the [`teRcen`](https://github.com/tercen/tercen) R package.
 
 <center>![](images/stairs.png)</center>
